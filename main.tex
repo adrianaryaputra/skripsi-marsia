@@ -1,0 +1,43 @@
+\documentclass{skripsi}
+
+\input{metadata/skripsi}
+
+% Tambahkan .bib file untuk daftar pustaka
+\addbibresource{referensi.bib}
+
+\begin{document}
+
+% -------------------------------------------------------------------
+% BAGIAN AWAL (FRONTMATTER)
+% -------------------------------------------------------------------
+\pagenumbering{roman} % Halaman angka romawi kecil (i, ii, iii)
+\pagestyle{plain} % Halaman diletakkan di bawah-tengah
+
+\makecover
+
+\input{frontmatter/abstrak-id}
+\input{frontmatter/abstract-en}
+\input{frontmatter/kata-pengantar}
+\input{frontmatter/daftar}
+
+% -------------------------------------------------------------------
+% BAGIAN ISI (MAINMATTER)
+% -------------------------------------------------------------------
+\clearpage
+\pagenumbering{arabic} % Halaman menggunakan angka arab (1, 2, 3)
+\pagestyle{skripsi_standard} % Halaman isi selain pembuka bab di kanan atas
+
+\input{chapters/01-pendahuluan}
+\input{chapters/02-tinjauan-pustaka}
+\input{chapters/03-metodologi-penelitian}
+\input{chapters/04-hasil-dan-pembahasan}
+\input{chapters/05-penutup}
+
+% -------------------------------------------------------------------
+% BAGIAN AKHIR (BACKMATTER)
+% -------------------------------------------------------------------
+\input{backmatter/daftar-pustaka}
+\input{appendices/01-prasurvey-tahap-1}
+\input{appendices/02-prasurvey-tahap-2}
+
+\end{document}
