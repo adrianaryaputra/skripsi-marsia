@@ -28,6 +28,8 @@
 \RequirePackage{caption}  % For Table and Figure Captions
 \RequirePackage{chngcntr} % For resetting float numbering by chapter
 \RequirePackage{graphicx} % For Images / Logo
+\RequirePackage{longtable} % For multi-page tables
+\RequirePackage{pdflscape} % For landscape pages
 \RequirePackage[style=apa, backend=biber]{biblatex} % APA Style references
 \RequirePackage{indentfirst} % Indent first paragraph
 \RequirePackage{tabularx}
@@ -204,10 +206,10 @@
   \renewcommand{\thechapter}{\thelampiran}%
   \thispagestyle{plain}%
   \begingroup
-    \centering
-    {\large\bfseries LAMPIRAN \thelampiran\par}%
-    \vspace{12pt}%
-    {\large\bfseries \MakeUppercase{#1}\par}%
+  \centering
+  {\large\bfseries LAMPIRAN \thelampiran\par}%
+  \vspace{12pt}%
+  {\large\bfseries \MakeUppercase{#1}\par}%
   \endgroup
   \vspace{12pt}%
   \addcontentsline{toc}{chapter}{LAMPIRAN \thelampiran\space #1}%
@@ -360,6 +362,12 @@
 % -------------------------------------------------------------------
 % 8. COVER PAGE (SAMPUL)
 % -------------------------------------------------------------------
+\newcommand{\covertitleblock}[1]{%
+  {\large\bfseries
+   \setlength{\tabcolsep}{0pt}%
+   \begin{tabular}{@{}c@{}}#1\end{tabular}\par}%
+}
+
 \newcommand{\makecover}{
   \begin{titlepage}
     \centering
@@ -370,7 +378,7 @@
 
     % JUDUL (Sampan terbalik requires careful line breaking or centering, 
     % user can format it using \\ in their \title command)
-    {\large \textbf{\judulindonesiacapslocktext}}\\[1.5cm]
+    \covertitleblock{\judulindonesiacapslocktext}\vspace{1.5cm}
 
     % OLEH
     {\normalsize \textbf{OLEH:}}\\[12pt] % 1 enter
@@ -378,7 +386,7 @@
     % NAMA
     {\normalsize \textbf{\MakeUppercase{\@author}}}\\[0pt]
     {\normalsize \textbf{NIM. \@nim}}
-    
+
     \vfill
 
     % LOGO (4.31 cm x 4.31 cm)
@@ -403,9 +411,9 @@
   \addcontentsline{toc}{chapter}{ABSTRAK}
   \def\@keywordlabel{Kata Kunci}
   \begingroup
-    \centering
-    {\large \textbf{ABSTRAK}}\par\vspace{12pt}
-    {\singlespacing \textbf{\judulindonesiacapslocktext}\par}\vspace{12pt}
+  \centering
+  {\large \textbf{ABSTRAK}}\par\vspace{12pt}
+  {\singlespacing \textbf{\judulindonesiacapslocktext}\par}\vspace{12pt}
   \endgroup
   \begin{singlespace}
   \setlength{\parindent}{0pt}
@@ -420,9 +428,9 @@
   \addcontentsline{toc}{chapter}{ABSTRACT}
   \def\@keywordlabel{Keywords}
   \begingroup
-    \centering
-    {\large \textbf{ABSTRACT}}\par\vspace{12pt}
-    {\singlespacing \textbf{\judulinggriscapitalizetext}\par}\vspace{12pt}
+  \centering
+  {\large \textbf{ABSTRACT}}\par\vspace{12pt}
+  {\singlespacing \textbf{\judulinggriscapslocktext}\par}\vspace{12pt}
   \endgroup
   \begin{singlespace}
   \setlength{\parindent}{0pt}
@@ -444,8 +452,8 @@
   \phantomsection
   \addcontentsline{toc}{chapter}{KATA PENGANTAR}
   \begingroup
-    \centering
-    {\large \textbf{KATA PENGANTAR}}\par\vspace{12pt}
+  \centering
+  {\large \textbf{KATA PENGANTAR}}\par\vspace{12pt}
   \endgroup
   % According to guide: paragraphs spacing double
   \doublespacing
