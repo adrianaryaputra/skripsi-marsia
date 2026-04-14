@@ -28,6 +28,8 @@
 \RequirePackage{caption}  % For Table and Figure Captions
 \RequirePackage{chngcntr} % For resetting float numbering by chapter
 \RequirePackage{graphicx} % For Images / Logo
+\RequirePackage{tikz} % For conceptual diagrams
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
 \RequirePackage{longtable} % For multi-page tables
 \RequirePackage{pdflscape} % For landscape pages
 \RequirePackage[style=apa, backend=biber]{biblatex} % APA Style references
