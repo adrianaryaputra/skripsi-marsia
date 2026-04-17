@@ -22,6 +22,7 @@
 ]{geometry}
 
 \RequirePackage{setspace} % For line spacing
+\RequirePackage{microtype} % Reduce overfull boxes in justified paragraphs
 \RequirePackage{titlesec} % For Chapter and Section formatting
 \RequirePackage{tocloft}  % For TOC formatting
 \RequirePackage{fancyhdr} % For Page Numbering
@@ -35,8 +36,11 @@
 \RequirePackage[style=apa, backend=biber]{biblatex} % APA Style references
 \RequirePackage{indentfirst} % Indent first paragraph
 \RequirePackage{tabularx}
+\RequirePackage{booktabs} % Cleaner table rules ala jurnal
+\RequirePackage{ragged2e} % Better ragged text in narrow table columns
 \RequirePackage{csquotes} % Required by biblatex
 \RequirePackage{enumitem} % For list formatting
+\RequirePackage{etoolbox} % For consistent environment-level table styling
 
 % -------------------------------------------------------------------
 % 1A. BIBLIOGRAPHY LOCALIZATION (INDONESIAN CITATION STYLE)
@@ -65,6 +69,7 @@
 
 % Paragraph Indentation: 1.25 cm
 \setlength{\parindent}{1.25cm}
+\setlength{\emergencystretch}{2em}
 
 % Disable Widow/Orphan
 \clubpenalty=0
@@ -72,6 +77,7 @@
 \displaywidowpenalty=0
 
 % Justify alignment is default in LaTeX.
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 
 % -------------------------------------------------------------------
 % 3. PAGE STYLES (HEADER & FOOTER)
@@ -142,12 +148,16 @@
 % -------------------------------------------------------------------
 % 5. TABLES AND FIGURES
 % -------------------------------------------------------------------
-% Caption settings: size 9-10 (footnotesize or small), single spacing
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\figurename}{Gambar}
+
+% Caption settings and table spacing
 \captionsetup[table]{
   font={small, singlespacing},
+  labelfont=bf,
   labelsep=space,
   justification=centerlast,
-  skip=6pt % Space between caption and table
+  skip=9pt
 }
 \captionsetup[figure]{
   font={small, singlespacing},
@@ -160,10 +170,36 @@
 \counterwithin{table}{chapter}
 \counterwithin{figure}{chapter}
 
+% Global table spacing so cells are neither too tight nor too loose
+\setlength{\LTpre}{12pt}
+\setlength{\LTpost}{12pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\setlength{\LTcapwidth}{\textwidth}
+\setlength{\extrarowheight}{1.5pt}
+\setlength{\heavyrulewidth}{0.08em}
+\setlength{\lightrulewidth}{0.05em}
+\setlength{\cmidrulewidth}{0.05em}
+
+\AtBeginEnvironment{table}{%
+  \singlespacing
+  \setlength{\tabcolsep}{5pt}%
+  \renewcommand{\arraystretch}{1.12}%
+}
+\AtBeginEnvironment{tabularx}{%
+  \small
+}
+\AtBeginEnvironment{longtable}{%
+  \small
+  \singlespacing
+  \setlength{\tabcolsep}{4.5pt}%
+  \renewcommand{\arraystretch}{1.12}%
+}
+
 % Spacing before/after floats (tables/figures)
-\setlength{\textfloatsep}{18pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{16pt plus 2pt minus 2pt}
 \setlength{\floatsep}{12pt plus 2pt minus 2pt}
-\setlength{\intextsep}{18pt plus 2pt minus 2pt}
+\setlength{\intextsep}{16pt plus 2pt minus 2pt}
 
 % -------------------------------------------------------------------
 % 6. LISTS (DAFTAR) FORMATTING
