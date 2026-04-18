@@ -155,7 +155,8 @@
 \captionsetup[table]{
   font={small, singlespacing},
   labelfont=bf,
-  labelsep=space,
+  textfont=bf,
+  labelsep=newline,
   justification=centerlast,
   skip=9pt
 }
@@ -171,8 +172,8 @@
 \counterwithin{figure}{chapter}
 
 % Global table spacing so cells are neither too tight nor too loose
+\newlength{\tableposttextsep}
 \setlength{\LTpre}{12pt}
-\setlength{\LTpost}{12pt}
 \setlength{\LTleft}{0pt}
 \setlength{\LTright}{0pt}
 \setlength{\LTcapwidth}{\textwidth}
@@ -196,10 +197,21 @@
   \renewcommand{\arraystretch}{1.12}%
 }
 
+\newcommand{\continuedtabletitle}[1]{%
+  \multicolumn{#1}{@{}l@{}}{\textbf{Lanjutan Tabel \thetable}}\\%
+}
+
+% Spacing after tables to the next body paragraph:
+% double-spaced body text with paragraph spacing before 0 pt and after 6 pt.
+\AtBeginDocument{%
+  \setlength{\tableposttextsep}{\dimexpr\baselineskip + 6pt\relax}%
+  \setlength{\LTpost}{\tableposttextsep}%
+  \setlength{\textfloatsep}{\tableposttextsep}%
+  \setlength{\intextsep}{\tableposttextsep}%
+}
+
 % Spacing before/after floats (tables/figures)
-\setlength{\textfloatsep}{16pt plus 2pt minus 2pt}
-\setlength{\floatsep}{12pt plus 2pt minus 2pt}
-\setlength{\intextsep}{16pt plus 2pt minus 2pt}
+\setlength{\floatsep}{12pt}
 
 % -------------------------------------------------------------------
 % 6. LISTS (DAFTAR) FORMATTING
@@ -210,8 +222,44 @@
 
 \setlist{nosep}
 
-\renewcommand{\cfttoctitlefont}{\hfill\large\bfseries\MakeUppercase}
-\renewcommand{\cftaftertoctitle}{\hfill\mbox{}\\[12pt]}
+\renewcommand{\cfttoctitlefont}{\large\bfseries\MakeUppercase}
+\newlength{\skripsi@tocheaderwidth}
+\setlength{\skripsi@tocheaderwidth}{2cm}
+\newlength{\skripsi@tocpnumwidth}
+\setlength{\skripsi@tocpnumwidth}{0.9cm}
+\newlength{\skripsi@tocwrapreserve}
+\setlength{\skripsi@tocwrapreserve}{0.18cm}
+\newlength{\skripsi@tocsubsecwrapreserve}
+\setlength{\skripsi@tocsubsecwrapreserve}{0.75cm}
+\newlength{\skripsi@tocsubsubsecwrapreserve}
+\setlength{\skripsi@tocsubsubsecwrapreserve}{0.95cm}
+\newlength{\skripsi@tocrmarg}
+\setlength{\skripsi@tocrmarg}{0pt}
+\renewcommand{\cftaftertoctitle}{%
+  \par\nobreak
+  \vspace{12pt}%
+  {\singlespacing
+   \noindent\makebox[\textwidth][r]{\hspace*{-\skripsi@tocrmarg}\makebox[\skripsi@tocheaderwidth][r]{Halaman}}\par}%
+  \nobreak\vspace{6pt}%
+}
+\renewcommand{\@cftmaketoctitle}{%
+  \addpenalty\@secpenalty
+  \if@cfthaschapter
+    \vspace*{\cftbeforetoctitleskip}%
+  \else
+    \vspace{\cftbeforetoctitleskip}%
+  \fi
+  \@cftpagestyle
+  {\interlinepenalty\@M
+   \noindent\makebox[0pt][l]{%
+     \hspace*{-\dimexpr 1in+\oddsidemargin\relax}%
+     \makebox[\paperwidth][c]{{\cfttoctitlefont\contentsname}}}%
+   \par
+   \cftaftertoctitle
+   \cftmarktoc
+   \par\nobreak
+   \vskip \cftaftertoctitleskip
+   \@afterheading}}
 \renewcommand{\cftlottitlefont}{\hfill\large\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\hfill\mbox{}\\[12pt]}
 \renewcommand{\cftloftitlefont}{\hfill\large\bfseries\MakeUppercase}
@@ -221,21 +269,197 @@
 
 % Sesuaikan jarak atas daftar dengan jarak pada chapter biasa
 \setlength{\cftbeforetoctitleskip}{-20pt}
+\setlength{\cftaftertoctitleskip}{0pt}
 \setlength{\cftbeforelottitleskip}{-20pt}
 \setlength{\cftbeforeloftitleskip}{-20pt}
 \setlength{\cftbeforeloatitleskip}{-20pt}
 \setlength{\cftlampirannumwidth}{6em}
 
-\setlength{\cftbeforesecskip}{6pt}
+\cftsetpnumwidth{\skripsi@tocpnumwidth}
+\cftsetrmarg{\skripsi@tocrmarg}
+
+\setlength{\cftchapindent}{0pt}
+\setlength{\cftchapnumwidth}{2cm}
+\setlength{\cftsecindent}{2cm}
+\setlength{\cftsecnumwidth}{1cm}
+\setlength{\cftsubsecindent}{3cm}
+\setlength{\cftsubsecnumwidth}{1.15cm}
+\setlength{\cftsubsubsecindent}{3.5cm}
+\setlength{\cftsubsubsecnumwidth}{0.95cm}
+
+\setlength{\cftbeforechapskip}{0pt}
+\newlength{\cftbeforebabchapskip}
+\setlength{\cftbeforebabchapskip}{6pt}
+\setlength{\cftbeforesecskip}{0pt}
+\setlength{\cftbeforesubsecskip}{0pt}
+\setlength{\cftbeforesubsubsecskip}{0pt}
+
+\renewcommand{\cftchapfont}{\normalfont\bfseries}
+\renewcommand{\cftchappagefont}{\normalfont\bfseries}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecpagefont}{\normalfont}
+\renewcommand{\cftdotsep}{2}
+\renewcommand{\cftchapaftersnum}{\hspace{0.45em}}
+\renewcommand{\cftsecaftersnum}{\hspace{0.35em}}
+\renewcommand{\cftsubsecaftersnum}{\hspace{0.15em}}
+\renewcommand{\cftsubsubsecaftersnum}{\hspace{0.35em}}
+\renewcommand{\cftchapafterpnum}{\vskip 6pt}
+
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots for section
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\newcommand{\cftbabchapfillnum}[1]{%
+  {\cftchapleader}\nobreak
+  \makebox[\@pnumwidth][\cftpnumalign]{\cftchappagefont #1}\cftchapafterpnum\par
+}
+\newif\ifskripsi@toclastchapterlike
+\skripsi@toclastchapterlikefalse
+
+\newcommand{\skripsi@toctextsetup}{%
+  \finalhyphendemerits=100000\relax
+  \doublehyphendemerits=100000\relax
+  \adjdemerits=10000\relax
+  \tolerance=2000\relax
+  \emergencystretch=1em\relax
+}
+
+\renewcommand*{\l@chapter}[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip \cftbeforechapskip
+    {\leftskip \cftchapindent\relax
+     \rightskip \@tocrmarg
+     \parfillskip -\rightskip
+     \parindent \cftchapindent\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \leavevmode
+     \@tempdima \cftchapnumwidth\relax
+     \let\@cftbsnum \cftchappresnum
+     \let\@cftasnum \cftchapaftersnum
+     \let\@cftasnumb \cftchapaftersnumb
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     {\cftchapfont #1}\nobreak
+     \cftchapfillnum{#2}}%
+    \global\skripsi@toclastchapterliketrue
+  \fi}
+
+\renewcommand*{\l@section}[2]{%
+  \ifnum \c@tocdepth >\z@
+    \if@cfthaschapter
+      \vskip \cftbeforesecskip
+    \else
+      \addpenalty\@secpenalty
+      \addvspace{\cftbeforesecskip}
+    \fi
+    {\leftskip \cftsecindent\relax
+     \rightskip \dimexpr\@pnumwidth+\skripsi@tocwrapreserve\relax
+     \parfillskip -\rightskip
+     \parindent \cftsecindent\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \skripsi@toctextsetup
+     \leavevmode
+     \@tempdima \cftsecnumwidth\relax
+     \let\@cftbsnum \cftsecpresnum
+     \let\@cftasnum \cftsecaftersnum
+     \let\@cftasnumb \cftsecaftersnumb
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     {\cftsecfont #1}\nobreak
+     \cftsecfillnum{#2}}%
+    \global\skripsi@toclastchapterlikefalse
+  \fi}
+
+\renewcommand*{\l@subsection}[2]{%
+  \ifnum \c@tocdepth >\@ne
+    \vskip \cftbeforesubsecskip
+    {\leftskip \cftsubsecindent\relax
+     \rightskip \dimexpr\@pnumwidth+\skripsi@tocsubsecwrapreserve\relax
+     \parfillskip -\rightskip
+     \parindent \cftsubsecindent\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \skripsi@toctextsetup
+     \leavevmode
+     \@tempdima \cftsubsecnumwidth\relax
+     \let\@cftbsnum \cftsubsecpresnum
+     \let\@cftasnum \cftsubsecaftersnum
+     \let\@cftasnumb \cftsubsecaftersnumb
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     {\cftsubsecfont #1}\nobreak
+     \cftsubsecfillnum{#2}}%
+    \global\skripsi@toclastchapterlikefalse
+  \fi}
+
+\renewcommand*{\l@subsubsection}[2]{%
+  \ifnum \c@tocdepth >\tw@
+    \vskip \cftbeforesubsubsecskip
+    {\leftskip \cftsubsubsecindent\relax
+     \rightskip \dimexpr\@pnumwidth+\skripsi@tocsubsubsecwrapreserve\relax
+     \parfillskip -\rightskip
+     \parindent \cftsubsubsecindent\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \skripsi@toctextsetup
+     \leavevmode
+     \@tempdima \cftsubsubsecnumwidth\relax
+     \let\@cftbsnum \cftsubsubsecpresnum
+     \let\@cftasnum \cftsubsubsecaftersnum
+     \let\@cftasnumb \cftsubsubsecaftersnumb
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     {\cftsubsubsecfont #1}\nobreak
+     \cftsubsubsecfillnum{#2}}%
+    \global\skripsi@toclastchapterlikefalse
+  \fi}
+
+\newcommand*{\l@babchapter}[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \ifskripsi@toclastchapterlike\else\vskip \cftbeforebabchapskip\fi
+    {\leftskip \cftchapindent\relax
+     \rightskip \@tocrmarg
+     \parfillskip -\rightskip
+     \parindent \cftchapindent\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \leavevmode
+     \@tempdima \cftchapnumwidth\relax
+     \let\@cftbsnum \cftchappresnum
+     \let\@cftasnum \cftchapaftersnum
+     \let\@cftasnumb \cftchapaftersnumb
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     {\cftchapfont #1}\nobreak
+     \cftbabchapfillnum{#2}}%
+    \global\skripsi@toclastchapterliketrue
+  \fi}
+
+\patchcmd{\@chapter}
+  {\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}}
+  {\addcontentsline{toc}{babchapter}{\protect\numberline{BAB \Roman{chapter}}#1}}
+  {}{}
 
 \newcommand{\lampiranentry}[1]{%
   \refstepcounter{lampiran}%
   \addcontentsline{loa}{lampiran}{\protect\numberline{Lampiran \thelampiran}#1}%
 }
+\newif\ifskripsi@appendixstarted
+\skripsi@appendixstartedfalse
+\let\skripsi@origaddcontentsline\addcontentsline
+\newcommand{\skripsi@disableappendixtoc}{%
+  \renewcommand{\addcontentsline}[3]{%
+    \ifstrequal{##1}{toc}{}{%
+      \skripsi@origaddcontentsline{##1}{##2}{##3}%
+    }%
+  }%
+}
 
 \newcommand{\lampiransection}[1]{%
   \clearpage
+  \ifskripsi@appendixstarted\else
+    \addcontentsline{toc}{chapter}{LAMPIRAN}%
+    \skripsi@disableappendixtoc
+    \global\skripsi@appendixstartedtrue
+  \fi
   \lampiranentry{#1}%
   \setcounter{chapter}{\value{lampiran}}% Make \section number start with A, B, C...
   \setcounter{section}{0}%
@@ -250,7 +474,6 @@
   {\large\bfseries \MakeUppercase{#1}\par}%
   \endgroup
   \vspace{12pt}%
-  \addcontentsline{toc}{chapter}{LAMPIRAN \thelampiran\space #1}%
 }
 
 % -------------------------------------------------------------------
@@ -419,11 +642,11 @@
     \covertitleblock{\judulindonesiacapslocktext}\vspace{1.5cm}
 
     % OLEH
-    {\normalsize \textbf{OLEH:}}\\[12pt] % 1 enter
+    {\normalsize \textbf{OLEH}}\\[12pt] % 1 enter
 
     % NAMA
     {\normalsize \textbf{\MakeUppercase{\@author}}}\\[0pt]
-    {\normalsize \textbf{NIM. \@nim}}
+    {\normalsize \textbf{\@nim}}
 
     \vfill
 
@@ -497,14 +720,25 @@
   \doublespacing
   \setlength{\parindent}{1.25cm}
 }{
-  \vspace{12pt}
+  % \par\vfill
+  \\
   \begin{flushright}
-    \@kota, \ifx\@tanggalpengesahan\@empty\today\else\@tanggalpengesahan\fi\par
-    \@labelpenandatangan\par
-    \ifx\@namapenandatangan\@empty\else
-      \vspace{4\baselineskip}
-      \@namapenandatangan\par
-    \fi
+    \singlespacing
+    \begin{tabular}{@{}l@{}}
+      \@kota, \ifx\@tanggalpengesahan\@empty\today\else\@tanggalpengesahan\fi \\
+      \@labelpenandatangan, \\
+      \ifx\@namapenandatangan\@empty\else
+        \\
+        \\
+        \\
+        \\
+        \@namapenandatangan
+      \fi
+      \ifx\@nim\@empty\else
+        \\
+        NIM: \@nim
+      \fi
+    \end{tabular}
   \end{flushright}
 }
 
