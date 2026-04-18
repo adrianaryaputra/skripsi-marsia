@@ -239,7 +239,7 @@
   \par\nobreak
   \vspace{12pt}%
   {\singlespacing
-   \noindent\makebox[\textwidth][r]{\hspace*{-\skripsi@tocrmarg}\makebox[\skripsi@tocheaderwidth][r]{Halaman}}\par}%
+    \noindent\makebox[\textwidth][r]{\hspace*{-\skripsi@tocrmarg}\makebox[\skripsi@tocheaderwidth][r]{Halaman}}\par}%
   \nobreak\vspace{6pt}%
 }
 \renewcommand{\@cftmaketoctitle}{%
@@ -251,15 +251,15 @@
   \fi
   \@cftpagestyle
   {\interlinepenalty\@M
-   \noindent\makebox[0pt][l]{%
-     \hspace*{-\dimexpr 1in+\oddsidemargin\relax}%
-     \makebox[\paperwidth][c]{{\cfttoctitlefont\contentsname}}}%
-   \par
-   \cftaftertoctitle
-   \cftmarktoc
-   \par\nobreak
-   \vskip \cftaftertoctitleskip
-   \@afterheading}}
+    \noindent\makebox[0pt][l]{%
+      \hspace*{-\dimexpr 1in+\oddsidemargin\relax}%
+      \makebox[\paperwidth][c]{{\cfttoctitlefont\contentsname}}}%
+    \par
+    \cftaftertoctitle
+    \cftmarktoc
+    \par\nobreak
+    \vskip \cftaftertoctitleskip
+    \@afterheading}}
 \renewcommand{\cftlottitlefont}{\hfill\large\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\hfill\mbox{}\\[12pt]}
 \renewcommand{\cftloftitlefont}{\hfill\large\bfseries\MakeUppercase}
@@ -333,18 +333,18 @@
     \addpenalty{-\@highpenalty}%
     \vskip \cftbeforechapskip
     {\leftskip \cftchapindent\relax
-     \rightskip \@tocrmarg
-     \parfillskip -\rightskip
-     \parindent \cftchapindent\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \leavevmode
-     \@tempdima \cftchapnumwidth\relax
-     \let\@cftbsnum \cftchappresnum
-     \let\@cftasnum \cftchapaftersnum
-     \let\@cftasnumb \cftchapaftersnumb
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {\cftchapfont #1}\nobreak
-     \cftchapfillnum{#2}}%
+      \rightskip \@tocrmarg
+      \parfillskip -\rightskip
+      \parindent \cftchapindent\relax\@afterindenttrue
+      \interlinepenalty\@M
+      \leavevmode
+      \@tempdima \cftchapnumwidth\relax
+      \let\@cftbsnum \cftchappresnum
+      \let\@cftasnum \cftchapaftersnum
+      \let\@cftasnumb \cftchapaftersnumb
+      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+      {\cftchapfont #1}\nobreak
+      \cftchapfillnum{#2}}%
     \global\skripsi@toclastchapterliketrue
   \fi}
 
@@ -357,19 +357,19 @@
       \addvspace{\cftbeforesecskip}
     \fi
     {\leftskip \cftsecindent\relax
-     \rightskip \dimexpr\@pnumwidth+\skripsi@tocwrapreserve\relax
-     \parfillskip -\rightskip
-     \parindent \cftsecindent\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \skripsi@toctextsetup
-     \leavevmode
-     \@tempdima \cftsecnumwidth\relax
-     \let\@cftbsnum \cftsecpresnum
-     \let\@cftasnum \cftsecaftersnum
-     \let\@cftasnumb \cftsecaftersnumb
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {\cftsecfont #1}\nobreak
-     \cftsecfillnum{#2}}%
+      \rightskip \dimexpr\@pnumwidth+\skripsi@tocwrapreserve\relax
+      \parfillskip -\rightskip
+      \parindent \cftsecindent\relax\@afterindenttrue
+      \interlinepenalty\@M
+      \skripsi@toctextsetup
+      \leavevmode
+      \@tempdima \cftsecnumwidth\relax
+      \let\@cftbsnum \cftsecpresnum
+      \let\@cftasnum \cftsecaftersnum
+      \let\@cftasnumb \cftsecaftersnumb
+      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+      {\cftsecfont #1}\nobreak
+      \cftsecfillnum{#2}}%
     \global\skripsi@toclastchapterlikefalse
   \fi}
 
@@ -377,19 +377,19 @@
   \ifnum \c@tocdepth >\@ne
     \vskip \cftbeforesubsecskip
     {\leftskip \cftsubsecindent\relax
-     \rightskip \dimexpr\@pnumwidth+\skripsi@tocsubsecwrapreserve\relax
-     \parfillskip -\rightskip
-     \parindent \cftsubsecindent\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \skripsi@toctextsetup
-     \leavevmode
-     \@tempdima \cftsubsecnumwidth\relax
-     \let\@cftbsnum \cftsubsecpresnum
-     \let\@cftasnum \cftsubsecaftersnum
-     \let\@cftasnumb \cftsubsecaftersnumb
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {\cftsubsecfont #1}\nobreak
-     \cftsubsecfillnum{#2}}%
+      \rightskip \dimexpr\@pnumwidth+\skripsi@tocsubsecwrapreserve\relax
+      \parfillskip -\rightskip
+      \parindent \cftsubsecindent\relax\@afterindenttrue
+      \interlinepenalty\@M
+      \skripsi@toctextsetup
+      \leavevmode
+      \@tempdima \cftsubsecnumwidth\relax
+      \let\@cftbsnum \cftsubsecpresnum
+      \let\@cftasnum \cftsubsecaftersnum
+      \let\@cftasnumb \cftsubsecaftersnumb
+      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+      {\cftsubsecfont #1}\nobreak
+      \cftsubsecfillnum{#2}}%
     \global\skripsi@toclastchapterlikefalse
   \fi}
 
@@ -397,19 +397,19 @@
   \ifnum \c@tocdepth >\tw@
     \vskip \cftbeforesubsubsecskip
     {\leftskip \cftsubsubsecindent\relax
-     \rightskip \dimexpr\@pnumwidth+\skripsi@tocsubsubsecwrapreserve\relax
-     \parfillskip -\rightskip
-     \parindent \cftsubsubsecindent\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \skripsi@toctextsetup
-     \leavevmode
-     \@tempdima \cftsubsubsecnumwidth\relax
-     \let\@cftbsnum \cftsubsubsecpresnum
-     \let\@cftasnum \cftsubsubsecaftersnum
-     \let\@cftasnumb \cftsubsubsecaftersnumb
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {\cftsubsubsecfont #1}\nobreak
-     \cftsubsubsecfillnum{#2}}%
+      \rightskip \dimexpr\@pnumwidth+\skripsi@tocsubsubsecwrapreserve\relax
+      \parfillskip -\rightskip
+      \parindent \cftsubsubsecindent\relax\@afterindenttrue
+      \interlinepenalty\@M
+      \skripsi@toctextsetup
+      \leavevmode
+      \@tempdima \cftsubsubsecnumwidth\relax
+      \let\@cftbsnum \cftsubsubsecpresnum
+      \let\@cftasnum \cftsubsubsecaftersnum
+      \let\@cftasnumb \cftsubsubsecaftersnumb
+      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+      {\cftsubsubsecfont #1}\nobreak
+      \cftsubsubsecfillnum{#2}}%
     \global\skripsi@toclastchapterlikefalse
   \fi}
 
@@ -418,25 +418,25 @@
     \addpenalty{-\@highpenalty}%
     \ifskripsi@toclastchapterlike\else\vskip \cftbeforebabchapskip\fi
     {\leftskip \cftchapindent\relax
-     \rightskip \@tocrmarg
-     \parfillskip -\rightskip
-     \parindent \cftchapindent\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \leavevmode
-     \@tempdima \cftchapnumwidth\relax
-     \let\@cftbsnum \cftchappresnum
-     \let\@cftasnum \cftchapaftersnum
-     \let\@cftasnumb \cftchapaftersnumb
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {\cftchapfont #1}\nobreak
-     \cftbabchapfillnum{#2}}%
+      \rightskip \@tocrmarg
+      \parfillskip -\rightskip
+      \parindent \cftchapindent\relax\@afterindenttrue
+      \interlinepenalty\@M
+      \leavevmode
+      \@tempdima \cftchapnumwidth\relax
+      \let\@cftbsnum \cftchappresnum
+      \let\@cftasnum \cftchapaftersnum
+      \let\@cftasnumb \cftchapaftersnumb
+      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+      {\cftchapfont #1}\nobreak
+      \cftbabchapfillnum{#2}}%
     \global\skripsi@toclastchapterliketrue
   \fi}
 
 \patchcmd{\@chapter}
-  {\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}}
-  {\addcontentsline{toc}{babchapter}{\protect\numberline{BAB \Roman{chapter}}#1}}
-  {}{}
+{\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}}
+{\addcontentsline{toc}{babchapter}{\protect\numberline{BAB \Roman{chapter}}#1}}
+{}{}
 
 \newcommand{\lampiranentry}[1]{%
   \refstepcounter{lampiran}%
@@ -625,8 +625,8 @@
 % -------------------------------------------------------------------
 \newcommand{\covertitleblock}[1]{%
   {\large\bfseries
-   \setlength{\tabcolsep}{0pt}%
-   \begin{tabular}{@{}c@{}}#1\end{tabular}\par}%
+    \setlength{\tabcolsep}{0pt}%
+    \begin{tabular}{@{}c@{}}#1\end{tabular}\par}%
 }
 
 \newcommand{\makecover}{
@@ -658,6 +658,7 @@
     {\normalsize \textbf{\MakeUppercase{PROGRAM STUDI \@programstudi}}}\\[0pt]
     {\normalsize \textbf{\MakeUppercase{FAKULTAS \@fakultas}}}\\[0pt]
     {\normalsize \textbf{\MakeUppercase{\@universitas}}}\\[0pt]
+    {\normalsize \textbf{\MakeUppercase{\@kota}}}\\[0pt]
     {\normalsize \textbf{\@tahun}}
   \end{titlepage}
 }
@@ -726,7 +727,7 @@
     \singlespacing
     \begin{tabular}{@{}l@{}}
       \@kota, \ifx\@tanggalpengesahan\@empty\today\else\@tanggalpengesahan\fi \\
-      \@labelpenandatangan, \\
+      \@labelpenandatangan,                                                   \\
       \ifx\@namapenandatangan\@empty\else
         \\
         \\
