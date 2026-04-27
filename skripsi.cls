@@ -260,12 +260,41 @@
     \par\nobreak
     \vskip \cftaftertoctitleskip
     \@afterheading}}
+\newlength{\skripsi@listnumwidth}
+\newlength{\skripsi@listpageleft}
+\newlength{\skripsi@listpagewidth}
+\newlength{\skripsi@listtitlewidth}
+\newlength{\skripsi@listlinewidth}
+\newlength{\skripsi@listtextleft}
+\setlength{\skripsi@listtextleft}{\dimexpr 1in+\oddsidemargin\relax}
+\setlength{\skripsi@listnumwidth}{\dimexpr 6.25cm-\skripsi@listtextleft\relax}
+\setlength{\skripsi@listpagewidth}{\skripsi@tocpnumwidth}
+\setlength{\skripsi@listpageleft}{\dimexpr \textwidth-\skripsi@listpagewidth\relax}
+\setlength{\skripsi@listtitlewidth}{\dimexpr\skripsi@listpageleft-\skripsi@listnumwidth\relax}
+\setlength{\skripsi@listlinewidth}{\dimexpr\skripsi@listpageleft+\skripsi@listpagewidth\relax}
+\newcommand{\skripsi@listsinglespacing}{\setstretch{\setspace@singlespace}}
+\newcommand{\skripsi@listheader}[1]{%
+  \par\nobreak
+  \vspace{12pt}%
+  {\normalfont\skripsi@listsinglespacing
+    \parskip \z@
+    \noindent
+    \makebox[\skripsi@listlinewidth][l]{%
+      \makebox[\skripsi@listnumwidth][l]{#1}%
+      \makebox[\skripsi@listtitlewidth][c]{Judul}%
+      \makebox[\skripsi@listpagewidth][r]{Halaman}}\par}%
+  \nobreak\vspace{6pt}%
+}
+\newcommand{\skripsi@afterlisttitle}[1]{%
+  \hfill\mbox{}%
+  \skripsi@listheader{#1}%
+}
 \renewcommand{\cftlottitlefont}{\hfill\large\bfseries\MakeUppercase}
-\renewcommand{\cftafterlottitle}{\hfill\mbox{}\\[12pt]}
+\renewcommand{\cftafterlottitle}{\skripsi@afterlisttitle{No. Tabel}}
 \renewcommand{\cftloftitlefont}{\hfill\large\bfseries\MakeUppercase}
-\renewcommand{\cftafterloftitle}{\hfill\mbox{}\\[12pt]}
+\renewcommand{\cftafterloftitle}{\skripsi@afterlisttitle{No. Gambar}}
 \renewcommand{\cftloatitlefont}{\hfill\large\bfseries\MakeUppercase}
-\renewcommand{\cftafterloatitle}{\hfill\mbox{}\\[12pt]}
+\renewcommand{\cftafterloatitle}{\skripsi@afterlisttitle{No. Lampiran}}
 
 % Sesuaikan jarak atas daftar dengan jarak pada chapter biasa
 \setlength{\cftbeforetoctitleskip}{-20pt}
@@ -273,7 +302,18 @@
 \setlength{\cftbeforelottitleskip}{-20pt}
 \setlength{\cftbeforeloftitleskip}{-20pt}
 \setlength{\cftbeforeloatitleskip}{-20pt}
-\setlength{\cftlampirannumwidth}{6em}
+\setlength{\cftafterlottitleskip}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\setlength{\cftafterloatitleskip}{0pt}
+\setlength{\cftfigindent}{0pt}
+\setlength{\cfttabindent}{0pt}
+\setlength{\cftlampiranindent}{0pt}
+\setlength{\cftfignumwidth}{\skripsi@listnumwidth}
+\setlength{\cfttabnumwidth}{\skripsi@listnumwidth}
+\setlength{\cftlampirannumwidth}{\skripsi@listnumwidth}
+\setlength{\cftbeforefigskip}{0pt}
+\setlength{\cftbeforetabskip}{0pt}
+\setlength{\cftbeforelampiranskip}{0pt}
 
 \cftsetpnumwidth{\skripsi@tocpnumwidth}
 \cftsetrmarg{\skripsi@tocrmarg}
@@ -313,6 +353,57 @@
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots for section
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\newcommand{\skripsi@listfillnum}[1]{%
+  {\cftdotfill{\cftdotsep}}\nobreak
+  \makebox[\skripsi@listpagewidth][r]{\normalfont #1}\par
+}
+\newcommand{\skripsi@listline}[8]{%
+  \vskip #1%
+  {\leftskip #2\relax
+    \hsize \skripsi@listlinewidth
+    \rightskip \skripsi@listpagewidth
+    \parskip \z@
+    \parfillskip -\rightskip
+    \parindent #2\relax\@afterindenttrue
+    \interlinepenalty\@M
+    \skripsi@listsinglespacing
+    \skripsi@toctextsetup
+    \leavevmode
+    \@tempdima #3\relax
+    \let\@cftbsnum #4%
+    \let\@cftasnum #5%
+    \let\@cftasnumb #6%
+    \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+    {\normalfont #7}\nobreak
+    \skripsi@listfillnum{#8}}%
+}
+\renewcommand*{\l@figure}[2]{%
+  \skripsi@listline{\cftbeforefigskip}{\cftfigindent}{\cftfignumwidth}%
+    {\cftfigpresnum}{\cftfigaftersnum}{\cftfigaftersnumb}{#1}{#2}}
+\renewcommand*{\l@table}[2]{%
+  \skripsi@listline{\cftbeforetabskip}{\cfttabindent}{\cfttabnumwidth}%
+    {\cfttabpresnum}{\cfttabaftersnum}{\cfttabaftersnumb}{#1}{#2}}
+\renewcommand*{\l@lampiran}[2]{%
+  \skripsi@listline{\cftbeforelampiranskip}{\cftlampiranindent}{\cftlampirannumwidth}%
+    {\cftlampiranpresnum}{\cftlampiranaftersnum}{\cftlampiranaftersnumb}{#1}{#2}}
+\let\skripsi@origlistoffigures\listoffigures
+\let\skripsi@origlistoftables\listoftables
+\let\skripsi@origlistoflampiran\listoflampiran
+\renewcommand{\listoffigures}{%
+  \begingroup
+    \let\addvspace\@gobble
+    \skripsi@origlistoffigures
+  \endgroup}
+\renewcommand{\listoftables}{%
+  \begingroup
+    \let\addvspace\@gobble
+    \skripsi@origlistoftables
+  \endgroup}
+\renewcommand{\listoflampiran}{%
+  \begingroup
+    \let\addvspace\@gobble
+    \skripsi@origlistoflampiran
+  \endgroup}
 \newcommand{\cftbabchapfillnum}[1]{%
   {\cftchapleader}\nobreak
   \makebox[\@pnumwidth][\cftpnumalign]{\cftchappagefont #1}\cftchapafterpnum\par
@@ -440,7 +531,7 @@
 
 \newcommand{\lampiranentry}[1]{%
   \refstepcounter{lampiran}%
-  \addcontentsline{loa}{lampiran}{\protect\numberline{Lampiran \thelampiran}#1}%
+  \addcontentsline{loa}{lampiran}{\protect\numberline{\thelampiran}#1}%
 }
 \newif\ifskripsi@appendixstarted
 \skripsi@appendixstartedfalse

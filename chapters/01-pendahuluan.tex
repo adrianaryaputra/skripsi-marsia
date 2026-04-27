@@ -1,13 +1,119 @@
 \chapter{PENDAHULUAN}
 
 \section{Latar Belakang}
-Digitalisasi pemasaran telah menjadi faktor penting yang memengaruhi kinerja usaha kuliner. Dalam penelitian yang dilakukan oleh \textcite{putro2025digitaltransformation} terhadap 125 UMKM kuliner di Kabupaten Bogor, diperoleh hasil bahwa digitalisasi berpengaruh positif terhadap performa usaha, terutama melalui media promosi digital dan sistem pembayaran digital. Penelitian yang dilakukan \textcite{sophia2025rendanggadih} juga menampilkan bahwa strategi pemasaran berbasis platform digital dengan pemanfaatan fitur promosi platform dapat meningkatkan penjualan melalui penguatan di poin STP dan 4P. Temuan ini menunjukkan bahwa platform digital berfungsi sebagai media promosi, transaksi, dan lahan persaingan pada usaha kuliner.
-Pada \textit{Online Food Delivery Application} (OFDA), keputusan konsumen dipengaruhi oleh harga, manfaat, kualitas layanan, dan kepercayaan. \textcite{elverda2025ofdindonesia} dalam penelitiannya terhadap 724 konsumen OFDA di Indonesia menemukan bahwa \textit{perceived price}, \textit{perceived usefulness}, \textit{ease of use}, \textit{service quality}, \textit{customer satisfaction}, dan \textit{trust} memengaruhi \textit{repurchase intention}. \textcite{putri2022grabfood} pada penelitiannya terhadap 98 pengguna GrabFood Generasi Z juga menunjukkan bahwa \textit{e-service quality} dan \textit{e-trust} berpengaruh positif signifikan terhadap \textit{e-satisfaction}. Selain itu, \textcite{santoso2023esatisfaction} menemukan bahwa \textit{food quality} dan \textit{price fairness} berpengaruh signifikan terhadap \textit{e-satisfaction}, dan \textit{e-satisfaction} berpengaruh terhadap \textit{repurchase intention}. Dengan demikian, pada platform seperti GrabFood, persaingan tidak hanya bergantung pada rasa makanan, namun dipengaruhi juga oleh kualitas layanan, harga, \textit{review}, dan kepuasan pelanggan.
-Kondisi yang dijelaskan oleh beberapa penelitian terdahulu tersebut juga berlaku pada RM Nasi Gerilya. Hasil pra-survei pada platform GrabFood di tanggal 04 April 2026 sebagaimana ditulis di Lampiran~\ref{app:prasurvey1} menunjukkan bahwa Nasi Gerilya memiliki rating 4,7/5,0 dengan 4.187 ulasan. Menu teratas pada halaman GrabFood Nasi Gerilya adalah Nasi Padang Rendang Sapi, Nasi Padang Ayam Goreng, Nasi Padang Ayam Bakar, dan Nasi Bakar Kikil Tunjang, dengan harga masing-masing Rp56.000, Rp45.000, Rp45.000, dan Rp68.000. Harga makanan yang disajikan berada pada rentang Rp11.000 sampai Rp72.000. Toko memanfaatkan promosi berupa diskon Rp8.000 Jajan Hemat, diskon 25\% sampai Rp100.000, dan diskon 15\% \textit{Group Order}, serta promo pembayaran dari beberapa bank. Data yang ditampilkan menjadi sumber pendukung yang menunjukkan bahwa Nasi Gerilya memiliki reputasi digital yang cukup kuat, menu unggulan yang jelas, dan dukungan promosi dari pihak penyedia aplikasi.
-Data pra-survei juga menampilkan adanya kekuatan dan kelemahan yang bersumber dari review konsumen. Review positif menonjolkan rasa enak, porsi besar, bahan segar, kemasan rapi, menu beragam, serta bumbu dan rempah yang kuat. Sebaliknya, review negatif menunjukkan adanya masalah seperti rasa berubah dibanding awal toko dibuka, pesanan tidak lengkap, lauk kecil, nasi keras, ikan dingin, perkedel basi, dan item yang sudah habis tetapi masih dapat dipesan pada platform. Data ini menggambarkan kekuatan Nasi Gerilya yang terletak pada produk dan reputasi, serta kelemahannya dengan keberadaan persoalan pada konsistensi kualitas, akurasi pesanan, dan ketersediaan menu.
-Data yang kedua diperoleh dari hasil wawancara dengan \textit{owner} yang memperkuat temuan yang dimuat pada Lampiran~\ref{app:prasurvey2}. Nasi Gerilya sudah berdiri sejak awal September 2024 dan langsung terjun ke platform penjulan digital sepert GrabFood, GoFood, dan ShopeeFood. Menurut \textit{owner}, GrabFood merupakan penyumbang penjualan terbesar karena dinilai paling sesuai dengan segmen pasar usaha dan dukungan platform yang lebih intensif seperti \textit{Awards}, \textit{verified store}, dan \textit{voucher discount}. Pelanggan Nasi Gerilya saat ini terdiri atas 55\% \textit{new-comers}, 38\% \textit{repeat order}, dan sisanya \textit{reactivated user}. \textit{Owner} juga menyebutkan Nasi Gerilya kuat pada identitas rasa makananan yang otentik dan \textit{brand recognition}, dengan dendeng dan ayam pop putih sebagai \textit{top food}. Namun, \textit{owner} juga mengidentifikasi beberapa kendala, yaitu ongkir mahal, jangkauan distribusi yang terbatas, makanan habis tetapi masih muncul di platform, makanan tidak sesuai \textit{request}, \textit{bottleneck} saat \textit{peak hour}, keterbatasan alat penggorengan, belum adanya menu penutup seperti \textit{dessert} untuk \textit{upselling}, serta inkonsistensi rasa karena proses kerja yang belum sepenuhnya terkendali.
-Nasi Gerilya mendapatkan tekanan dari beberapa persaingan dengan jenis usaha yang sama setelah dilakukan perbandingan. RM Padang Paripurna memiliki 1.119 ulasan dengan rating 4,7/5,0, sedangkan RM Padang Dendeng Batokok memiliki 1.313 ulasan dengan rating 4,7/5,0. Walaupun Nasi Gerilya memiliki jumlah ulasan yang jauh lebih besar, harga menunya cenderung lebih tinggi daripada kedua kompetitor tersebut. Karena ketiga usaha memiliki rating yang sama, maka persaingan tidak cukup dibaca dari rating, tetapi juga dari harga, persepsi nilai, kualitas produk, dan ketepatan layanan.
-Temuan ini sejalan dengan penelitian \textcite{nurwansyah2025miegacoan} yang menunjukkan bahwa \textit{customer experience} dan \textit{e-service quality} berpengaruh signifikan terhadap \textit{customer satisfaction} dan \textit{customer loyalty} pada layanan \textit{online food delivery}. Oleh karena itu, kondisi Rumah Makan Nasi Gerilya perlu dianalisis tidak hanya dari sisi promosi, tetapi juga dari sisi faktor internal dan eksternal usaha. Dalam hal ini, analisis SWOT relevan digunakan untuk mengidentifikasi kekuatan, kelemahan, peluang, dan ancaman secara sistematis sebagai dasar perumusan strategi pemasaran Rumah Makan Nasi Gerilya pada platform GrabFood.
+Pemasaran merupakan proses menciptakan, mengomunikasikan, menyampaikan, dan mempertukarkan nilai kepada konsumen \parencite{kotler2021marketingmanagement}. Pada usaha kuliner, pemasaran tidak hanya menentukan bagaimana produk diperkenalkan, tetapi juga bagaimana produk, harga, layanan, dan saluran penjualan disusun agar sesuai dengan kebutuhan konsumen dan situasi persaingan. \textcite{regina2025kuliner} menunjukkan bahwa strategi pemasaran yang tepat membantu UMKM kuliner meningkatkan visibilitas usaha dan mendorong penjualan. Temuan serupa juga ditunjukkan oleh \textcite{mamuriyah2021gadihminang} dan \textcite{roslam2021markisaaurora}, yang memperlihatkan bahwa penguatan strategi promosi dan pemilihan saluran pemasaran dapat membantu usaha makanan mempertahankan serta memperluas pasar. Dengan demikian, persoalan pemasaran pada usaha kuliner tidak hanya berkaitan dengan memperkenalkan produk, tetapi juga dengan memilih cara bersaing yang paling relevan dengan konteks pasar yang dihadapi.
+
+Strategi pemasaran usaha kuliner saat ini dijalankan melalui saluran offline dan online secara bersamaan. Saluran offline tetap penting untuk menjaga pengalaman makan, kualitas layanan langsung, dan kedekatan dengan pelanggan di lokasi usaha, sedangkan saluran online memperluas jangkauan informasi, transaksi, dan pembelian ulang. Ketika usaha masuk ke platform digital, strategi pemasaran tidak lagi berhenti pada kegiatan promosi, tetapi juga mencakup penentuan segmen, pemilihan target pasar, penegasan \textit{positioning}, pengelolaan harga, ulasan, foto menu, serta pemanfaatan program platform. \textcite{sophia2025rendanggadih} menunjukkan bahwa peningkatan penjualan pada usaha kuliner di platform dapat dicapai melalui penguatan STP, bauran pemasaran 4P, dan pemanfaatan fitur platform. Sejalan dengan itu, \textcite{suharjo2020bogorsnacks}, \textcite{ruhiyat2023minatbeli}, dan \textcite{khairani2022buahsayur} menunjukkan bahwa strategi online pada produk makanan sangat dipengaruhi oleh ketepatan bauran pemasaran, harga, promosi, ulasan, dan penyesuaian penawaran dengan perilaku pasar.
+
+Dalam kondisi tersebut, analisis SWOT tetap relevan karena membantu peneliti memetakan faktor internal dan eksternal usaha secara sistematis sebelum merumuskan strategi yang lebih operasional. \textcite{helms2010swotreview} menegaskan bahwa SWOT akan lebih berguna ketika digunakan secara terstruktur dan dikaitkan langsung dengan pengambilan keputusan strategis. \textcite{gurel2017swot} juga menjelaskan bahwa kekuatan, kelemahan, peluang, dan ancaman perlu dibaca sebagai dasar penyusunan strategi, bukan sekadar daftar faktor. Pada konteks usaha makanan dan minuman, \textcite{haliza2023seqapla} menunjukkan bahwa pembacaan kondisi internal dan eksternal membantu usaha menemukan arah strategi pemasaran yang lebih terfokus.
+
+Kondisi tersebut tampak pada Rumah Makan Nasi Gerilya, sebuah rumah makan nasi padang di Kota Medan yang aktif memasarkan produknya melalui platform GrabFood. Hasil pra-survei tahap 1, tahap 2, dan tahap 3 menunjukkan bahwa persoalan penelitian tidak hanya terletak pada promosi, tetapi pada bagaimana usaha ini bersaing, menarik pelanggan baru, mempertahankan pembelian ulang, dan menjaga konsistensi performa pada platform. Ringkasan data awal tersebut disajikan pada Tabel~\ref{tab:ringkasan-awal-gerilya}.
+
+\begin{table}[!ht]
+    \centering
+    \caption{Ringkasan Data Awal Rumah Makan Nasi Gerilya pada GrabFood}
+    \label{tab:ringkasan-awal-gerilya}
+    \begin{tabularx}{\textwidth}{p{3cm}p{5cm}Y}
+        \toprule
+        \textbf{Aspek}                 & \textbf{Data Awal}                                                                                                                                      & \textbf{Makna Penelitian}                                                                                           \\
+        \midrule
+        Eksposur platform              & Rating 4,7/5,0; 4.187 ulasan; promo platform aktif                                                                                                      & Nasi Gerilya sudah memiliki visibilitas digital yang kuat pada GrabFood                                             \\
+        Harga dan menu                 & Rentang harga Rp11.000--Rp72.000; menu teratas rendang sapi, ayam goreng, ayam bakar, dan nasi bakar kikil tunjang                                    & Usaha tampil dengan menu unggulan yang jelas dan posisi harga cenderung premium dibanding kompetitor awal           \\
+        Struktur pelanggan dan STP awal & GrabFood dinilai paling sesuai dengan target pasar; pelanggan terdiri atas 55\% \textit{new-comers}, 38\% \textit{repeat order}, dan 7\% \textit{reactivated user} & Target kanal utama sudah jelas, tetapi retensi pelanggan masih perlu diperkuat                                      \\
+        \textit{Positioning} awal         & Rasa otentik, \textit{brand recognition}, serta produk unggulan dendeng dan ayam pop putih                                                            & Usaha memiliki diferensiasi rasa dan identitas merek sebagai modal untuk bersaing di platform                       \\
+        Kinerja penjualan              & Indeks omzet mencapai 633,3 pada Jul-25 lalu turun menjadi 93,8 pada Okt-25 dan 86,5 pada Nov-25, dengan basis Des-24 = 100                           & Performa penjualan sempat melonjak, tetapi belum stabil setelah periode puncak                                      \\
+        Persaingan kategori            & Pada pemantauan internal \textit{top brand nasi padang}, indeks Nasi Gerilya turun dari 100,0 pada Jul-25 menjadi 70,4 pada Okt-25, terdalam di antara 10 merchant pembanding & Persaingan pada kategori nasi padang di pasar GrabFood yang dihadapi usaha cukup ketat dan posisi usaha perlu diperkuat \\
+        Kendala layanan                & Keluhan utama meliputi inkonsistensi rasa, \textit{sold out}, pesanan tidak sesuai, dan \textit{bottleneck} saat \textit{peak hour}                   & Masalah operasional berpotensi melemahkan pengalaman pelanggan dan pembelian ulang                                   \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+                width=0.9\textwidth,
+                height=7.2cm,
+                xmin=-0.4, xmax=11.4,
+                ymin=0, ymax=700,
+                ylabel={Indeks},
+                xlabel={Periode},
+                ymajorgrids=true,
+                grid style={gray!20},
+                axis line style={gray!60},
+                tick style={gray!60},
+                xtick=data,
+                xticklabels={Des-24,Jan-25,Feb-25,Mar-25,Apr-25,Mei-25,Jun-25,Jul-25,Ags-25,Sep-25,Okt-25,Nov-25},
+                x tick label style={rotate=35, anchor=east, font=\scriptsize},
+                ytick={0,100,200,300,400,500,600,700},
+                yticklabel style={font=\scriptsize},
+                clip=false
+            ]
+            \addplot[
+                color=blue!70!black,
+                line width=1.2pt,
+                mark=*,
+                mark size=2pt,
+                mark options={fill=blue!70!black}
+            ] coordinates {
+                    (0,100) (1,103) (2,112.6) (3,99.1) (4,116) (5,175.3)
+                    (6,383.8) (7,633.3) (8,104.2) (9,103.2) (10,93.8) (11,86.5)
+                };
+            \node[font=\scriptsize, fill=white, inner sep=1.5pt, anchor=north east] at (rel axis cs:0.98,0.98) {Basis Des-24 = 100};
+            \node[font=\scriptsize, anchor=south] at (axis cs:7,633.3) {633,3};
+            \node[font=\scriptsize, anchor=north] at (axis cs:11,86.5) {86,5};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Tren indeks omzet Nasi Gerilya berdasarkan pra-survei tahap 3}
+    \label{fig:tren-omzet-gerilya}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+                width=0.72\textwidth,
+                height=7cm,
+                ybar=6pt,
+                bar width=14pt,
+                ymin=0, ymax=60,
+                ylabel={Persen},
+                xlabel={Kategori pelanggan},
+                ymajorgrids=true,
+                grid style={gray!20},
+                axis line style={gray!60},
+                tick style={gray!60},
+                symbolic x coords={Baru,Repeat,Reactivated},
+                xtick=data,
+                xticklabels={Pelanggan\\baru,Repeat\\order,Reactivated},
+                x tick label style={font=\scriptsize, align=center},
+                ytick={0,10,20,30,40,50,60},
+                yticklabel style={font=\scriptsize},
+                nodes near coords,
+                every node near coord/.append style={font=\scriptsize},
+                enlarge x limits=0.28,
+                legend style={
+                        font=\scriptsize,
+                        draw=none,
+                        at={(0.5,-0.2)},
+                        anchor=north,
+                        legend columns=2
+                    }
+            ]
+            \addplot[fill=gray!55, draw=gray!55] coordinates {(Baru,45) (Repeat,43) (Reactivated,12)};
+            \addplot[fill=orange!80, draw=orange!80] coordinates {(Baru,55) (Repeat,38) (Reactivated,7)};
+            \legend{Periode sebelumnya,Saat ini}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Perubahan komposisi pelanggan Nasi Gerilya berdasarkan pra-survei tahap 2}
+    \label{fig:komposisi-pelanggan-gerilya}
+\end{figure}
+
+Data pada Tabel~\ref{tab:ringkasan-awal-gerilya} diringkas dari Lampiran~\ref{app:prasurvey1}, Lampiran~\ref{app:prasurvey2}, dan Lampiran~\ref{app:prasurvey3}. Visual pendukung pada Gambar~\ref{fig:tren-omzet-gerilya} dan Gambar~\ref{fig:komposisi-pelanggan-gerilya} memperlihatkan dua gejala penting. Pertama, indeks omzet Nasi Gerilya sempat melonjak sampai 633,3 pada Juli 2025, tetapi kemudian turun tajam dan berada pada indeks 86,5 pada November 2025. Kedua, komposisi pelanggan menunjukkan bahwa proporsi pelanggan baru lebih besar daripada pelanggan ulang. Tabel dan gambar tersebut menunjukkan bahwa GrabFood memang menjadi kanal utama Nasi Gerilya, tetapi performa di platform masih menyimpan persoalan. Dari sisi internal, pemilik masih menghadapi kendala konsistensi rasa, akurasi pesanan, \textit{sold out}, dan kapasitas operasional. Dari sisi persaingan, data pembanding \textit{top brand nasi padang} menunjukkan tekanan kompetitif yang nyata. Artinya, masalah penelitian tidak cukup dijelaskan sebagai persoalan pemasaran digital secara umum, tetapi lebih spesifik sebagai persoalan strategi pemasaran pada platform GrabFood yang menuntut kesesuaian STP, pengalaman layanan, dan kesiapan operasional secara bersamaan.
+
+Penelitian terdahulu yang digunakan sebagai rujukan utama umumnya telah membahas strategi pemasaran untuk meningkatkan penjualan, baik melalui promosi digital, bauran pemasaran, maupun pemanfaatan platform. \textcite{regina2025kuliner}, \textcite{mamuriyah2021gadihminang}, \textcite{roslam2021markisaaurora}, dan \textcite{suharjo2020bogorsnacks} menekankan pentingnya strategi pemasaran online dalam memperluas jangkauan dan penjualan. \textcite{sophia2025rendanggadih} memperlihatkan peran STP dan 4P pada usaha kuliner berbasis platform, sedangkan \textcite{ruhiyat2023minatbeli} dan \textcite{khairani2022buahsayur} menunjukkan bahwa harga, promosi, ulasan, dan penyesuaian strategi pasar memengaruhi kinerja penjualan pada kanal digital. Namun, penelitian-penelitian tersebut umumnya belum memusatkan perhatian pada satu \textit{merchant} kuliner lokal di GrabFood dengan menggabungkan observasi platform, ulasan pelanggan, wawancara pemilik, dan dokumentasi performa internal sebagai dasar perumusan strategi pemasaran berbasis SWOT.
+
+Dengan demikian, \textit{research gap} penelitian ini terletak pada masih terbatasnya kajian kualitatif deskriptif yang secara khusus membaca strategi pemasaran satu usaha kuliner lokal pada platform GrabFood sebagai gabungan antara persoalan pasar, pengalaman pelanggan, dan kesiapan operasional. Penelitian ini memilih Rumah Makan Nasi Gerilya karena menyediakan kasus yang kaya data: usaha mempunyai eksposur digital tinggi, GrabFood menjadi kanal penjualan utama, tekanan persaingan pada kategori nasi padang cukup kuat, namun performa penjualan dan \textit{repeat order} belum stabil. Berdasarkan kondisi tersebut, penelitian ini penting dilakukan untuk merumuskan strategi pemasaran Rumah Makan Nasi Gerilya pada platform GrabFood melalui analisis SWOT.
 
 \section{Rumusan Masalah}
 Berdasarkan latar belakang penelitian, maka rumusan masalah dalam penelitian ini dapat dikemukakan sebagai berikut:
@@ -28,12 +134,12 @@ Berdasarkan rumusan masalah yang telah dikemukakan, maka tujuan penelitian ini a
 \section{Manfaat Penelitian}
 Penelitian ini diharapkan dapat bermanfaat secara teoretis dan praktis seperti berikut:
 \subsection{Manfaat Teoretis}
-Penelitian ini diharapkan dapat berkontribusi dalam pengembangan ilmu manajemen pemasaran, khususnya yang berkaitan dengan strategi pemasaran digital pada usaha kuliner berbasis platform online food delivery. Selain itu, penelitian ini juga diharapkan dapat memperkaya kajian mengenai penerapan analisis SWOT dalam mengidentifikasi faktor internal dan faktor eksternal usaha sebagai dasar perumusan strategi pemasaran. Hasil penelitian ini selanjutnya diharapkan dapat menjadi bahan referensi bagi peneliti lain yang ingin mengkaji topik serupa, terutama pada konteks UMKM kuliner yang memanfaatkan platform digital sebagai saluran pemasaran.
+Penelitian ini diharapkan dapat berkontribusi dalam pengembangan ilmu manajemen pemasaran, khususnya yang berkaitan dengan strategi pemasaran usaha kuliner pada platform \textit{online food delivery}, terutama GrabFood. Selain itu, penelitian ini juga diharapkan dapat memperkaya kajian mengenai penerapan analisis SWOT dalam mengidentifikasi faktor internal dan faktor eksternal usaha sebagai dasar perumusan strategi pemasaran. Hasil penelitian ini selanjutnya diharapkan dapat menjadi bahan referensi bagi peneliti lain yang ingin mengkaji topik serupa, terutama pada konteks UMKM kuliner yang memanfaatkan platform digital sebagai saluran pemasaran.
 \subsection{Manfaat Praktis}
 Secara praktis, penelitian ini diharapkan dapat memberikan manfaat bagi beberapa pihak sebagai berikut:
 \subsubsection{Bagi Rumah Makan Nasi Gerilya}
 \noindent Penelitian ini diharapkan dapat menjadi bahan masukan dan evaluasi dalam mengidentifikasi kekuatan, kelemahan, peluang, dan ancaman usaha pada platform GrabFood. Dengan demikian, hasil penelitian ini dapat digunakan sebagai dasar dalam merumuskan strategi pemasaran yang lebih tepat untuk mempertahankan daya saing dan meningkatkan kinerja usaha.
 \subsubsection{Bagi Pelaku Usaha Kuliner}
-\noindent Penelitian ini diharapkan dapat menjadi gambaran dan bahan pertimbangan bagi pelaku usaha kuliner lainnya mengenai pentingnya analisis kondisi internal dan eksternal usaha dalam menyusun strategi pemasaran pada platform digital, khususnya layanan online food delivery.
+\noindent Penelitian ini diharapkan dapat menjadi gambaran dan bahan pertimbangan bagi pelaku usaha kuliner lainnya mengenai pentingnya analisis kondisi internal dan eksternal usaha dalam menyusun strategi pemasaran pada platform \textit{online food delivery}.
 \subsubsection{Bagi Akademisi}
-\noindent Penelitian ini diharapkan dapat menjadi tambahan acuan dan referensi ilmiah, khususnya yang berkaitan dengan pemasaran digital, strategi pemasaran UMKM, dan penerapan analisis SWOT pada sektor kuliner.
+\noindent Penelitian ini diharapkan dapat menjadi tambahan acuan dan referensi ilmiah, khususnya yang berkaitan dengan strategi pemasaran kuliner berbasis platform, strategi pemasaran UMKM, dan penerapan analisis SWOT pada sektor kuliner.
