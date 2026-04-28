@@ -30,7 +30,8 @@
 \RequirePackage{chngcntr} % For resetting float numbering by chapter
 \RequirePackage{graphicx} % For Images / Logo
 \RequirePackage{tikz} % For conceptual diagrams
-\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,backgrounds,calc}
+\RequirePackage{smartdiagram} % For automatic flow diagrams
 \RequirePackage{longtable} % For multi-page tables
 \RequirePackage{pdflscape} % For landscape pages
 \RequirePackage[style=apa, backend=biber]{biblatex} % APA Style references
