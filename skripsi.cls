@@ -9,7 +9,7 @@
 % -------------------------------------------------------------------
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{times} % Times New Roman
+\RequirePackage{times} % Times-like font for pdfLaTeX output
 \RequirePackage[
   a4paper,
   top=4cm,
@@ -42,6 +42,7 @@
 \RequirePackage{csquotes} % Required by biblatex
 \RequirePackage{enumitem} % For list formatting
 \RequirePackage{etoolbox} % For consistent environment-level table styling
+\RequirePackage{placeins} % Keep floats close to their textual context
 
 % -------------------------------------------------------------------
 % 1A. BIBLIOGRAPHY LOCALIZATION (INDONESIAN CITATION STYLE)
@@ -61,7 +62,7 @@
 % -------------------------------------------------------------------
 % 2. FONT & PARAGRAPH SETTINGS
 % -------------------------------------------------------------------
-% Size 12pt is set in LoadClass. Times New Roman is set via mathptmx.
+% Size 12pt is set in LoadClass.
 % Line spacing: Double
 \doublespacing
 
@@ -71,6 +72,7 @@
 % Paragraph Indentation: 1.25 cm
 \setlength{\parindent}{1.25cm}
 \setlength{\emergencystretch}{2em}
+\raggedbottom
 
 % Disable Widow/Orphan
 \clubpenalty=0
@@ -79,6 +81,14 @@
 
 % Justify alignment is default in LaTeX.
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcommand{\skripsi@headingfont}{\normalfont\normalsize\bfseries}
+\newcommand{\skripsi@frontheading}[1]{%
+  \begingroup
+    \centering
+    {\skripsi@headingfont #1\par}%
+  \endgroup
+  \vspace{12pt}%
+}
 
 % -------------------------------------------------------------------
 % 3. PAGE STYLES (HEADER & FOOTER)
@@ -109,7 +119,7 @@
 
 % BAB
 \titleformat{\chapter}[display]
-{\normalfont\large\bfseries\centering} % Format (Times New Roman, Bold, Center)
+{\normalfont\normalsize\bfseries\centering} % Format (Times-like, 12pt, Bold, Center)
 {\MakeUppercase{\chaptertitlename}~\Roman{chapter}} % "BAB I"
 {0pt} % Spacing vertically between "BAB I" and Title
 {\MakeUppercase} % Title uppercase
@@ -154,18 +164,44 @@
 
 % Caption settings and table spacing
 \captionsetup[table]{
-  font={small, singlespacing},
+  font={footnotesize, singlespacing},
   labelfont=bf,
   textfont=bf,
   labelsep=newline,
-  justification=centerlast,
-  skip=9pt
+  justification=centering,
+  singlelinecheck=false,
+  skip=6pt
 }
 \captionsetup[figure]{
-  font={small, singlespacing},
-  labelsep=space,
-  justification=centerlast,
+  font={normalsize, singlespacing},
+  labelfont=bf,
+  textfont=bf,
+  labelsep=newline,
+  justification=centering,
+  singlelinecheck=false,
   skip=6pt
+}
+
+\newcommand{\tablesource}[2][\textwidth]{%
+  \par\vspace{2pt}%
+  \begingroup
+    \normalfont\footnotesize\singlespacing
+    \noindent\begin{minipage}{#1}%
+      \raggedright Sumber: #2%
+    \end{minipage}\par
+  \endgroup
+}
+
+\newcommand{\figuresource}[2][\textwidth]{%
+  \par\vspace{0pt}%
+  \begingroup
+    \normalfont\footnotesize\singlespacing
+    \noindent\makebox[\linewidth][c]{%
+      \begin{minipage}{#1}%
+        \raggedright Sumber: #2%
+      \end{minipage}%
+    }\par
+  \endgroup
 }
 
 % Reset table and figure numbering in each chapter/lampiran
@@ -174,7 +210,7 @@
 
 % Global table spacing so cells are neither too tight nor too loose
 \newlength{\tableposttextsep}
-\setlength{\LTpre}{12pt}
+\setlength{\LTpre}{6pt}
 \setlength{\LTleft}{0pt}
 \setlength{\LTright}{0pt}
 \setlength{\LTcapwidth}{\textwidth}
@@ -185,14 +221,15 @@
 
 \AtBeginEnvironment{table}{%
   \singlespacing
+  \footnotesize
   \setlength{\tabcolsep}{5pt}%
   \renewcommand{\arraystretch}{1.12}%
 }
 \AtBeginEnvironment{tabularx}{%
-  \small
+  \footnotesize
 }
 \AtBeginEnvironment{longtable}{%
-  \small
+  \footnotesize
   \singlespacing
   \setlength{\tabcolsep}{4.5pt}%
   \renewcommand{\arraystretch}{1.12}%
@@ -202,17 +239,20 @@
   \multicolumn{#1}{@{}l@{}}{\textbf{Lanjutan Tabel \thetable}}\\%
 }
 
-% Spacing after tables to the next body paragraph:
-% double-spaced body text with paragraph spacing before 0 pt and after 6 pt.
+% Keep table/figure-to-text spacing close to the guide and avoid stretched gaps.
 \AtBeginDocument{%
-  \setlength{\tableposttextsep}{\dimexpr\baselineskip + 6pt\relax}%
+  \setlength{\tableposttextsep}{6pt}%
   \setlength{\LTpost}{\tableposttextsep}%
   \setlength{\textfloatsep}{\tableposttextsep}%
   \setlength{\intextsep}{\tableposttextsep}%
 }
 
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{8pt plus 2pt minus 2pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+
 % Spacing before/after floats (tables/figures)
-\setlength{\floatsep}{12pt}
+\setlength{\floatsep}{6pt}
 
 % -------------------------------------------------------------------
 % 6. LISTS (DAFTAR) FORMATTING
@@ -221,9 +261,27 @@
 \newlistof{lampiran}{loa}{\listlampiranname}
 \renewcommand{\thelampiran}{\Alph{lampiran}}
 
-\setlist{nosep}
+\setlist{nosep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt}
+\setlist[enumerate,1]{
+  label=\arabic*.,
+  labelindent=0.75cm,
+  labelwidth=0.35cm,
+  labelsep=0.15cm,
+  leftmargin=!,
+  align=left,
+  listparindent=0pt
+}
+\setlist[enumerate,2]{
+  label=\alph*.,
+  labelindent=0.75cm,
+  labelwidth=0.35cm,
+  labelsep=0.15cm,
+  leftmargin=!,
+  align=left,
+  listparindent=0pt
+}
 
-\renewcommand{\cfttoctitlefont}{\large\bfseries\MakeUppercase}
+\renewcommand{\cfttoctitlefont}{\normalsize\bfseries\MakeUppercase}
 \newlength{\skripsi@tocheaderwidth}
 \setlength{\skripsi@tocheaderwidth}{2cm}
 \newlength{\skripsi@tocpnumwidth}
@@ -290,11 +348,11 @@
   \hfill\mbox{}%
   \skripsi@listheader{#1}%
 }
-\renewcommand{\cftlottitlefont}{\hfill\large\bfseries\MakeUppercase}
+\renewcommand{\cftlottitlefont}{\hfill\normalsize\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\skripsi@afterlisttitle{No. Tabel}}
-\renewcommand{\cftloftitlefont}{\hfill\large\bfseries\MakeUppercase}
+\renewcommand{\cftloftitlefont}{\hfill\normalsize\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{\skripsi@afterlisttitle{No. Gambar}}
-\renewcommand{\cftloatitlefont}{\hfill\large\bfseries\MakeUppercase}
+\renewcommand{\cftloatitlefont}{\hfill\normalsize\bfseries\MakeUppercase}
 \renewcommand{\cftafterloatitle}{\skripsi@afterlisttitle{No. Lampiran}}
 
 % Sesuaikan jarak atas daftar dengan jarak pada chapter biasa
@@ -529,6 +587,23 @@
 {\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}}
 {\addcontentsline{toc}{babchapter}{\protect\numberline{BAB \Roman{chapter}}#1}}
 {}{}
+\pretocmd{\section}{\FloatBarrier}{}{}
+\pretocmd{\subsection}{\FloatBarrier}{}{}
+\pretocmd{\subsubsection}{\FloatBarrier}{}{}
+
+\setlength{\bibitemsep}{6pt}
+\setlength{\bibhang}{1.25cm}
+\defbibheading{skripsibibliography}[\bibname]{%
+  \clearpage
+  \thispagestyle{plain}%
+  \phantomsection
+  \addcontentsline{toc}{chapter}{#1}%
+  \skripsi@frontheading{\MakeUppercase{#1}}%
+}
+\AtBeginBibliography{%
+  \singlespacing
+  \setlength{\parskip}{0pt}%
+}
 
 \newcommand{\lampiranentry}[1]{%
   \refstepcounter{lampiran}%
@@ -561,9 +636,9 @@
   \thispagestyle{plain}%
   \begingroup
   \centering
-  {\large\bfseries LAMPIRAN \thelampiran\par}%
+  {\normalsize\bfseries LAMPIRAN \thelampiran\par}%
   \vspace{12pt}%
-  {\large\bfseries \MakeUppercase{#1}\par}%
+  {\normalsize\bfseries \MakeUppercase{#1}\par}%
   \endgroup
   \vspace{12pt}%
 }
@@ -716,7 +791,7 @@
 % 8. COVER PAGE (SAMPUL)
 % -------------------------------------------------------------------
 \newcommand{\covertitleblock}[1]{%
-  {\large\bfseries
+  {\normalsize\bfseries
     \setlength{\tabcolsep}{0pt}%
     \begin{tabular}{@{}c@{}}#1\end{tabular}\par}%
 }
@@ -727,7 +802,7 @@
     \singlespacing
 
     % SKRIPSI
-    {\large \textbf{SKRIPSI}}\\[12pt] % After: 12 (Double)
+    {\normalsize \textbf{SKRIPSI}}\\[12pt] % After: 12 (Double)
 
     % JUDUL (Sampan terbalik requires careful line breaking or centering, 
     % user can format it using \\ in their \title command)
@@ -764,11 +839,14 @@
   \phantomsection
   \addcontentsline{toc}{chapter}{ABSTRAK}
   \def\@keywordlabel{Kata Kunci}
+  \skripsi@frontheading{ABSTRAK}
   \begingroup
-  \centering
-  {\large \textbf{ABSTRAK}}\par\vspace{12pt}
-  {\singlespacing \textbf{\judulindonesiacapslocktext}\par}\vspace{12pt}
+    \centering
+    {\singlespacing \bfseries
+      \setlength{\tabcolsep}{0pt}%
+      \begin{tabular}{@{}c@{}}\judulindonesiacapslocktext\end{tabular}\par}%
   \endgroup
+  \vspace{12pt}
   \begin{singlespace}
   \setlength{\parindent}{0pt}
 }{
@@ -781,11 +859,14 @@
   \phantomsection
   \addcontentsline{toc}{chapter}{ABSTRACT}
   \def\@keywordlabel{Keywords}
+  \skripsi@frontheading{ABSTRACT}
   \begingroup
-  \centering
-  {\large \textbf{ABSTRACT}}\par\vspace{12pt}
-  {\singlespacing \textbf{\judulinggriscapslocktext}\par}\vspace{12pt}
+    \centering
+    {\singlespacing \bfseries
+      \setlength{\tabcolsep}{0pt}%
+      \begin{tabular}{@{}c@{}}\judulinggriscapslocktext\end{tabular}\par}%
   \endgroup
+  \vspace{12pt}
   \begin{singlespace}
   \setlength{\parindent}{0pt}
 }{
@@ -805,18 +886,15 @@
   \clearpage
   \phantomsection
   \addcontentsline{toc}{chapter}{KATA PENGANTAR}
-  \begingroup
-  \centering
-  {\large \textbf{KATA PENGANTAR}}\par\vspace{12pt}
-  \endgroup
+  \skripsi@frontheading{KATA PENGANTAR}
   % According to guide: paragraphs spacing double
   \doublespacing
   \setlength{\parindent}{1.25cm}
 }{
-  % \par\vfill
-  \\
-  \begin{flushright}
+  \par\vspace{12pt}
+  \begingroup
     \singlespacing
+    \noindent\hfill
     \begin{tabular}{@{}l@{}}
       \@kota, \ifx\@tanggalpengesahan\@empty\today\else\@tanggalpengesahan\fi \\
       \@labelpenandatangan,                                                   \\
@@ -832,7 +910,8 @@
         NIM: \@nim
       \fi
     \end{tabular}
-  \end{flushright}
+  \par
+  \endgroup
 }
 
 % Initialize Roman Numbering for Frontmatter manually in the main document 
