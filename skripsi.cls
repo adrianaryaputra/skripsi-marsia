@@ -29,6 +29,7 @@
 \RequirePackage{caption}  % For Table and Figure Captions
 \RequirePackage{chngcntr} % For resetting float numbering by chapter
 \RequirePackage{graphicx} % For Images / Logo
+\RequirePackage[table]{xcolor} % Grayscale table fills and rules
 \RequirePackage{tikz} % For conceptual diagrams
 \usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,backgrounds,calc}
 \RequirePackage{smartdiagram} % For automatic flow diagrams
@@ -70,7 +71,9 @@
 \setlength{\parskip}{0pt}
 
 % Paragraph Indentation: 1.25 cm
-\setlength{\parindent}{1.25cm}
+\newlength{\skripsi@normalparindent}
+\setlength{\skripsi@normalparindent}{1.25cm}
+\setlength{\parindent}{\skripsi@normalparindent}
 \setlength{\emergencystretch}{2em}
 \raggedbottom
 
@@ -82,10 +85,27 @@
 % Justify alignment is default in LaTeX.
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \newcommand{\skripsi@headingfont}{\normalfont\normalsize\bfseries}
+\newcommand{\skripsi@resetbodyindent}{%
+  \par
+  \global\leftskip=0pt\relax
+  \global\parindent=\skripsi@normalparindent\relax
+}
+\newcommand{\resetindent}{%
+  \par
+  \vspace{12pt}%
+  \global\leftskip=0pt\relax
+  \global\parindent=\skripsi@normalparindent\relax
+}
+
+\newcommand{\skripsi@setbodyindent}[1]{%
+  \par
+  \global\leftskip=#1\relax
+  \global\parindent=0pt\relax
+}
 \newcommand{\skripsi@frontheading}[1]{%
   \begingroup
-    \centering
-    {\skripsi@headingfont #1\par}%
+  \centering
+  {\skripsi@headingfont #1\par}%
   \endgroup
   \vspace{12pt}%
 }
@@ -145,15 +165,62 @@
 {}
 \titlespacing*{\subsection}{0pt}{12pt}{12pt}
 
-% SUB-SUBBAB (a, b, c)
-\setcounter{secnumdepth}{3}
-\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+% SUB-SUBBAB dan level di bawahnya
+\newlength{\skripsi@subsubsectionindent}
+\newlength{\skripsi@subsubsubsectionindent}
+\newlength{\skripsi@subsubsubsubsectionindent}
+\newlength{\skripsi@subsubsubsubsubsectionindent}
+\newlength{\skripsi@subsubsubsubsubsubsectionindent}
+\setlength{\skripsi@subsubsectionindent}{0.625cm}
+\setlength{\skripsi@subsubsubsectionindent}{1.25cm}
+\setlength{\skripsi@subsubsubsubsectionindent}{1.875cm}
+\setlength{\skripsi@subsubsubsubsubsectionindent}{2.5cm}
+\setlength{\skripsi@subsubsubsubsubsubsectionindent}{3.125cm}
+
+\setcounter{secnumdepth}{6}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+\renewcommand{\theparagraph}{\alph{paragraph}}
+\renewcommand{\thesubparagraph}{\arabic{subparagraph})}
+\newcounter{subsubsubsubsubsection}[subparagraph]
+\renewcommand{\thesubsubsubsubsubsection}{\alph{subsubsubsubsubsection})}
+
 \titleformat{\subsubsection}
 {\normalfont\normalsize\bfseries}
-{\thesubsubsection.}
-{1em}
+{\makebox[0.625cm][l]{\thesubsubsection.}}
+{0pt}
 {}
-\titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
+[\skripsi@setbodyindent{\skripsi@subsubsubsectionindent}]
+\titlespacing*{\subsubsection}{\skripsi@subsubsectionindent}{12pt}{12pt}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}
+{\makebox[0.625cm][l]{\theparagraph.}}
+{0pt}
+{}
+[\skripsi@setbodyindent{\skripsi@subsubsubsubsectionindent}]
+\titlespacing*{\paragraph}{\skripsi@subsubsubsectionindent}{12pt}{12pt}
+
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}
+{\makebox[0.625cm][l]{\thesubparagraph}}
+{0pt}
+{}
+[\skripsi@setbodyindent{\skripsi@subsubsubsubsubsectionindent}]
+\titlespacing*{\subparagraph}{\skripsi@subsubsubsubsectionindent}{12pt}{12pt}
+
+\newcommand{\subsubsubsubsubsection}{%
+  \@startsection{subsubsubsubsubsection}{6}{\z@}{12pt}{12pt}{\normalfont\normalsize\bfseries}%
+}
+\titleformat{\subsubsubsubsubsection}
+{\normalfont\normalsize\bfseries}
+{\makebox[0.625cm][l]{\thesubsubsubsubsubsection}}
+{0pt}
+{}
+[\skripsi@setbodyindent{\skripsi@subsubsubsubsubsubsectionindent}]
+\titlespacing*{\subsubsubsubsubsection}{\skripsi@subsubsubsubsubsectionindent}{12pt}{12pt}
+
+\let\subsubsubsection\paragraph
+\let\subsubsubsubsection\subparagraph
 
 
 % -------------------------------------------------------------------
@@ -185,22 +252,22 @@
 \newcommand{\tablesource}[2][\textwidth]{%
   \par\vspace{2pt}%
   \begingroup
-    \normalfont\footnotesize\singlespacing
-    \noindent\begin{minipage}{#1}%
-      \raggedright Sumber: #2%
-    \end{minipage}\par
+  \normalfont\footnotesize\singlespacing
+  \noindent\begin{minipage}{#1}%
+    \raggedright Sumber: #2%
+  \end{minipage}\par
   \endgroup
 }
 
 \newcommand{\figuresource}[2][\textwidth]{%
   \par\vspace{0pt}%
   \begingroup
-    \normalfont\footnotesize\singlespacing
-    \noindent\makebox[\linewidth][c]{%
-      \begin{minipage}{#1}%
-        \raggedright Sumber: #2%
-      \end{minipage}%
-    }\par
+  \normalfont\footnotesize\singlespacing
+  \noindent\makebox[\linewidth][c]{%
+    \begin{minipage}{#1}%
+      \raggedright Sumber: #2%
+    \end{minipage}%
+  }\par
   \endgroup
 }
 
@@ -218,19 +285,30 @@
 \setlength{\heavyrulewidth}{0.08em}
 \setlength{\lightrulewidth}{0.05em}
 \setlength{\cmidrulewidth}{0.05em}
-
+\newcommand{\skripsi@tableheadcolor}{black!12}
+\newcommand{\skripsi@tablerulecolor}{black!60}
+\newcolumntype{Z}[1]{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}p{#1}}
+\newcolumntype{J}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}l}
+\newcolumntype{V}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}Y}
+\renewcommand{\toprule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline\rowcolor{\skripsi@tableheadcolor}}
+\renewcommand{\midrule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline}
+\renewcommand{\bottomrule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline}
+\renewcommand{\addlinespace}[1][]{}
 \AtBeginEnvironment{table}{%
   \singlespacing
   \footnotesize
+  \arrayrulecolor{\skripsi@tablerulecolor}%
   \setlength{\tabcolsep}{5pt}%
   \renewcommand{\arraystretch}{1.12}%
 }
 \AtBeginEnvironment{tabularx}{%
   \footnotesize
+  \arrayrulecolor{\skripsi@tablerulecolor}%
 }
 \AtBeginEnvironment{longtable}{%
   \footnotesize
   \singlespacing
+  \arrayrulecolor{\skripsi@tablerulecolor}%
   \setlength{\tabcolsep}{4.5pt}%
   \renewcommand{\arraystretch}{1.12}%
 }
@@ -247,6 +325,16 @@
   \setlength{\intextsep}{\tableposttextsep}%
 }
 
+% Prefer top placement for all table and figure floats.
+\def\fps@table{!t}
+\def\fps@figure{!t}
+\setcounter{topnumber}{5}
+\setcounter{bottomnumber}{0}
+\setcounter{totalnumber}{5}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.8}
 \setlength{\@fptop}{0pt}
 \setlength{\@fpsep}{8pt plus 2pt minus 2pt}
 \setlength{\@fpbot}{0pt plus 1fil}
@@ -438,30 +526,30 @@
 }
 \renewcommand*{\l@figure}[2]{%
   \skripsi@listline{\cftbeforefigskip}{\cftfigindent}{\cftfignumwidth}%
-    {\cftfigpresnum}{\cftfigaftersnum}{\cftfigaftersnumb}{#1}{#2}}
+  {\cftfigpresnum}{\cftfigaftersnum}{\cftfigaftersnumb}{#1}{#2}}
 \renewcommand*{\l@table}[2]{%
   \skripsi@listline{\cftbeforetabskip}{\cfttabindent}{\cfttabnumwidth}%
-    {\cfttabpresnum}{\cfttabaftersnum}{\cfttabaftersnumb}{#1}{#2}}
+  {\cfttabpresnum}{\cfttabaftersnum}{\cfttabaftersnumb}{#1}{#2}}
 \renewcommand*{\l@lampiran}[2]{%
   \skripsi@listline{\cftbeforelampiranskip}{\cftlampiranindent}{\cftlampirannumwidth}%
-    {\cftlampiranpresnum}{\cftlampiranaftersnum}{\cftlampiranaftersnumb}{#1}{#2}}
+  {\cftlampiranpresnum}{\cftlampiranaftersnum}{\cftlampiranaftersnumb}{#1}{#2}}
 \let\skripsi@origlistoffigures\listoffigures
 \let\skripsi@origlistoftables\listoftables
 \let\skripsi@origlistoflampiran\listoflampiran
 \renewcommand{\listoffigures}{%
   \begingroup
-    \let\addvspace\@gobble
-    \skripsi@origlistoffigures
+  \let\addvspace\@gobble
+  \skripsi@origlistoffigures
   \endgroup}
 \renewcommand{\listoftables}{%
   \begingroup
-    \let\addvspace\@gobble
-    \skripsi@origlistoftables
+  \let\addvspace\@gobble
+  \skripsi@origlistoftables
   \endgroup}
 \renewcommand{\listoflampiran}{%
   \begingroup
-    \let\addvspace\@gobble
-    \skripsi@origlistoflampiran
+  \let\addvspace\@gobble
+  \skripsi@origlistoflampiran
   \endgroup}
 \newcommand{\cftbabchapfillnum}[1]{%
   {\cftchapleader}\nobreak
@@ -587,9 +675,13 @@
 {\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}}
 {\addcontentsline{toc}{babchapter}{\protect\numberline{BAB \Roman{chapter}}#1}}
 {}{}
-\pretocmd{\section}{\FloatBarrier}{}{}
-\pretocmd{\subsection}{\FloatBarrier}{}{}
-\pretocmd{\subsubsection}{\FloatBarrier}{}{}
+\pretocmd{\chapter}{\skripsi@resetbodyindent}{}{}
+\pretocmd{\section}{\FloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\subsection}{\FloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\subsubsection}{\FloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\paragraph}{\skripsi@resetbodyindent}{}{}
+\pretocmd{\subparagraph}{\skripsi@resetbodyindent}{}{}
+\pretocmd{\subsubsubsubsubsection}{\skripsi@resetbodyindent}{}{}
 
 \setlength{\bibitemsep}{6pt}
 \setlength{\bibhang}{1.25cm}
@@ -628,6 +720,8 @@
     \global\skripsi@appendixstartedtrue
   \fi
   \lampiranentry{#1}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
   \setcounter{chapter}{\value{lampiran}}% Make \section number start with A, B, C...
   \setcounter{section}{0}%
   \setcounter{table}{0}%
@@ -841,10 +935,10 @@
   \def\@keywordlabel{Kata Kunci}
   \skripsi@frontheading{ABSTRAK}
   \begingroup
-    \centering
-    {\singlespacing \bfseries
-      \setlength{\tabcolsep}{0pt}%
-      \begin{tabular}{@{}c@{}}\judulindonesiacapslocktext\end{tabular}\par}%
+  \centering
+  {\singlespacing \bfseries
+    \setlength{\tabcolsep}{0pt}%
+    \begin{tabular}{@{}c@{}}\judulindonesiacapslocktext\end{tabular}\par}%
   \endgroup
   \vspace{12pt}
   \begin{singlespace}
@@ -861,10 +955,10 @@
   \def\@keywordlabel{Keywords}
   \skripsi@frontheading{ABSTRACT}
   \begingroup
-    \centering
-    {\singlespacing \bfseries
-      \setlength{\tabcolsep}{0pt}%
-      \begin{tabular}{@{}c@{}}\judulinggriscapslocktext\end{tabular}\par}%
+  \centering
+  {\singlespacing \bfseries
+    \setlength{\tabcolsep}{0pt}%
+    \begin{tabular}{@{}c@{}}\judulinggriscapslocktext\end{tabular}\par}%
   \endgroup
   \vspace{12pt}
   \begin{singlespace}
@@ -893,23 +987,23 @@
 }{
   \par\vspace{12pt}
   \begingroup
-    \singlespacing
-    \noindent\hfill
-    \begin{tabular}{@{}l@{}}
-      \@kota, \ifx\@tanggalpengesahan\@empty\today\else\@tanggalpengesahan\fi \\
-      \@labelpenandatangan,                                                   \\
-      \ifx\@namapenandatangan\@empty\else
-        \\
-        \\
-        \\
-        \\
-        \@namapenandatangan
-      \fi
-      \ifx\@nim\@empty\else
-        \\
-        NIM: \@nim
-      \fi
-    \end{tabular}
+  \singlespacing
+  \noindent\hfill
+  \begin{tabular}{@{}l@{}}
+    \@kota, \ifx\@tanggalpengesahan\@empty\today\else\@tanggalpengesahan\fi \\
+    \@labelpenandatangan,                                                   \\
+    \ifx\@namapenandatangan\@empty\else
+      \\
+      \\
+      \\
+      \\
+      \@namapenandatangan
+    \fi
+    \ifx\@nim\@empty\else
+      \\
+      NIM: \@nim
+    \fi
+  \end{tabular}
   \par
   \endgroup
 }
