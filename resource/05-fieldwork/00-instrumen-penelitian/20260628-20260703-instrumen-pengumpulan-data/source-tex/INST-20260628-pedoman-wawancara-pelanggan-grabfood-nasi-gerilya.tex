@@ -1,0 +1,302 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=18mm,bottom=19mm,left=16mm,right=16mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\setmainfont{Arial}
+\setsansfont{Arial}
+
+\definecolor{Primary}{HTML}{235347}
+\definecolor{Accent}{HTML}{E98B2A}
+\definecolor{Soft}{HTML}{EEF4F1}
+\definecolor{LineGray}{HTML}{B7C3BE}
+\definecolor{TextGray}{HTML}{4E5A56}
+
+\newcommand{\documentlabel}{Pedoman Wawancara Pelanggan GrabFood Nasi Gerilya}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=Primary,
+  urlcolor=Primary,
+  pdftitle={Pedoman Wawancara Pelanggan GrabFood Nasi Gerilya},
+  pdfauthor={Instrumen Penelitian Skripsi}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{Primary}{\documentlabel}}
+\fancyhead[R]{\small\textcolor{TextGray}{Panduan Pewawancara}}
+\fancyfoot[C]{\small\textcolor{TextGray}{Halaman \thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.22}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\sloppy
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\sectionbar}[1]{%
+  \Needspace{5\baselineskip}
+  \vspace{4mm}
+  \noindent\colorbox{Soft}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \large\bfseries\textcolor{Primary}{#1}
+    }%
+  }\par\vspace{1mm}
+}
+
+\newcommand{\probe}[1]{%
+  \vspace{1mm}
+  \noindent{\small\textbf{\textcolor{Accent}{Probing:}} \textcolor{TextGray}{#1}}\par
+}
+
+\newcommand{\notefield}[1]{%
+  \textbf{\textcolor{Primary}{#1}}\par
+  \noindent\textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\par\vspace{3.5mm}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{9mm}
+{\Huge\bfseries\textcolor{Primary}{Pedoman Wawancara}}\par
+{\Huge\bfseries\textcolor{Primary}{Pelanggan GrabFood}}\par
+{\Huge\bfseries\textcolor{Primary}{Nasi Gerilya}}\par
+\vspace{3mm}
+{\Large\textcolor{Accent}{Panduan Pertanyaan Terbuka untuk Interview Langsung}}\par
+\vspace{7mm}
+\textcolor{Accent}{\rule{0.92\linewidth}{1.4pt}}\par
+\vspace{10mm}
+
+\begin{tabularx}{\linewidth}{>{\bfseries\color{Primary}}p{38mm} Y}
+Fokus wawancara & Pengalaman pelanggan dalam membeli Nasi Gerilya melalui GrabFood.\\
+Informan utama & Pelanggan yang pernah melakukan pembelian Nasi Gerilya melalui GrabFood.\\
+Jenis wawancara & Semi-terstruktur dengan pertanyaan terbuka. Pewawancara boleh menyesuaikan urutan pertanyaan selama semua aspek utama tetap tergali.\\
+Perkiraan durasi & 45 sampai 60 menit.\\
+Tujuan data & Menggali persepsi tentang produk, kemasan, harga, pelayanan, promosi, kepuasan, loyalitas, perbandingan kompetitor, dan harapan pelanggan.\\
+Catatan etika & Jelaskan tujuan wawancara, minta kesediaan informan, jaga kerahasiaan identitas, dan hindari mengarahkan jawaban.\\
+\end{tabularx}
+
+\vfill
+\colorbox{Soft}{%
+  \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \raggedright
+    \textbf{\textcolor{Primary}{Kalimat pembuka:}}
+    Terima kasih sudah bersedia menjadi informan. Wawancara ini bertujuan mengetahui pengalaman pelanggan dalam membeli Nasi Gerilya melalui GrabFood. Tidak ada jawaban benar atau salah, jadi silakan menjawab sesuai pengalaman pribadi.
+  }%
+}
+\vspace*{8mm}
+\end{titlepage}
+
+\sectionbar{Panduan Pelaksanaan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1mm]
+\item Mulai dengan membangun suasana nyaman dan menjelaskan tujuan penelitian secara singkat.
+\item Pastikan informan memang pernah membeli Nasi Gerilya melalui GrabFood.
+\item Gunakan pertanyaan utama sebagai panduan. Jika jawaban informan belum jelas, gunakan probing.
+\item Catat pengalaman konkret, alasan, contoh kejadian, dan kata-kata khas informan.
+\item Hindari pertanyaan yang menggiring, misalnya "Setuju kan rasanya enak?".
+\item Akhiri wawancara dengan memberi kesempatan informan menambahkan hal lain.
+\end{enumerate}
+
+\sectionbar{A. Identitas Informan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm]
+\item Boleh ceritakan nama atau inisial Anda dan usia Anda?
+\item Apa pekerjaan atau aktivitas utama Anda saat ini?
+\item Di daerah mana Anda tinggal atau biasa beraktivitas?
+\item Bagaimana kebiasaan Anda dalam membeli makanan secara online?
+\end{enumerate}
+\probe{Jika perlu, gali pola aktivitas harian, lokasi pemesanan, dan kebiasaan makan informan.}
+
+\sectionbar{B. Pengalaman Menggunakan GrabFood}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Sejak kapan Anda mulai menggunakan GrabFood?
+\item Seberapa sering Anda biasanya memesan makanan melalui GrabFood?
+\item Dalam situasi seperti apa Anda biasanya menggunakan GrabFood untuk membeli makanan?
+\item Jenis makanan seperti apa yang paling sering Anda pesan melalui GrabFood?
+\item Apa saja hal yang biasanya Anda pertimbangkan sebelum memilih makanan di GrabFood?
+\item Bagaimana pengaruh harga, promo, rating, foto, dan jarak restoran terhadap keputusan Anda saat memesan makanan?
+\end{enumerate}
+\probe{Tanyakan contoh pesanan terakhir, alasan memilih GrabFood, dan faktor yang paling dominan.}
+
+\sectionbar{C. Pengalaman Mengenal Nasi Gerilya}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Ceritakan bagaimana awalnya Anda mengetahui Nasi Gerilya.
+\item Apa yang membuat Anda tertarik untuk mencoba Nasi Gerilya melalui GrabFood?
+\item Bagaimana kesan pertama Anda saat melihat Nasi Gerilya di aplikasi GrabFood?
+\item Apa menu Nasi Gerilya yang pernah atau paling sering Anda pesan?
+\item Mengapa Anda memilih menu tersebut?
+\item Bagaimana pengalaman pertama Anda saat membeli Nasi Gerilya melalui GrabFood?
+\end{enumerate}
+\probe{Gali sumber informasi pertama, alasan mencoba, dan kesan awal terhadap tampilan toko di aplikasi.}
+
+\sectionbar{D. Proses Keputusan Pembelian}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Ceritakan proses Anda saat memutuskan membeli Nasi Gerilya di GrabFood.
+\item Apa faktor utama yang membuat Anda akhirnya memilih Nasi Gerilya dibanding pilihan makanan lain?
+\item Bagaimana peran foto menu dalam memengaruhi keputusan Anda?
+\item Bagaimana peran nama menu dan deskripsi menu dalam memengaruhi keputusan Anda?
+\item Bagaimana peran rating atau ulasan pelanggan lain dalam keputusan Anda membeli?
+\item Bagaimana pengaruh promo atau diskon terhadap minat Anda membeli Nasi Gerilya?
+\item Apa yang biasanya membuat Anda ragu sebelum membeli makanan melalui GrabFood?
+\item Hal apa yang membuat Anda yakin untuk membeli Nasi Gerilya?
+\end{enumerate}
+\probe{Minta informan mengurutkan faktor keputusan dari yang paling berpengaruh sampai yang paling kecil.}
+
+\sectionbar{E. Penilaian terhadap Produk}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana pendapat Anda tentang rasa makanan Nasi Gerilya?
+\item Bagian rasa apa yang paling Anda sukai dari Nasi Gerilya?
+\item Bagian rasa apa yang menurut Anda masih perlu diperbaiki?
+\item Bagaimana pendapat Anda tentang porsi makanan Nasi Gerilya?
+\item Bagaimana kesesuaian porsi dengan kebutuhan atau harapan Anda?
+\item Bagaimana pendapat Anda tentang tampilan makanan saat diterima?
+\item Bagaimana kondisi makanan saat sampai di tangan Anda?
+\item Bagaimana pendapat Anda tentang suhu makanan saat diterima?
+\item Bagaimana pendapat Anda tentang kualitas bahan makanan yang digunakan?
+\item Bagaimana pendapat Anda tentang variasi menu Nasi Gerilya di GrabFood?
+\item Menu seperti apa yang menurut Anda perlu ditambahkan?
+\item Bagaimana kesesuaian antara foto menu di GrabFood dengan makanan yang Anda terima?
+\item Bagaimana kesesuaian antara deskripsi menu dengan makanan yang Anda terima?
+\item Bagaimana pendapat Anda tentang tingkat kepedasan, bumbu, atau cita rasa makanan?
+\item Apa yang membedakan rasa Nasi Gerilya dari makanan sejenis lainnya?
+\end{enumerate}
+\probe{Gali pengalaman makan terakhir: rasa, porsi, suhu, tampilan, dan kesesuaian dengan ekspektasi.}
+
+\sectionbar{F. Penilaian terhadap Kemasan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana pendapat Anda tentang kemasan makanan Nasi Gerilya?
+\item Bagaimana kondisi kemasan saat makanan sampai?
+\item Bagaimana kemampuan kemasan dalam menjaga makanan agar tidak tumpah atau rusak?
+\item Bagaimana kesan Anda terhadap kebersihan makanan dan kemasan?
+\item Apa yang menurut Anda perlu diperbaiki dari sisi kemasan?
+\item Kemasan seperti apa yang menurut Anda lebih menarik atau lebih nyaman digunakan?
+\end{enumerate}
+\probe{Tanyakan apakah pernah ada makanan bocor, rusak, berantakan, atau sulit dimakan dari kemasan.}
+
+\sectionbar{G. Penilaian terhadap Harga}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana pendapat Anda tentang harga Nasi Gerilya di GrabFood?
+\item Bagaimana kesesuaian harga dengan rasa makanan yang Anda dapatkan?
+\item Bagaimana kesesuaian harga dengan porsi makanan?
+\item Bagaimana kesesuaian harga dengan kualitas makanan secara keseluruhan?
+\item Bagaimana pendapat Anda tentang biaya tambahan seperti ongkir dan biaya layanan saat membeli Nasi Gerilya?
+\item Dalam kondisi tanpa promo, bagaimana minat Anda untuk tetap membeli Nasi Gerilya?
+\item Bagaimana perbandingan harga Nasi Gerilya dengan makanan sejenis di GrabFood?
+\item Menurut Anda, harga seperti apa yang paling sesuai untuk produk Nasi Gerilya?
+\end{enumerate}
+\probe{Gali batas harga yang dianggap wajar dan pengaruh promo terhadap keputusan membeli.}
+
+\sectionbar{H. Penilaian terhadap Pelayanan melalui GrabFood}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana pengalaman Anda saat memesan Nasi Gerilya melalui GrabFood?
+\item Bagaimana pendapat Anda tentang kecepatan restoran dalam memproses pesanan?
+\item Bagaimana pendapat Anda tentang waktu tunggu dari pemesanan sampai makanan diterima?
+\item Ceritakan pengalaman Anda terkait kesesuaian pesanan yang diterima.
+\item Bagaimana pengalaman Anda jika memberikan catatan khusus pada pesanan?
+\item Bagaimana restoran memenuhi permintaan atau catatan khusus dari pelanggan?
+\item Kendala apa yang pernah Anda alami saat memesan Nasi Gerilya melalui GrabFood?
+\item Bagaimana penyelesaian kendala tersebut menurut pengalaman Anda?
+\item Bagaimana peran driver GrabFood dalam pengalaman Anda menerima pesanan Nasi Gerilya?
+\end{enumerate}
+\probe{Pisahkan pengalaman dengan restoran dan pengalaman dengan driver jika informan mencampur keduanya.}
+
+\sectionbar{I. Tampilan dan Informasi Nasi Gerilya di GrabFood}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana pendapat Anda tentang tampilan Nasi Gerilya di aplikasi GrabFood?
+\item Bagaimana kemudahan Anda dalam menemukan Nasi Gerilya di GrabFood?
+\item Bagaimana kejelasan informasi menu yang tersedia di aplikasi?
+\item Bagaimana kejelasan informasi harga di aplikasi?
+\item Bagaimana pendapat Anda tentang foto produk yang ditampilkan?
+\item Bagaimana pendapat Anda tentang nama-nama menu yang digunakan?
+\item Informasi apa yang menurut Anda masih kurang di halaman GrabFood Nasi Gerilya?
+\item Tampilan seperti apa yang menurut Anda bisa membuat Nasi Gerilya lebih menarik di GrabFood?
+\end{enumerate}
+\probe{Minta contoh informasi yang menurut informan perlu ditambahkan di halaman menu.}
+
+\sectionbar{J. Promosi}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana Anda mengetahui promo Nasi Gerilya di GrabFood?
+\item Bagaimana pengaruh promo terhadap keputusan Anda membeli Nasi Gerilya?
+\item Promo seperti apa yang paling menarik bagi Anda?
+\item Bagaimana pendapat Anda tentang promo yang pernah ditawarkan Nasi Gerilya?
+\item Selain diskon harga, bentuk promosi apa yang menurut Anda bisa menarik pelanggan?
+\item Bagaimana media sosial, rekomendasi teman, atau ulasan pelanggan memengaruhi minat Anda terhadap Nasi Gerilya?
+\end{enumerate}
+\probe{Gali promo yang paling diingat dan apakah promo membuat informan melakukan pembelian ulang.}
+
+\sectionbar{K. Kepuasan Pelanggan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Bagaimana tingkat kepuasan Anda setelah membeli Nasi Gerilya melalui GrabFood?
+\item Hal apa yang membuat Anda puas saat membeli Nasi Gerilya?
+\item Hal apa yang membuat Anda kurang puas atau kecewa?
+\item Bagaimana kesesuaian pengalaman membeli Nasi Gerilya dengan harapan Anda sebelumnya?
+\item Bagaimana nilai yang Anda rasakan antara uang yang dikeluarkan dan makanan yang diterima?
+\item Ceritakan pengalaman paling berkesan saat membeli Nasi Gerilya.
+\item Ceritakan pengalaman yang kurang menyenangkan, jika ada, saat membeli Nasi Gerilya.
+\end{enumerate}
+\probe{Tanyakan contoh pengalaman spesifik agar jawaban tidak terlalu umum.}
+
+\sectionbar{L. Loyalitas dan Pembelian Ulang}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Apa yang membuat Anda ingin membeli kembali Nasi Gerilya?
+\item Apa yang bisa membuat Anda tidak ingin membeli kembali Nasi Gerilya?
+\item Dalam kondisi seperti apa Anda biasanya terpikir untuk membeli Nasi Gerilya lagi?
+\item Bagaimana kemungkinan Anda merekomendasikan Nasi Gerilya kepada teman atau keluarga?
+\item Apa alasan Anda merekomendasikan atau tidak merekomendasikan Nasi Gerilya?
+\item Hal apa yang perlu dipertahankan agar Anda tetap menjadi pelanggan Nasi Gerilya?
+\item Hal apa yang perlu ditingkatkan agar Anda lebih sering membeli Nasi Gerilya?
+\end{enumerate}
+\probe{Gali syarat pembelian ulang, penyebab pindah ke pesaing, dan kemungkinan rekomendasi.}
+
+\sectionbar{M. Perbandingan dengan Kompetitor}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Makanan atau restoran apa yang biasanya Anda bandingkan dengan Nasi Gerilya?
+\item Bagaimana perbandingan Nasi Gerilya dengan makanan sejenis dari segi rasa?
+\item Bagaimana perbandingan Nasi Gerilya dengan makanan sejenis dari segi harga?
+\item Bagaimana perbandingan Nasi Gerilya dengan makanan sejenis dari segi porsi?
+\item Bagaimana perbandingan Nasi Gerilya dengan makanan sejenis dari segi kemasan?
+\item Bagaimana perbandingan Nasi Gerilya dengan makanan sejenis dari segi pelayanan?
+\item Apa keunggulan utama Nasi Gerilya dibandingkan pesaingnya?
+\item Apa kelemahan utama Nasi Gerilya dibandingkan pesaingnya?
+\end{enumerate}
+\probe{Jika informan menyebut pesaing tertentu, catat nama pesaing dan alasan perbandingannya.}
+
+\sectionbar{N. Masukan dan Harapan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.2mm,resume]
+\item Apa hal paling Anda sukai dari Nasi Gerilya?
+\item Apa hal yang paling perlu diperbaiki oleh Nasi Gerilya?
+\item Menu baru seperti apa yang menurut Anda cocok untuk Nasi Gerilya?
+\item Bagaimana saran Anda untuk meningkatkan kualitas rasa Nasi Gerilya?
+\item Bagaimana saran Anda untuk meningkatkan tampilan dan kemasan produk?
+\item Bagaimana saran Anda untuk meningkatkan pelayanan Nasi Gerilya di GrabFood?
+\item Bagaimana saran Anda agar Nasi Gerilya lebih menarik bagi pelanggan baru?
+\item Apa harapan Anda terhadap Nasi Gerilya ke depannya?
+\item Apakah ada hal lain yang ingin Anda sampaikan tentang pengalaman membeli Nasi Gerilya melalui GrabFood?
+\end{enumerate}
+\probe{Akhiri dengan memberi ruang bagi informan untuk menambahkan hal yang belum sempat ditanyakan.}
+
+\sectionbar{Kalimat Penutup}
+Terima kasih atas waktu dan jawaban yang sudah diberikan. Informasi ini sangat membantu penelitian untuk memahami pengalaman pelanggan Nasi Gerilya melalui GrabFood. Jawaban akan digunakan hanya untuk kepentingan penelitian dan identitas informan akan dijaga kerahasiaannya.
+
+\sectionbar{Lembar Catatan Cepat Pewawancara}
+\notefield{Kode informan}
+\notefield{Tanggal}
+\notefield{Durasi wawancara}
+\notefield{Menu yang paling sering dipesan}
+\notefield{Tema jawaban paling kuat}
+\notefield{Kutipan penting}
+\notefield{Catatan tindak lanjut}
+
+\end{document}

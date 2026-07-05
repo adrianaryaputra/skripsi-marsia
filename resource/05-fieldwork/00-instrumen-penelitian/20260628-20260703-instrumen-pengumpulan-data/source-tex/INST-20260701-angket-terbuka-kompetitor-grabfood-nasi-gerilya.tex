@@ -1,0 +1,151 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,top=18mm,bottom=20mm,left=17mm,right=17mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\setmainfont{Arial}
+\setsansfont{Arial}
+
+\definecolor{Primary}{HTML}{235347}
+\definecolor{Accent}{HTML}{E98B2A}
+\definecolor{Soft}{HTML}{EEF4F1}
+\definecolor{LineGray}{HTML}{B7C3BE}
+\definecolor{TextGray}{HTML}{4E5A56}
+
+\newcommand{\documentlabel}{Angket Kompetitor GrabFood}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=Primary,
+  urlcolor=Primary,
+  pdftitle={Angket Kompetitor GrabFood Nasi Gerilya},
+  pdfauthor={Instrumen Penelitian Skripsi}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{Primary}{\documentlabel}}
+\fancyhead[R]{\small\textcolor{TextGray}{Versi Juli 2026}}
+\fancyfoot[C]{\small\textcolor{TextGray}{Halaman \thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.18}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\sloppy
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\sectionbar}[1]{%
+  \Needspace{4\baselineskip}
+  \vspace{5mm}
+  \noindent\colorbox{Soft}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \large\bfseries\textcolor{Primary}{#1}
+    }%
+  }\par\vspace{2mm}
+}
+
+\newcommand{\choice}{\raisebox{0.15ex}{\fbox{\rule{0pt}{1.05ex}\rule{1.05ex}{0pt}}}\hspace{0.5mm}}
+
+\newcommand{\choiceitem}[1]{\choice #1}
+
+\newcommand{\questionblock}[3]{%
+  \Needspace{7\baselineskip}
+  \noindent
+  \begin{tabularx}{\linewidth}{>{\bfseries\color{Primary}}p{8mm} Y}
+    #1 & \textbf{#2}\\
+       & {\small\textcolor{TextGray}{#3}}\\
+  \end{tabularx}
+  \par\vspace{2.4mm}
+}
+
+\newcommand{\answerline}{%
+  \par\vspace{1mm}
+  \noindent\textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\par\vspace{4mm}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{12mm}
+{\Huge\bfseries\textcolor{Primary}{Angket Kompetitor}}\par
+{\Huge\bfseries\textcolor{Primary}{GrabFood}}\par
+\vspace{3mm}
+{\Large\textcolor{Accent}{Instrumen Ringkas Informan Pembanding}}\par
+\vspace{4mm}
+{\large\textcolor{TextGray}{Versi terbaru: 01 Juli 2026}}\par
+\vspace{7mm}
+\textcolor{Accent}{\rule{0.92\linewidth}{1.4pt}}\par
+\vspace{10mm}
+
+\begin{tabularx}{\linewidth}{>{\bfseries\color{Primary}}p{38mm} Y}
+Topik penelitian & Strategi pemasaran Rumah Makan Nasi Gerilya pada platform GrabFood untuk meningkatkan penjualan berdasarkan analisis SWOT.\\
+Sasaran informan & Kasir, waitress, admin order online, atau karyawan rumah makan Padang/merchant makanan sejenis.\\
+Metode pengisian & Pilih jawaban yang paling sesuai dengan pengalaman informan. Untuk pertanyaan terakhir, jawab secara singkat berdasarkan pandangan informan.\\
+Kerahasiaan & Jawaban digunakan hanya untuk kepentingan penelitian. Informan tidak diminta membuka data penjualan, margin, atau rahasia usaha.\\
+\end{tabularx}
+
+\vfill
+\colorbox{Soft}{%
+  \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \raggedright
+    \textbf{\textcolor{Primary}{Petunjuk singkat:}}
+    Beri tanda centang pada pilihan jawaban yang paling sesuai. Jika memilih "Lainnya", tuliskan jawaban pada ruang yang tersedia.
+  }%
+}
+\vspace*{8mm}
+\end{titlepage}
+
+\sectionbar{Identitas Singkat}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{Primary}}p{35mm} Y}
+Kode informan & \textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\\[4mm]
+Nama usaha & \textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\\[4mm]
+Tanggal & \textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\\[4mm]
+\end{tabularx}
+
+\sectionbar{Pertanyaan Angket Kompetitor}
+
+\questionblock{1.}{Posisi Kakak di sini apa?}{\choiceitem{Kasir}\quad \choiceitem{Waitress}\quad \choiceitem{Admin order online}\quad \choiceitem{Lainnya: \textcolor{LineGray}{\rule{28mm}{0.35pt}}}}
+
+\questionblock{2.}{Sudah berapa lama bekerja di sini?}{\choiceitem{\textless{} 6 bulan}\quad \choiceitem{6-12 bulan}\quad \choiceitem{\textgreater{} 1 tahun}}
+
+\questionblock{3.}{Pesanan paling ramai biasanya dari mana?}{\choiceitem{Makan di tempat}\quad \choiceitem{Bungkus}\quad \choiceitem{GrabFood}\quad \choiceitem{GoFood}\quad \choiceitem{ShopeeFood}}
+
+\questionblock{4.}{Jam paling ramai biasanya kapan?}{\choiceitem{Pagi}\quad \choiceitem{Siang}\quad \choiceitem{Sore}\quad \choiceitem{Malam}\quad \choiceitem{Akhir pekan}}
+
+\questionblock{5.}{Menu apa yang paling sering dipesan pelanggan?}{Sebutkan 2-3 menu.}
+\answerline
+
+\questionblock{6.}{Menurut Kakak, kenapa pelanggan sering memilih menu itu?}{\choiceitem{Rasa}\quad \choiceitem{Porsi}\quad \choiceitem{Harga}\quad \choiceitem{Cepat siap}\quad \choiceitem{Promo}\quad \choiceitem{Sudah terkenal}}
+
+\questionblock{7.}{Rentang harga menu yang paling sering dibeli pelanggan biasanya berapa?}{\choiceitem{\textless{} Rp20.000}\quad \choiceitem{Rp20.000-Rp35.000}\quad \choiceitem{Rp35.000-Rp50.000}\quad \choiceitem{\textgreater{} Rp50.000}}
+
+\questionblock{8.}{Apakah pelanggan sering memakai promo/voucher aplikasi?}{\choiceitem{Sering}\quad \choiceitem{Kadang-kadang}\quad \choiceitem{Jarang}\quad \choiceitem{Tidak tahu}}
+
+\questionblock{9.}{Kalau pesanan online ramai, kendala yang paling sering muncul apa?}{\choiceitem{Menu habis}\quad \choiceitem{Salah item}\quad \choiceitem{Lama siap}\quad \choiceitem{Catatan pelanggan terlewat}\quad \choiceitem{Driver menunggu}\quad \choiceitem{Lainnya: \textcolor{LineGray}{\rule{20mm}{0.35pt}}}}
+
+\questionblock{10.}{Keluhan pelanggan yang paling sering terdengar biasanya tentang apa?}{\choiceitem{Rasa}\quad \choiceitem{Porsi}\quad \choiceitem{Harga}\quad \choiceitem{Lama}\quad \choiceitem{Pesanan kurang lengkap}\quad \choiceitem{Kemasan}\quad \choiceitem{Jarang ada keluhan}}
+
+\questionblock{11.}{Sebelum pesanan diberikan ke pelanggan/driver, biasanya dicek dulu apa saja?}{\choiceitem{Item pesanan}\quad \choiceitem{Lauk}\quad \choiceitem{Kuah/sambal}\quad \choiceitem{Minuman}\quad \choiceitem{Catatan khusus}\quad \choiceitem{Tidak selalu dicek}}
+
+\questionblock{12.}{Menurut Kakak, hal apa yang paling membuat pelanggan balik lagi ke restoran ini?}{\choiceitem{Rasa}\quad \choiceitem{Harga}\quad \choiceitem{Porsi}\quad \choiceitem{Pelayanan cepat}\quad \choiceitem{Reputasi restoran}\quad \choiceitem{Lokasi}\quad \choiceitem{Promo}}
+
+\sectionbar{Pertanyaan Terbuka}
+\Needspace{8\baselineskip}
+\textbf{Kalau dibanding rumah makan Padang lain di sekitar sini, menurut Kakak keunggulan restoran ini apa?}
+\answerline
+\answerline
+
+\end{document}

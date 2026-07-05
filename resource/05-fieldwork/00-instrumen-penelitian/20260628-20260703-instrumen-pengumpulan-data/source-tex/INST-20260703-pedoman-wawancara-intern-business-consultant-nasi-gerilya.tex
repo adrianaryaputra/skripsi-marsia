@@ -1,0 +1,193 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=17mm,bottom=18mm,left=16mm,right=16mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\setmainfont{Arial}
+\setsansfont{Arial}
+
+\definecolor{Primary}{HTML}{235347}
+\definecolor{Accent}{HTML}{E98B2A}
+\definecolor{Soft}{HTML}{EEF4F1}
+\definecolor{LineGray}{HTML}{B7C3BE}
+\definecolor{TextGray}{HTML}{4E5A56}
+
+\newcommand{\documentlabel}{Pedoman Wawancara Intern Business Consultant Nasi Gerilya}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=Primary,
+  urlcolor=Primary,
+  pdftitle={Pedoman Wawancara Intern Business Consultant Nasi Gerilya},
+  pdfauthor={Instrumen Penelitian Skripsi}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{Primary}{\documentlabel}}
+\fancyhead[R]{\small\textcolor{TextGray}{Versi Juli 2026}}
+\fancyfoot[C]{\small\textcolor{TextGray}{Halaman \thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.18}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
+\sloppy
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\sectionbar}[1]{%
+  \Needspace{4\baselineskip}
+  \vspace{4mm}
+  \noindent\colorbox{Soft}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \large\bfseries\textcolor{Primary}{#1}
+    }%
+  }\par\vspace{2mm}
+}
+
+\newcommand{\probe}[1]{%
+  \vspace{1mm}
+  \noindent{\small\textbf{\textcolor{Accent}{Probing:}} \textcolor{TextGray}{#1}}\par
+}
+
+\newcommand{\answerline}{%
+  \par\vspace{0.8mm}
+  \noindent\textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\par\vspace{2.8mm}
+}
+
+\newcommand{\questionblock}[4]{%
+  \Needspace{8\baselineskip}
+  \noindent\textbf{\textcolor{Primary}{#1. #2}}\par
+  \noindent #3\par
+  \probe{#4}
+  \answerline\answerline\answerline
+}
+
+\newcommand{\metadatafield}[1]{%
+  \textbf{\textcolor{Primary}{#1}}\par
+  \textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\par\vspace{2.4mm}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{9mm}
+{\Huge\bfseries\textcolor{Primary}{Pedoman Wawancara}}\par
+{\Huge\bfseries\textcolor{Primary}{Intern / Magang}}\par
+{\Huge\bfseries\textcolor{Primary}{Business Consultant}}\par
+\vspace{3mm}
+{\Large\textcolor{Accent}{Nasi Gerilya}}\par
+\vspace{7mm}
+\textcolor{Accent}{\rule{0.92\linewidth}{1.4pt}}\par
+\vspace{8mm}
+
+\begin{tabularx}{0.92\linewidth}{>{\bfseries\color{Primary}}p{35mm}Y}
+Jenis instrumen & Pedoman wawancara semi-terstruktur \\
+Target informan & Intern atau magang \textit{business consultant} yang pernah mengamati, mendampingi, atau memberi rekomendasi untuk Nasi Gerilya \\
+Fokus penelitian & Strategi pemasaran Nasi Gerilya pada GrabFood untuk meningkatkan penjualan berdasarkan analisis SWOT \\
+Tujuan wawancara & Menggali diagnosis bisnis, rekomendasi pemasaran, kendala implementasi, indikator evaluasi, serta masukan IFAS dan EFAS \\
+\end{tabularx}
+
+\vfill
+{\large\bfseries\textcolor{Primary}{Instrumen Penelitian Skripsi}}\par
+{\normalsize\textcolor{TextGray}{Disusun untuk kebutuhan pengumpulan data lapangan, 2026}}\par
+\end{titlepage}
+
+\sectionbar{Identitas Wawancara}
+
+\begin{tabularx}{\linewidth}{X X}
+\metadatafield{Nama informan} & \metadatafield{Tanggal wawancara} \\
+\metadatafield{Posisi / peran} & \metadatafield{Durasi keterlibatan} \\
+\metadatafield{Tempat / media wawancara} & \metadatafield{Kode informan} \\
+\end{tabularx}
+
+\sectionbar{Catatan untuk Pewawancara}
+
+Gunakan pedoman ini secara semi-terstruktur. Pertanyaan utama dapat ditanyakan berurutan, tetapi peneliti boleh menyesuaikan alur sesuai jawaban informan. Probing dipakai bila jawaban masih terlalu umum, belum menyebut contoh, atau belum menjelaskan dasar data.
+
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+  \item Minta informan menjelaskan pengalaman aktual selama magang, bukan hanya pendapat umum.
+  \item Pisahkan temuan berbasis data dengan asumsi atau saran pribadi.
+  \item Catat contoh konkret, angka, dokumen, atau observasi yang disebut informan.
+  \item Hubungkan jawaban dengan kekuatan, kelemahan, peluang, dan ancaman Nasi Gerilya.
+\end{itemize}
+
+\sectionbar{Pemetaan Tema Wawancara}
+
+\begin{tabularx}{\linewidth}{|p{31mm}|Y|Y|}
+\hline
+\textbf{\textcolor{Primary}{Tema}} & \textbf{\textcolor{Primary}{Fokus Data}} & \textbf{\textcolor{Primary}{Kaitan Analisis}} \\ \hline
+Profil peran & Ruang lingkup magang, tugas, koordinasi, dan batas keterlibatan informan. & Menentukan kredibilitas dan batas informasi informan. \\ \hline
+Diagnosis bisnis & Data penjualan, pelanggan, menu, ulasan, promo, operasional, dan kompetitor. & Menjadi dasar pembacaan masalah pemasaran. \\ \hline
+Strategi GrabFood & Segmentasi, positioning, produk, harga, promo, tampilan toko digital, dan proses layanan. & Menggali strategi pemasaran pada platform GrabFood. \\ \hline
+Persaingan & Perbandingan dengan rumah makan Padang atau kompetitor makanan sejenis di sekitar lokasi dan platform. & Menjadi input peluang dan ancaman eksternal. \\ \hline
+Evaluasi dan SWOT & KPI, hambatan implementasi, kekuatan, kelemahan, peluang, ancaman, dan prioritas rekomendasi. & Menjadi bahan IFAS, EFAS, dan matriks SWOT. \\ \hline
+\end{tabularx}
+
+\sectionbar{A. Profil Peran dan Konteks Magang}
+
+\questionblock{W-BC-01}{Peran informan}{Bisa dijelaskan peran Anda sebagai intern atau magang \textit{business consultant} di Nasi Gerilya?}{Sejak kapan terlibat, tugas utama apa yang dikerjakan, dan dengan siapa paling sering berkoordinasi?}
+
+\questionblock{W-BC-02}{Tujuan pendampingan}{Masalah bisnis atau pemasaran apa yang menjadi fokus utama selama Anda membantu Nasi Gerilya?}{Apakah fokusnya peningkatan penjualan, promosi, menu, operasional, kanal online, kompetitor, atau hal lain?}
+
+\questionblock{W-BC-03}{Batas keterlibatan}{Bagian mana dari kegiatan Nasi Gerilya yang Anda amati langsung, dan bagian mana yang hanya Anda ketahui dari cerita atau data pihak lain?}{Apakah Anda ikut observasi toko, membaca data penjualan, berdiskusi dengan pemilik, atau memantau platform GrabFood?}
+
+\sectionbar{B. Diagnosis Bisnis dan Data Awal}
+
+\questionblock{W-BC-04}{Sumber data}{Data atau informasi apa saja yang Anda gunakan untuk memahami kondisi Nasi Gerilya?}{Data pesanan, omzet, menu terlaris, ulasan, rating, promo, observasi lapangan, wawancara internal, atau kompetitor.}
+
+\questionblock{W-BC-05}{Masalah utama}{Dari data atau pengamatan tersebut, masalah apa yang paling terlihat pada pemasaran Nasi Gerilya?}{Apakah masalahnya di visibilitas toko, harga, promo, menu, stok, kecepatan layanan, rating, atau persaingan?}
+
+\questionblock{W-BC-06}{Peran GrabFood}{Bagaimana penilaian Anda terhadap peran GrabFood dalam penjualan Nasi Gerilya?}{Apa kelebihan dan kekurangan GrabFood dibanding pembelian langsung atau platform pesan antar lain?}
+
+\sectionbar{C. Strategi Pemasaran GrabFood}
+
+\questionblock{W-BC-07}{Pelanggan target}{Menurut Anda, pelanggan seperti apa yang paling potensial disasar Nasi Gerilya melalui GrabFood?}{Pekerja sekitar, mahasiswa, keluarga, pelanggan promo, pelanggan sekitar lokasi, pelanggan makan siang, atau segmen lain.}
+
+\questionblock{W-BC-08}{Positioning}{Citra apa yang sebaiknya paling dikuatkan oleh Nasi Gerilya di GrabFood?}{Porsi besar, rasa lauk, masakan Padang praktis, harga promo, jarak dekat, menu tertentu, atau kecepatan layanan.}
+
+\questionblock{W-BC-09}{Menu unggulan}{Menu apa yang paling layak dijadikan andalan untuk menarik pesanan GrabFood?}{Dendeng bakar, ayam pop, ayam goreng, paket nasi, add-on, menu hemat, atau variasi menu lain.}
+
+\questionblock{W-BC-10}{Harga dan promo}{Bagaimana penilaian Anda terhadap harga, diskon, voucher, dan ongkir Nasi Gerilya di GrabFood?}{Apakah harga online terasa kompetitif, promo mendorong pesanan, dan margin masih aman?}
+
+\questionblock{W-BC-11}{Tampilan toko digital}{Bagian apa dari tampilan toko Nasi Gerilya di GrabFood yang perlu diperbaiki?}{Foto menu, nama menu, deskripsi, kategori, status stok, rating, ulasan, atau susunan menu.}
+
+\questionblock{W-BC-12}{Aktivitas promosi}{Promosi seperti apa yang menurut Anda paling cocok untuk mendorong pesanan GrabFood Nasi Gerilya?}{Voucher, bundling, paket jam makan siang, konten media sosial, menu hero, atau kerja sama promosi.}
+
+\sectionbar{D. Persaingan, Layanan, dan Operasional}
+
+\questionblock{W-BC-13}{Kompetitor relevan}{Kompetitor mana yang paling relevan dibandingkan dengan Nasi Gerilya, dan apa alasannya?}{Bandingkan dari rating, jumlah ulasan, harga, jarak, menu unggulan, reputasi, dan promo.}
+
+\questionblock{W-BC-14}{Pembeda usaha}{Apa pembeda utama Nasi Gerilya yang bisa dijadikan kekuatan strategi?}{Apakah pembeda berasal dari rasa, porsi, lokasi, menu tertentu, layanan, pelanggan loyal, atau fleksibilitas promosi?}
+
+\questionblock{W-BC-15}{Kendala layanan}{Kendala operasional apa yang paling mungkin memengaruhi kepuasan pelanggan GrabFood?}{Waktu proses, stok menu, item kurang, catatan pelanggan, kemasan, koordinasi admin-dapur, atau penanganan komplain.}
+
+\sectionbar{E. Evaluasi, SWOT, dan Rekomendasi}
+
+\questionblock{W-BC-16}{Kelemahan utama}{Kelemahan apa yang paling perlu diperbaiki agar strategi GrabFood lebih efektif?}{Konsistensi menu, harga, tampilan digital, stok, kecepatan layanan, data, SDM, atau pengelolaan promo.}
+
+\questionblock{W-BC-17}{Peluang dan ancaman}{Peluang apa yang masih bisa dimanfaatkan, dan ancaman apa yang paling perlu diantisipasi Nasi Gerilya?}{Peluang dari pelanggan sekitar, jam makan siang, promo platform, ulasan positif; ancaman dari pesaing, biaya platform, harga bahan, rating negatif, atau pelanggan sensitif harga.}
+
+\questionblock{W-BC-18}{Indikator evaluasi}{Indikator apa yang sebaiknya dipakai untuk menilai keberhasilan strategi GrabFood?}{Jumlah pesanan, omzet, rata-rata nilai transaksi, repeat order, rating, komplain, menu habis, biaya promo, atau margin.}
+
+\questionblock{W-BC-19}{Prioritas strategi}{Jika hanya boleh memilih tiga prioritas perbaikan, apa yang harus dilakukan Nasi Gerilya terlebih dahulu?}{Mengapa prioritas itu dipilih, seberapa mudah dijalankan, dan apa dampaknya terhadap penjualan atau kepuasan pelanggan?}
+
+\questionblock{W-BC-20}{Validasi rekomendasi}{Dari semua temuan dan rekomendasi Anda, mana yang paling kuat datanya dan mana yang masih perlu diuji lagi?}{Data tambahan apa yang perlu dikumpulkan agar rekomendasi lebih meyakinkan?}
+
+\sectionbar{Pertanyaan Penutup}
+
+\questionblock{W-BC-21}{Tambahan informan}{Apakah ada hal penting tentang strategi Nasi Gerilya di GrabFood yang belum sempat ditanyakan?}{Minta informan menambahkan catatan bebas, contoh kasus, atau saran praktis yang dianggap penting.}
+
+\end{document}
