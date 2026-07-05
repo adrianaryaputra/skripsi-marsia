@@ -288,6 +288,8 @@
 \newcommand{\skripsi@tableheadcolor}{black!12}
 \newcommand{\skripsi@tablerulecolor}{black!60}
 \newcolumntype{Z}[1]{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}p{#1}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{J}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}l}
 \newcolumntype{V}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}Y}
 \renewcommand{\toprule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline\rowcolor{\skripsi@tableheadcolor}}
@@ -306,11 +308,8 @@
   \arrayrulecolor{\skripsi@tablerulecolor}%
 }
 \AtBeginEnvironment{longtable}{%
-  \footnotesize
   \singlespacing
   \arrayrulecolor{\skripsi@tablerulecolor}%
-  \setlength{\tabcolsep}{4.5pt}%
-  \renewcommand{\arraystretch}{1.12}%
 }
 
 \newcommand{\continuedtabletitle}[1]{%
