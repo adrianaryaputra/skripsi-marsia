@@ -77,10 +77,11 @@
 \setlength{\emergencystretch}{2em}
 \raggedbottom
 
-% Disable Widow/Orphan
-\clubpenalty=0
-\widowpenalty=0
-\displaywidowpenalty=0
+% Avoid single orphan/widow lines at page breaks.
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=10000
 
 % Justify alignment is default in LaTeX.
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
