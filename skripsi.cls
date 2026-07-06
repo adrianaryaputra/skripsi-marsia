@@ -982,7 +982,7 @@
     \singlespacing
 
     % SKRIPSI
-    {\normalsize \textbf{PROPOSAL SKRIPSI}}\\[12pt] % After: 12 (Double)
+    {\normalsize \textbf{SKRIPSI}}\\[12pt] % After: 12 (Double)
 
     % JUDUL (Sampan terbalik requires careful line breaking or centering, 
     % user can format it using \\ in their \title command)
