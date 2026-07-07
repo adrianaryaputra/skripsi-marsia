@@ -1,0 +1,41 @@
+\documentclass{skripsi}
+
+\input{metadata/skripsi}
+
+% Tambahkan .bib file untuk daftar pustaka
+\addbibresource{referensi.bib}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+
+% -------------------------------------------------------------------
+% BAGIAN AWAL (FRONTMATTER)
+% -------------------------------------------------------------------
+\pagenumbering{roman} % Halaman angka romawi kecil (i, ii, iii)
+\pagestyle{plain} % Halaman diletakkan di bawah-tengah
+
+\makecover
+
+\input{frontmatter/daftar}
+
+% -------------------------------------------------------------------
+% BAGIAN ISI (MAINMATTER)
+% -------------------------------------------------------------------
+\clearpage
+\pagenumbering{arabic} % Halaman menggunakan angka arab (1, 2, 3)
+\pagestyle{skripsi_standard} % Halaman isi selain pembuka bab di kanan atas
+
+\input{chapters/01-pendahuluan}
+\input{chapters/02-tinjauan-pustaka}
+\input{chapters/03-metodologi-penelitian}
+
+% -------------------------------------------------------------------
+% BAGIAN AKHIR (BACKMATTER)
+% -------------------------------------------------------------------
+\input{backmatter/daftar-pustaka}
+\input{appendices/01-observasi-grabfood-nasi-gerilya-dan-kompetitor}
+\input{appendices/02-wawancara-awal-pemilik-nasi-gerilya}
+\input{appendices/03-dokumentasi-indeks-kinerja-nasi-gerilya-dan-kompetitor-grabfood}
+
+\end{document}
