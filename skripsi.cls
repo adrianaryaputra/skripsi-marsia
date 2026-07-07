@@ -77,10 +77,11 @@
 \setlength{\emergencystretch}{2em}
 \raggedbottom
 
-% Disable Widow/Orphan
-\clubpenalty=0
-\widowpenalty=0
-\displaywidowpenalty=0
+% Avoid single orphan/widow lines at page breaks.
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=10000
 
 % Justify alignment is default in LaTeX.
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
@@ -154,8 +155,8 @@
 {1em}
 {}
 
-% Spacing for SUBBAB: Before 12pt, After 12pt
-\titlespacing*{\section}{0pt}{12pt}{12pt}
+% Spacing for SUBBAB: keep before spacing, match paragraph spacing after.
+\titlespacing*{\section}{0pt}{12pt}{0pt}
 
 % SUBSUBBAB (1.1.1)
 \titleformat{\subsection}
@@ -163,7 +164,7 @@
 {\thesubsection}
 {1em}
 {}
-\titlespacing*{\subsection}{0pt}{12pt}{12pt}
+\titlespacing*{\subsection}{0pt}{12pt}{0pt}
 
 % SUB-SUBBAB dan level di bawahnya
 \newlength{\skripsi@subsubsectionindent}
@@ -190,7 +191,7 @@
 {0pt}
 {}
 [\skripsi@setbodyindent{\skripsi@subsubsubsectionindent}]
-\titlespacing*{\subsubsection}{\skripsi@subsubsectionindent}{12pt}{12pt}
+\titlespacing*{\subsubsection}{\skripsi@subsubsectionindent}{12pt}{0pt}
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}
@@ -198,7 +199,7 @@
 {0pt}
 {}
 [\skripsi@setbodyindent{\skripsi@subsubsubsubsectionindent}]
-\titlespacing*{\paragraph}{\skripsi@subsubsubsectionindent}{12pt}{12pt}
+\titlespacing*{\paragraph}{\skripsi@subsubsubsectionindent}{12pt}{0pt}
 
 \titleformat{\subparagraph}
 {\normalfont\normalsize\bfseries}
@@ -206,10 +207,10 @@
 {0pt}
 {}
 [\skripsi@setbodyindent{\skripsi@subsubsubsubsubsectionindent}]
-\titlespacing*{\subparagraph}{\skripsi@subsubsubsubsectionindent}{12pt}{12pt}
+\titlespacing*{\subparagraph}{\skripsi@subsubsubsubsectionindent}{12pt}{0pt}
 
 \newcommand{\subsubsubsubsubsection}{%
-  \@startsection{subsubsubsubsubsection}{6}{\z@}{12pt}{12pt}{\normalfont\normalsize\bfseries}%
+  \@startsection{subsubsubsubsubsection}{6}{\z@}{12pt}{0pt}{\normalfont\normalsize\bfseries}%
 }
 \titleformat{\subsubsubsubsubsection}
 {\normalfont\normalsize\bfseries}
@@ -217,7 +218,7 @@
 {0pt}
 {}
 [\skripsi@setbodyindent{\skripsi@subsubsubsubsubsubsectionindent}]
-\titlespacing*{\subsubsubsubsubsection}{\skripsi@subsubsubsubsubsectionindent}{12pt}{12pt}
+\titlespacing*{\subsubsubsubsubsection}{\skripsi@subsubsubsubsubsectionindent}{12pt}{0pt}
 
 \let\subsubsubsection\paragraph
 \let\subsubsubsubsection\subparagraph
@@ -250,7 +251,7 @@
 }
 
 \newcommand{\tablesource}[2][\textwidth]{%
-  \par\vspace{2pt}%
+  \par\nointerlineskip\vspace{-7pt}%
   \begingroup
   \normalfont\footnotesize\singlespacing
   \noindent\begin{minipage}{#1}%
@@ -260,7 +261,7 @@
 }
 
 \newcommand{\figuresource}[2][\textwidth]{%
-  \par\vspace{0pt}%
+  \par\nointerlineskip\vspace{-7pt}%
   \begingroup
   \normalfont\footnotesize\singlespacing
   \noindent\makebox[\linewidth][c]{%
@@ -287,9 +288,12 @@
 \setlength{\cmidrulewidth}{0.05em}
 \newcommand{\skripsi@tableheadcolor}{black!12}
 \newcommand{\skripsi@tablerulecolor}{black!60}
-\newcolumntype{Z}[1]{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}p{#1}}
-\newcolumntype{J}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}l}
-\newcolumntype{V}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=10000\exhyphenpenalty=10000\relax}Y}
+\newcolumntype{Z}[1]{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=50\exhyphenpenalty=0\relax}p{#1}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
+\newcolumntype{J}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=50\exhyphenpenalty=0\relax}l}
+\newcolumntype{V}{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=50\exhyphenpenalty=0\relax}Y}
 \renewcommand{\toprule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline\rowcolor{\skripsi@tableheadcolor}}
 \renewcommand{\midrule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline}
 \renewcommand{\bottomrule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline}
@@ -306,11 +310,8 @@
   \arrayrulecolor{\skripsi@tablerulecolor}%
 }
 \AtBeginEnvironment{longtable}{%
-  \footnotesize
   \singlespacing
   \arrayrulecolor{\skripsi@tablerulecolor}%
-  \setlength{\tabcolsep}{4.5pt}%
-  \renewcommand{\arraystretch}{1.12}%
 }
 
 \newcommand{\continuedtabletitle}[1]{%
@@ -320,13 +321,13 @@
 % Keep table/figure-to-text spacing close to the guide and avoid stretched gaps.
 \AtBeginDocument{%
   \setlength{\tableposttextsep}{6pt}%
-  \setlength{\LTpost}{\tableposttextsep}%
+  \setlength{\LTpost}{0pt}%
   \setlength{\textfloatsep}{\tableposttextsep}%
   \setlength{\intextsep}{\tableposttextsep}%
 }
 
-% Prefer top placement for all table and figure floats.
-\def\fps@table{!t}
+% Let tables follow nearby text while still allowing top/bottom/float pages.
+\def\fps@table{!htbp}
 \def\fps@figure{!t}
 \setcounter{topnumber}{5}
 \setcounter{bottomnumber}{0}
@@ -341,6 +342,64 @@
 
 % Spacing before/after floats (tables/figures)
 \setlength{\floatsep}{6pt}
+
+\newcommand{\skripsi@addfloattolist}[2]{%
+  \begingroup
+    \let\@elt\relax
+    \xdef\skripsi@fb@tmp{#1\noexpand\@elt\noexpand#2}%
+  \endgroup
+  \global\let#1\skripsi@fb@tmp
+}
+
+\newcommand{\skripsi@splitfloatlist}[3]{%
+  \global\let#2\@empty
+  \global\let#3\@empty
+  \begingroup
+    \def\@elt##1{%
+      \@tempcnta\count##1\relax
+      \divide\@tempcnta\@xxxii
+      \ifnum\@tempcnta=\ftype@table\relax
+        \skripsi@addfloattolist#2{##1}%
+      \else
+        \skripsi@addfloattolist#3{##1}%
+      \fi
+    }%
+    #1%
+  \endgroup
+}
+
+\newcommand{\TableFloatBarrier}{%
+  \par
+  \begingroup
+    \let\@elt\relax
+    \skripsi@splitfloatlist{\@botlist}{\skripsi@fb@tablebot}{\skripsi@fb@otherbot}%
+    \skripsi@splitfloatlist{\@deferlist}{\skripsi@fb@tabledefer}{\skripsi@fb@otherdefer}%
+    \skripsi@splitfloatlist{\@dbldeferlist}{\skripsi@fb@tabledbldefer}{\skripsi@fb@otherdbldefer}%
+    \edef\skripsi@fb@tables{\skripsi@fb@tablebot\skripsi@fb@tabledefer\skripsi@fb@tabledbldefer}%
+    \ifx\skripsi@fb@tables\@empty
+      \global\let\skripsi@fb@needed\@empty
+    \else
+      \global\let\skripsi@fb@needed\relax
+      \global\let\@botlist\skripsi@fb@tablebot
+      \global\let\@deferlist\skripsi@fb@tabledefer
+      \global\let\@dbldeferlist\skripsi@fb@tabledbldefer
+    \fi
+  \endgroup
+  \ifx\skripsi@fb@needed\@empty
+  \else
+    \begingroup
+      \let\@fb@topbarrier\relax
+      \FloatBarrier
+    \endgroup
+    \begingroup
+      \let\@elt\relax
+      \xdef\@botlist{\@botlist\skripsi@fb@otherbot}%
+      \xdef\@deferlist{\@deferlist\skripsi@fb@otherdefer}%
+      \xdef\@dbldeferlist{\@dbldeferlist\skripsi@fb@otherdbldefer}%
+    \endgroup
+  \fi
+}
+\AfterEndEnvironment{table}{\TableFloatBarrier}
 
 % -------------------------------------------------------------------
 % 6. LISTS (DAFTAR) FORMATTING
@@ -420,10 +479,13 @@
 \setlength{\skripsi@listtitlewidth}{\dimexpr\skripsi@listpageleft-\skripsi@listnumwidth\relax}
 \setlength{\skripsi@listlinewidth}{\dimexpr\skripsi@listpageleft+\skripsi@listpagewidth\relax}
 \newcommand{\skripsi@listsinglespacing}{\setstretch{\setspace@singlespace}}
+\newcommand{\skripsi@listspacingsetup}{%
+  \skripsi@listsinglespacing
+  \parskip \z@
+}
 \newcommand{\skripsi@listheader}[1]{%
   \par\nobreak
-  \vspace{12pt}%
-  {\normalfont\skripsi@listsinglespacing
+  {\normalfont\skripsi@listspacingsetup
     \parskip \z@
     \noindent
     \makebox[\skripsi@listlinewidth][l]{%
@@ -434,6 +496,7 @@
 }
 \newcommand{\skripsi@afterlisttitle}[1]{%
   \hfill\mbox{}%
+  \par\nobreak\vspace{15pt}%
   \skripsi@listheader{#1}%
 }
 \renewcommand{\cftlottitlefont}{\hfill\normalsize\bfseries\MakeUppercase}
@@ -494,7 +557,7 @@
 \renewcommand{\cftsecaftersnum}{\hspace{0.35em}}
 \renewcommand{\cftsubsecaftersnum}{\hspace{0.15em}}
 \renewcommand{\cftsubsubsecaftersnum}{\hspace{0.35em}}
-\renewcommand{\cftchapafterpnum}{\vskip 6pt}
+\renewcommand{\cftchapafterpnum}{}
 
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots for section
@@ -505,7 +568,6 @@
   \makebox[\skripsi@listpagewidth][r]{\normalfont #1}\par
 }
 \newcommand{\skripsi@listline}[8]{%
-  \vskip #1%
   {\leftskip #2\relax
     \hsize \skripsi@listlinewidth
     \rightskip \skripsi@listpagewidth
@@ -513,7 +575,7 @@
     \parfillskip -\rightskip
     \parindent #2\relax\@afterindenttrue
     \interlinepenalty\@M
-    \skripsi@listsinglespacing
+    \skripsi@listspacingsetup
     \skripsi@toctextsetup
     \leavevmode
     \@tempdima #3\relax
@@ -533,30 +595,37 @@
 \renewcommand*{\l@lampiran}[2]{%
   \skripsi@listline{\cftbeforelampiranskip}{\cftlampiranindent}{\cftlampirannumwidth}%
   {\cftlampiranpresnum}{\cftlampiranaftersnum}{\cftlampiranaftersnumb}{#1}{#2}}
-\let\skripsi@origlistoffigures\listoffigures
-\let\skripsi@origlistoftables\listoftables
-\let\skripsi@origlistoflampiran\listoflampiran
-\renewcommand{\listoffigures}{%
-  \begingroup
-  \let\addvspace\@gobble
-  \skripsi@origlistoffigures
-  \endgroup}
-\renewcommand{\listoftables}{%
-  \begingroup
-  \let\addvspace\@gobble
-  \skripsi@origlistoftables
-  \endgroup}
-\renewcommand{\listoflampiran}{%
-  \begingroup
-  \let\addvspace\@gobble
-  \skripsi@origlistoflampiran
-  \endgroup}
+\AtBeginDocument{%
+  \let\skripsi@origlistoffigures\listoffigures
+  \let\skripsi@origlistoftables\listoftables
+  \let\skripsi@origlistoflampiran\listoflampiran
+  \renewcommand{\listoffigures}{%
+    \begingroup
+    \skripsi@listspacingsetup
+    \let\addvspace\@gobble
+    \skripsi@origlistoffigures
+    \endgroup}%
+  \renewcommand{\listoftables}{%
+    \begingroup
+    \skripsi@listspacingsetup
+    \let\addvspace\@gobble
+    \skripsi@origlistoftables
+    \endgroup}%
+  \renewcommand{\listoflampiran}{%
+    \begingroup
+    \skripsi@listspacingsetup
+    \let\addvspace\@gobble
+    \skripsi@origlistoflampiran
+    \endgroup}%
+}
 \newcommand{\cftbabchapfillnum}[1]{%
   {\cftchapleader}\nobreak
   \makebox[\@pnumwidth][\cftpnumalign]{\cftchappagefont #1}\cftchapafterpnum\par
 }
 \newif\ifskripsi@toclastchapterlike
 \skripsi@toclastchapterlikefalse
+\newif\ifskripsi@tocafterbabblock
+\skripsi@tocafterbabblockfalse
 
 \newcommand{\skripsi@toctextsetup}{%
   \finalhyphendemerits=100000\relax
@@ -569,7 +638,11 @@
 \renewcommand*{\l@chapter}[2]{%
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
-    \vskip \cftbeforechapskip
+    \ifskripsi@tocafterbabblock
+      \vskip \cftbeforebabchapskip
+    \else
+      \vskip \cftbeforechapskip
+    \fi
     {\leftskip \cftchapindent\relax
       \rightskip \@tocrmarg
       \parfillskip -\rightskip
@@ -583,7 +656,8 @@
       \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
       {\cftchapfont #1}\nobreak
       \cftchapfillnum{#2}}%
-    \global\skripsi@toclastchapterliketrue
+    \global\skripsi@toclastchapterlikefalse
+    \global\skripsi@tocafterbabblockfalse
   \fi}
 
 \renewcommand*{\l@section}[2]{%
@@ -654,7 +728,7 @@
 \newcommand*{\l@babchapter}[2]{%
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
-    \ifskripsi@toclastchapterlike\else\vskip \cftbeforebabchapskip\fi
+    \vskip \cftbeforebabchapskip
     {\leftskip \cftchapindent\relax
       \rightskip \@tocrmarg
       \parfillskip -\rightskip
@@ -669,19 +743,28 @@
       {\cftchapfont #1}\nobreak
       \cftbabchapfillnum{#2}}%
     \global\skripsi@toclastchapterliketrue
+    \global\skripsi@tocafterbabblocktrue
   \fi}
 
 \patchcmd{\@chapter}
 {\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}}
 {\addcontentsline{toc}{babchapter}{\protect\numberline{BAB \Roman{chapter}}#1}}
 {}{}
+\patchcmd{\@chapter}
+{\addtocontents{lof}{\protect\addvspace{10\p@}}}
+{}
+{}{}
+\patchcmd{\@chapter}
+{\addtocontents{lot}{\protect\addvspace{10\p@}}}
+{}
+{}{}
 \pretocmd{\chapter}{\skripsi@resetbodyindent}{}{}
-\pretocmd{\section}{\FloatBarrier\skripsi@resetbodyindent}{}{}
-\pretocmd{\subsection}{\FloatBarrier\skripsi@resetbodyindent}{}{}
-\pretocmd{\subsubsection}{\FloatBarrier\skripsi@resetbodyindent}{}{}
-\pretocmd{\paragraph}{\skripsi@resetbodyindent}{}{}
-\pretocmd{\subparagraph}{\skripsi@resetbodyindent}{}{}
-\pretocmd{\subsubsubsubsubsection}{\skripsi@resetbodyindent}{}{}
+\pretocmd{\section}{\TableFloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\subsection}{\TableFloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\subsubsection}{\TableFloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\paragraph}{\TableFloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\subparagraph}{\TableFloatBarrier\skripsi@resetbodyindent}{}{}
+\pretocmd{\subsubsubsubsubsection}{\TableFloatBarrier\skripsi@resetbodyindent}{}{}
 
 \setlength{\bibitemsep}{6pt}
 \setlength{\bibhang}{1.25cm}
@@ -711,17 +794,17 @@
     }%
   }%
 }
-
 \newcommand{\lampiransection}[1]{%
   \clearpage
   \ifskripsi@appendixstarted\else
+    \phantomsection
     \addcontentsline{toc}{chapter}{LAMPIRAN}%
     \skripsi@disableappendixtoc
     \global\skripsi@appendixstartedtrue
+    {\centering\normalsize\bfseries LAMPIRAN\par}%
+    \vspace{-5pt}%
   \fi
   \lampiranentry{#1}%
-  \addtocontents{lot}{\protect\addvspace{10\p@}}%
-  \addtocontents{lof}{\protect\addvspace{10\p@}}%
   \setcounter{chapter}{\value{lampiran}}% Make \section number start with A, B, C...
   \setcounter{section}{0}%
   \setcounter{table}{0}%
@@ -729,12 +812,16 @@
   \renewcommand{\thechapter}{\thelampiran}%
   \thispagestyle{plain}%
   \begingroup
-  \centering
-  {\normalsize\bfseries LAMPIRAN \thelampiran\par}%
-  \vspace{12pt}%
-  {\normalsize\bfseries \MakeUppercase{#1}\par}%
+  \singlespacing
+  \RaggedRight
+  \setlength{\parskip}{0pt}%
+  \settowidth{\@tempdima}{\normalsize\bfseries LAMPIRAN \thelampiran{} :\space}%
+  \noindent\hangindent=\@tempdima
+  \hangafter=1
+  {\normalsize\bfseries
+    \makebox[\@tempdima][l]{LAMPIRAN \thelampiran{} : }%
+    \MakeUppercase{#1}\par}%
   \endgroup
-  \vspace{12pt}%
 }
 
 % -------------------------------------------------------------------
@@ -896,7 +983,7 @@
     \singlespacing
 
     % SKRIPSI
-    {\normalsize \textbf{PROPOSAL SKRIPSI}}\\[12pt] % After: 12 (Double)
+    {\normalsize \textbf{SKRIPSI}}\\[12pt] % After: 12 (Double)
 
     % JUDUL (Sampan terbalik requires careful line breaking or centering, 
     % user can format it using \\ in their \title command)

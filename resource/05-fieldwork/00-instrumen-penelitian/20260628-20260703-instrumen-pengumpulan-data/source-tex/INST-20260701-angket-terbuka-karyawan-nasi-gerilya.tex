@@ -1,0 +1,287 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=17mm,bottom=18mm,left=16mm,right=16mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\setmainfont{Arial}
+\setsansfont{Arial}
+
+\definecolor{Primary}{HTML}{235347}
+\definecolor{Accent}{HTML}{E98B2A}
+\definecolor{Soft}{HTML}{EEF4F1}
+\definecolor{LineGray}{HTML}{B7C3BE}
+\definecolor{TextGray}{HTML}{4E5A56}
+
+\newcommand{\documentlabel}{Pedoman Wawancara Terbuka Karyawan Nasi Gerilya}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=Primary,
+  urlcolor=Primary,
+  pdftitle={Pedoman Wawancara Terbuka Karyawan Nasi Gerilya},
+  pdfauthor={Instrumen Penelitian Skripsi}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{Primary}{\documentlabel}}
+\fancyhead[R]{\small\textcolor{TextGray}{Versi Juli 2026}}
+\fancyfoot[C]{\small\textcolor{TextGray}{Halaman \thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
+\sloppy
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\sectionbar}[1]{%
+  \Needspace{4\baselineskip}
+  \vspace{4mm}
+  \noindent\colorbox{Soft}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \large\bfseries\textcolor{Primary}{#1}
+    }%
+  }\par\vspace{2mm}
+}
+
+\newcommand{\subsectionbar}[1]{%
+  \Needspace{3\baselineskip}
+  \vspace{2.5mm}
+  {\normalsize\bfseries\textcolor{Accent}{#1}}\par
+  \textcolor{Accent}{\rule{0.28\linewidth}{0.7pt}}\par\vspace{1mm}
+}
+
+\newcommand{\answerline}{%
+  \par\vspace{0.9mm}
+  \noindent\textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\par\vspace{3mm}
+}
+
+\newcommand{\question}[1]{%
+  \Needspace{4.5\baselineskip}
+  \item #1
+  \answerline
+}
+
+\newcommand{\widefield}[1]{%
+  \Needspace{3\baselineskip}
+  \textbf{#1}\par
+  \noindent\textcolor{LineGray}{\rule{\linewidth}{0.35pt}}\par\vspace{2.7mm}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{10mm}
+{\Huge\bfseries\textcolor{Primary}{Pedoman Wawancara}}\par
+{\Huge\bfseries\textcolor{Primary}{Terbuka Karyawan}}\par
+{\Huge\bfseries\textcolor{Primary}{Nasi Gerilya}}\par
+\vspace{4mm}
+{\Large\textcolor{Accent}{Instrumen Angket Terbuka Karyawan}}\par
+\vspace{4mm}
+{\large\textcolor{TextGray}{Versi terbaru: 01 Juli 2026}}\par
+\vspace{7mm}
+\textcolor{Accent}{\rule{0.92\linewidth}{1.4pt}}\par
+\vspace{10mm}
+
+\begin{tabularx}{\linewidth}{>{\bfseries\color{Primary}}p{36mm} Y}
+Topik penelitian & Strategi pemasaran Rumah Makan Nasi Gerilya pada platform GrabFood untuk meningkatkan penjualan berdasarkan analisis SWOT.\\
+Sasaran informan & Karyawan dapur, kasir, pelayanan, atau karyawan yang terlibat dalam operasional Nasi Gerilya dan pesanan GrabFood.\\
+Bentuk instrumen & Pertanyaan terbuka. Jawaban dapat ditulis langsung oleh informan atau dicatat oleh peneliti saat wawancara.\\
+Kerahasiaan & Identitas informan dijaga kerahasiaannya dan data digunakan hanya untuk keperluan penelitian.\\
+\end{tabularx}
+
+\vspace{9mm}
+\colorbox{Soft}{%
+  \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \raggedright
+    \textbf{\textcolor{Primary}{Petunjuk penggunaan:}}\par
+    Untuk karyawan dapur gunakan bagian A + B + C + E.\par
+    Untuk karyawan kasir gunakan bagian A + B + D + E.
+  }%
+}
+
+\vfill
+{\small\textcolor{TextGray}{Jawablah berdasarkan pengalaman kerja sehari-hari di Nasi Gerilya. Tidak ada jawaban benar atau salah. Ceritakan contoh nyata jika memungkinkan.}}
+\vspace*{8mm}
+\end{titlepage}
+
+\sectionbar{Identitas Singkat Informan}
+\widefield{Kode informan}
+\widefield{Tanggal wawancara atau pengisian}
+\widefield{Bagian kerja}
+\widefield{Shift atau jam kerja}
+\widefield{Catatan peneliti}
+
+\sectionbar{A. Pertanyaan Pembuka untuk Kedua Karyawan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Sejak kapan Anda bekerja di Nasi Gerilya?}
+\question{Bagaimana awalnya Anda bisa bekerja di Nasi Gerilya?}
+\question{Apa tugas utama Anda sehari-hari?}
+\question{Biasanya Anda mulai bekerja dari jam berapa sampai jam berapa?}
+\question{Kalau baru mulai buka, apa saja yang pertama kali dikerjakan?}
+\question{Kalau mau tutup, apa saja yang biasanya dibereskan?}
+\question{Bagaimana pembagian kerja antara bagian dapur dan bagian kasir?}
+\question{Menurut Anda, bagian pekerjaan apa yang paling berat di Nasi Gerilya? Ceritakan alasannya.}
+\end{enumerate}
+
+\sectionbar{B. Alur Kerja dan Kondisi Pesanan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Ceritakan alur kerja dari pesanan masuk sampai makanan diberikan ke pelanggan atau driver.}
+\question{Kapan biasanya pesanan paling ramai?}
+\question{Kapan biasanya pesanan paling sepi?}
+\question{Kalau pesanan sedang ramai, apa yang biasanya terjadi di tempat kerja?}
+\question{Kalau pesanan sedang ramai, bagaimana Anda dan karyawan lain membagi pekerjaan?}
+\question{Pernahkah pesanan menumpuk? Ceritakan bagaimana kejadiannya.}
+\question{Kesalahan apa yang pernah terjadi saat pesanan sedang banyak?}
+\question{Kalau ada kesalahan pesanan, biasanya siapa yang mengetahui lebih dulu?}
+\question{Bagaimana cara memperbaiki kesalahan pesanan tersebut?}
+\question{Menurut Anda, apa yang perlu diperbaiki supaya pekerjaan lebih lancar?}
+\end{enumerate}
+
+\sectionbar{C. Pertanyaan Khusus Karyawan Bagian Dapur}
+\subsectionbar{Persiapan dan Memasak}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Apa saja bahan makanan yang biasanya disiapkan sebelum mulai jualan?}
+\question{Bagaimana cara menentukan bahan yang harus dimasak lebih dulu?}
+\question{Menu apa yang paling sering dibuat?}
+\question{Menu apa yang paling lama dibuat?}
+\question{Menu apa yang paling mudah dibuat?}
+\question{Saat membuat pesanan, bagaimana Anda tahu pesanan mana yang harus dikerjakan dulu?}
+\question{Kalau ada banyak pesanan sekaligus, bagaimana cara Anda mengatur urutannya?}
+\question{Pernahkah makanan harus dibuat ulang? Ceritakan penyebabnya.}
+\question{Apa yang biasanya membuat proses memasak menjadi lambat?}
+\question{Apa yang membantu pekerjaan dapur menjadi lebih cepat?}
+\end{enumerate}
+
+\subsectionbar{Rasa, Porsi, dan Kualitas Makanan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Bagaimana cara Anda menjaga rasa makanan supaya tetap sama?}
+\question{Bagaimana cara Anda menentukan porsi untuk setiap pesanan?}
+\question{Apa yang Anda lakukan supaya porsi tidak berbeda-beda?}
+\question{Bagaimana cara memastikan makanan sudah matang dan siap diberikan?}
+\question{Apa yang biasanya dicek sebelum makanan dibungkus?}
+\question{Kalau ada pelanggan minta catatan khusus, bagaimana dapur menanganinya?}
+\question{Apa catatan khusus dari pelanggan yang paling sering diterima?}
+\question{Menurut Anda, bagian mana dari makanan Nasi Gerilya yang paling disukai pelanggan?}
+\question{Apa keluhan pelanggan tentang makanan yang pernah Anda dengar?}
+\question{Kalau makanan dikirim lewat GrabFood, apa yang perlu diperhatikan agar tetap enak sampai ke pelanggan?}
+\end{enumerate}
+
+\subsectionbar{Bahan Baku dan Stok}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Bahan apa yang paling cepat habis?}
+\question{Bagaimana Anda tahu kalau stok bahan mulai menipis?}
+\question{Kalau bahan hampir habis tapi masih ada pesanan, apa yang biasanya dilakukan?}
+\question{Pernahkah ada menu yang tidak bisa dijual karena bahan habis? Ceritakan.}
+\question{Bagaimana cara menyimpan bahan supaya tetap bagus?}
+\question{Bahan apa yang paling sulit dijaga kualitasnya?}
+\question{Kalau harga bahan naik, apa yang biasanya terasa di pekerjaan dapur?}
+\question{Peralatan dapur apa yang paling sering digunakan?}
+\question{Peralatan apa yang menurut Anda masih kurang atau perlu diganti?}
+\end{enumerate}
+
+\subsectionbar{Kebersihan Dapur}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Bagaimana cara menjaga kebersihan dapur saat bekerja?}
+\question{Bagaimana cara membersihkan alat masak setelah dipakai?}
+\question{Kalau sedang ramai, bagian kebersihan apa yang paling sulit dijaga?}
+\question{Apa yang biasanya dilakukan supaya makanan tetap bersih saat dimasak dan dibungkus?}
+\end{enumerate}
+
+\subsectionbar{Kerja Sama dengan Kasir}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Bagaimana kasir menyampaikan pesanan ke dapur?}
+\question{Informasi apa yang paling penting disampaikan kasir ke dapur?}
+\question{Pernahkah pesanan kurang jelas dari kasir atau aplikasi? Ceritakan.}
+\question{Kalau makanan sudah selesai, bagaimana dapur memberi tahu kasir?}
+\question{Menurut Anda, apa yang perlu diperbaiki dari kerja sama dapur dan kasir?}
+\end{enumerate}
+
+\sectionbar{D. Pertanyaan Khusus Karyawan Bagian Kasir/Pelayanan/GrabFood}
+\subsectionbar{Tugas Kasir dan Pelayanan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Apa saja tugas Anda sebagai kasir?}
+\question{Bagaimana cara Anda menerima pesanan dari pelanggan yang datang langsung?}
+\question{Bagaimana cara Anda mencatat pesanan pelanggan?}
+\question{Bagaimana cara Anda menyampaikan pesanan ke dapur?}
+\question{Apa yang biasanya ditanyakan pelanggan sebelum membeli?}
+\question{Bagaimana cara Anda menjawab pelanggan yang bingung memilih menu?}
+\question{Menu apa yang paling sering ditanyakan pelanggan?}
+\question{Menu apa yang paling sering dibeli pelanggan langsung?}
+\question{Apa keluhan pelanggan yang pernah Anda terima?}
+\question{Kalau pelanggan komplain, apa yang biasanya Anda lakukan?}
+\end{enumerate}
+
+\subsectionbar{Pesanan GrabFood}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Ceritakan bagaimana pesanan GrabFood masuk ke Nasi Gerilya.}
+\question{Apa yang Anda lakukan setelah pesanan GrabFood masuk?}
+\question{Bagaimana cara mengecek apakah menu yang dipesan masih tersedia?}
+\question{Bagaimana cara menyampaikan pesanan GrabFood ke dapur?}
+\question{Bagaimana cara memastikan catatan khusus dari pelanggan tidak terlewat?}
+\question{Apa catatan khusus pelanggan GrabFood yang paling sering muncul?}
+\question{Bagaimana cara mengecek makanan sebelum diberikan ke driver?}
+\question{Bagaimana cara memastikan pesanan tidak tertukar?}
+\question{Pernahkah pesanan GrabFood salah atau kurang? Ceritakan kejadiannya.}
+\question{Kalau pesanan GrabFood dibatalkan, apa yang biasanya dilakukan?}
+\question{Kalau aplikasi GrabFood bermasalah, apa yang biasanya terjadi?}
+\question{Apa kesulitan paling sering saat mengurus pesanan GrabFood?}
+\end{enumerate}
+
+\subsectionbar{Driver GrabFood}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Bagaimana biasanya komunikasi dengan driver GrabFood?}
+\question{Kalau driver datang sebelum makanan selesai, apa yang Anda lakukan?}
+\question{Kalau makanan sudah selesai tapi driver belum datang, apa yang Anda lakukan?}
+\question{Pernahkah ada masalah dengan driver? Ceritakan.}
+\question{Apa yang membuat proses penyerahan pesanan ke driver berjalan lancar?}
+\end{enumerate}
+
+\subsectionbar{Menu, Harga, dan Tampilan di GrabFood}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Menu apa yang paling sering dipesan lewat GrabFood?}
+\question{Menurut pengamatan Anda, kenapa menu itu sering dipesan?}
+\question{Menu apa yang jarang dipesan lewat GrabFood?}
+\question{Menurut Anda, kenapa menu itu jarang dipesan?}
+\question{Apa yang pernah dikatakan pelanggan tentang harga makanan?}
+\question{Apa yang pernah dikatakan pelanggan tentang porsi makanan?}
+\question{Apa yang pernah dikatakan pelanggan tentang kemasan?}
+\question{Menurut Anda, apakah foto menu di GrabFood sudah sesuai dengan makanan aslinya? Ceritakan.}
+\question{Informasi apa yang menurut Anda perlu ditambahkan di GrabFood supaya pelanggan lebih mudah memilih?}
+\end{enumerate}
+
+\subsectionbar{Promosi dan Pembelian}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Kalau sedang ada promo, apa yang biasanya terjadi pada pesanan?}
+\question{Promo seperti apa yang paling sering membuat pelanggan membeli?}
+\question{Dari mana biasanya pelanggan tahu tentang Nasi Gerilya?}
+\question{Pernahkah pelanggan datang atau memesan karena melihat promo? Ceritakan.}
+\question{Menurut Anda, apa yang membuat pelanggan mau membeli lagi?}
+\question{Menurut Anda, apa yang bisa membuat pelanggan pindah membeli ke tempat lain?}
+\end{enumerate}
+
+\sectionbar{E. Pertanyaan Penutup untuk Kedua Karyawan}
+\begin{enumerate}[label=\arabic*.,leftmargin=*,itemsep=1.5mm]
+\question{Menurut Anda, apa kelebihan utama Nasi Gerilya?}
+\question{Menurut Anda, apa kekurangan yang paling perlu diperbaiki?}
+\question{Apa saran Anda supaya pekerjaan karyawan lebih mudah?}
+\question{Apa saran Anda supaya pelanggan lebih puas?}
+\question{Apa saran Anda supaya pesanan GrabFood lebih lancar?}
+\question{Apa harapan Anda untuk Nasi Gerilya ke depannya?}
+\question{Apakah ada hal penting lain yang belum ditanyakan tetapi ingin Anda ceritakan?}
+\end{enumerate}
+
+\end{document}
