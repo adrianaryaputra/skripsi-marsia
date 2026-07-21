@@ -1,12 +1,11 @@
 {\footnotesize
-    \setlength{\tabcolsep}{4pt}
-    \renewcommand{\arraystretch}{1.10}
     \setlength{\LTleft}{0pt}
     \setlength{\LTright}{0pt}
-    \setlength{\LTcapwidth}{\linewidth}
     \newlength{\PenelitianTerdahuluWidth}
-    \setlength{\PenelitianTerdahuluWidth}{\dimexpr\linewidth-10\tabcolsep-6\arrayrulewidth-6pt\relax}
-    \refstepcounter{table}\label{tab:penelitian-terdahulu}
+    \setlength{\PenelitianTerdahuluWidth}{\dimexpr\textwidth-10\tabcolsep-6\arrayrulewidth\relax}
+    
+
+\refstepcounter{table}\label{tab:penelitian-terdahulu}
     \edef\PenelitianTerdahuluNomor{\thetable}
     \addcontentsline{lot}{table}{\protect\numberline{\thetable}Penelitian Terdahulu yang Relevan}
     \begin{longtable}{|>{\centering\arraybackslash}p{0.05\PenelitianTerdahuluWidth}|>{\raggedright\arraybackslash}p{0.14\PenelitianTerdahuluWidth}|>{\raggedright\arraybackslash}p{0.29\PenelitianTerdahuluWidth}|>{\raggedright\arraybackslash}p{0.18\PenelitianTerdahuluWidth}|>{\raggedright\arraybackslash}p{0.34\PenelitianTerdahuluWidth}|}
@@ -40,6 +39,6 @@
         12 & \textcite{gurel2017swot}                  & SWOT Analysis: A Theoretical Review                                                                                                                                                  & Tinjauan teoretis terhadap konsep dan penggunaan SWOT                                                                               & Kajian ini menegaskan bahwa SWOT merupakan alat analisis strategis yang membantu organisasi mengidentifikasi kekuatan, kelemahan, peluang, dan ancaman sebagai dasar perumusan strategi.         \\ \hline
         13 & \textcite{helms2010swotreview}            & Exploring SWOT Analysis -- Where Are We Now?: A Review of Academic Research from the Last Decade                                                                                     & Kajian pustaka terhadap penelitian SWOT dalam satu dekade                                                                           & Hasil telaah menunjukkan bahwa SWOT tetap luas digunakan dalam penelitian strategi, tetapi memerlukan penerapan yang lebih sistematis dan dukungan kerangka analitis yang lebih kuat.             \\ \hline
     \end{longtable}
-    \tablesource[\linewidth]{Diolah peneliti dari berbagai penelitian terdahulu (2026).}
+    \tablesource[\textwidth]{Diolah peneliti dari berbagai penelitian terdahulu (2026).}
     \addtocounter{table}{-1}
 }

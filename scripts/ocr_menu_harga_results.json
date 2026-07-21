@@ -1,0 +1,4451 @@
+{
+  "paripurna": {
+    "name": "Restoran Paripurna",
+    "items": [
+      {
+        "filecode": "O-KP-20260619-PAR-005",
+        "name": "Pergedel",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-005",
+        "name": "Udang Toufu",
+        "price_raw": "66.000",
+        "price_int": 66000,
+        "price_formatted": "Rp66.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-005",
+        "name": "Dendeng Hijau",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-005",
+        "name": "Rendang Daging",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-005",
+        "name": "Telur Dadar",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-006",
+        "name": "Telur Gulai",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-006",
+        "name": "Groo",
+        "price_raw": "64.000",
+        "price_int": 64000,
+        "price_formatted": "Rp64.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-006",
+        "name": "Telur Gulai",
+        "price_raw": "49.000",
+        "price_int": 49000,
+        "price_formatted": "Rp49.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-006",
+        "name": "Telur Sambal",
+        "price_raw": "49.000",
+        "price_int": 49000,
+        "price_formatted": "Rp49.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-006",
+        "name": "Goreng Paripurna",
+        "price_raw": "39.500",
+        "price_int": 39500,
+        "price_formatted": "Rp39.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-007",
+        "name": "Ayam Pop",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-007",
+        "name": "Ayam Gulai",
+        "price_raw": "38.000",
+        "price_int": 38000,
+        "price_formatted": "Rp38.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-007",
+        "name": "Ayam Panggang",
+        "price_raw": "38.000",
+        "price_int": 38000,
+        "price_formatted": "Rp38.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-007",
+        "name": "Ayam Rendang",
+        "price_raw": "38.000",
+        "price_int": 38000,
+        "price_formatted": "Rp38.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-007",
+        "name": "Dendeng Balado",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-008",
+        "name": "Ikan Kakap Goreng",
+        "price_raw": "39.500",
+        "price_int": 39500,
+        "price_formatted": "Rp39.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-008",
+        "name": "Ikan Kakap Gulai",
+        "price_raw": "39.500",
+        "price_int": 39500,
+        "price_formatted": "Rp39.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-008",
+        "name": "Hati Kentang",
+        "price_raw": "36.000",
+        "price_int": 36000,
+        "price_formatted": "Rp36.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-009",
+        "name": "Telur Sambal",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-009",
+        "name": "Tunjang",
+        "price_raw": "50.500",
+        "price_int": 50500,
+        "price_formatted": "Rp50.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-009",
+        "name": "Nasi Bungkus Tambah",
+        "price_raw": "7.000",
+        "price_int": 7000,
+        "price_formatted": "Rp7.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-009",
+        "name": "Gembung Asam Padeh",
+        "price_raw": "40.500",
+        "price_int": 40500,
+        "price_formatted": "Rp40.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-009",
+        "name": "Gembung Acar",
+        "price_raw": "40.500",
+        "price_int": 40500,
+        "price_formatted": "Rp40.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-010",
+        "name": "Gembung Acar",
+        "price_raw": "40.500",
+        "price_int": 40500,
+        "price_formatted": "Rp40.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-010",
+        "name": "Gembung Bakar",
+        "price_raw": "40.500",
+        "price_int": 40500,
+        "price_formatted": "Rp40.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-010",
+        "name": "Nila Sambal Hijau",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-010",
+        "name": "Ikan Tenggiri",
+        "price_raw": "36.000",
+        "price_int": 36000,
+        "price_formatted": "Rp36.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-010",
+        "name": "Kari Kambing",
+        "price_raw": "54.000",
+        "price_int": 54000,
+        "price_formatted": "Rp54.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-011",
+        "name": "Nila Bakar",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-011",
+        "name": "Sambal Hati Puyuh",
+        "price_raw": "36.000",
+        "price_int": 36000,
+        "price_formatted": "Rp36.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-011",
+        "name": "Jus Mix",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-011",
+        "name": "Jus Terong Belanda",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Jus Terong Belanda",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Jeruk)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Tomat)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Nanas)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Jus Bumi (Buah Naga + Mangga)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Jeruk)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-012",
+        "name": "Nanas",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Terong Belanda)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Naga",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Guava)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Sirsak)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Alpukad)",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Jus Wortel",
+        "price_raw": "24.500",
+        "price_int": 24500,
+        "price_formatted": "Rp24.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Teh Pahit Hangat",
+        "price_raw": "8.000",
+        "price_int": 8000,
+        "price_formatted": "Rp8.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-013",
+        "name": "Teh Pahit Dingin",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Es Kosong",
+        "price_raw": "5.000",
+        "price_int": 5000,
+        "price_formatted": "Rp5.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Lemon Tea (Panas/Dingin)",
+        "price_raw": "20.500",
+        "price_int": 20500,
+        "price_formatted": "Rp20.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Buah Potong Special",
+        "price_raw": "47.000",
+        "price_int": 47000,
+        "price_formatted": "Rp47.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Buah Potong Biasa",
+        "price_raw": "39.000",
+        "price_int": 39000,
+        "price_formatted": "Rp39.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Mineral",
+        "price_raw": "11.000",
+        "price_int": 11000,
+        "price_formatted": "Rp11.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Jus Marqisah",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Teh Manis Dingin",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-014",
+        "name": "Teh Manis Panas",
+        "price_raw": "11.000",
+        "price_int": 11000,
+        "price_formatted": "Rp11.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Teh Tarik (Dingin/Hangat)",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Kopi Hitam",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Kopi Susu Biasa",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Kopi Susu Paripurna",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Susu (Dingin/Hangat)",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Kelapa",
+        "price_raw": "22.000",
+        "price_int": 22000,
+        "price_formatted": "Rp22.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Jus Nanas",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-015",
+        "name": "Timun Kerok",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Teh Tarik (Dingin/Hangat)",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Kopi Hitam",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Kopi Susu Biasa",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Kopi Susu Paripurna",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Susu (Dingin/Hangat)",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Kelapa",
+        "price_raw": "22.000",
+        "price_int": 22000,
+        "price_formatted": "Rp22.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Jus Nanas",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-016",
+        "name": "Timun Kerok",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-017",
+        "name": "Jus Tomat",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-017",
+        "name": "Jus Pepaya",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-017",
+        "name": "Jus Belimbing",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-017",
+        "name": "Jus Jeruk",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-017",
+        "name": "Jus Melon",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-017",
+        "name": "Jus Apel",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Jus Buah Naga",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Jus Mangga",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Jus Kuini",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Jus Guava",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Jus Sirsak",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Jus Alpukad",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-018",
+        "name": "Susu",
+        "price_raw": "24.000",
+        "price_int": 24000,
+        "price_formatted": "Rp24.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Jeruk",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Puding",
+        "price_raw": "14.000",
+        "price_int": 14000,
+        "price_formatted": "Rp14.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Teh Botol Sosro",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Teh Serai Madu",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Jus Durian",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Jus Kiwi",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-019",
+        "name": "Jus Semangka",
+        "price_raw": "24.300",
+        "price_int": 24300,
+        "price_formatted": "Rp24.300"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-020",
+        "name": "Jus Strawberry",
+        "price_raw": "27.000",
+        "price_int": 27000,
+        "price_formatted": "Rp27.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-020",
+        "name": "Jus Sunkist",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-020",
+        "name": "Udang Toufu",
+        "price_raw": "60.000",
+        "price_int": 60000,
+        "price_formatted": "Rp60.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-020",
+        "name": "Ayam",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-020",
+        "name": "Kakap Gulai",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-020",
+        "name": "Sambal Kentang Hati",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-021",
+        "name": "Porsi",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-021",
+        "name": "1/2 Pc Sambal Cumi",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-021",
+        "name": "1/2 pc Sambal Udang",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-021",
+        "name": "Jangek",
+        "price_raw": "11.500",
+        "price_int": 11500,
+        "price_formatted": "Rp11.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-021",
+        "name": "Sambel Kecap",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-021",
+        "name": "Sambel Merahlijo",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-023",
+        "name": "Daun Ubi Tumbuk",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-023",
+        "name": "Sambal Cumi",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-023",
+        "name": "Sambal Udang",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-023",
+        "name": "Kakap Sambal",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-023",
+        "name": "Kakap Goreng",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-024",
+        "name": "Tunjang",
+        "price_raw": "43.500",
+        "price_int": 43500,
+        "price_formatted": "Rp43.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-024",
+        "name": "Dendeng Lambok",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-024",
+        "name": "Dendeng Batokok",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-024",
+        "name": "Rendang Daging",
+        "price_raw": "34.000",
+        "price_int": 34000,
+        "price_formatted": "Rp34.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-024",
+        "name": "Ayam Bakar",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-025",
+        "name": "Ayam Rendang",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-025",
+        "name": "Ayam Gulai",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-025",
+        "name": "Ayam Goreng",
+        "price_raw": "31.500",
+        "price_int": 31500,
+        "price_formatted": "Rp31.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-025",
+        "name": "Nasi Putih",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-025",
+        "name": "Teri bilih",
+        "price_raw": "45.000",
+        "price_int": 45000,
+        "price_formatted": "Rp45.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-026",
+        "name": "Jengkol Cabe Hijau",
+        "price_raw": "28.500",
+        "price_int": 28500,
+        "price_formatted": "Rp28.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-026",
+        "name": "Jengkol Balado",
+        "price_raw": "28.500",
+        "price_int": 28500,
+        "price_formatted": "Rp28.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-026",
+        "name": "Gembung Acar",
+        "price_raw": "31.500",
+        "price_int": 31500,
+        "price_formatted": "Rp31.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-026",
+        "name": "Kerupuk Udang",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-026",
+        "name": "Nila Sambal Hijau",
+        "price_raw": "28.500",
+        "price_int": 28500,
+        "price_formatted": "Rp28.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-026",
+        "name": "Keripik Kentang",
+        "price_raw": "14.000",
+        "price_int": 14000,
+        "price_formatted": "Rp14.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "Daun Ubi Rebus",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "Telur Rendang",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "Ikan Tenggiri Rendang",
+        "price_raw": "33.000",
+        "price_int": 33000,
+        "price_formatted": "Rp33.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "Nggak tersedia",
+        "price_raw": "26.000",
+        "price_int": 26000,
+        "price_formatted": "Rp26.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "1/2 Pc Kari Kambing",
+        "price_raw": "26.000",
+        "price_int": 26000,
+        "price_formatted": "Rp26.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "Nggak tersedia",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-027",
+        "name": "1/2 Pc Sambal Kerang",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-028",
+        "name": "Sop Daging",
+        "price_raw": "39.500",
+        "price_int": 39500,
+        "price_formatted": "Rp39.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-028",
+        "name": "Jengkol Rendang",
+        "price_raw": "28.500",
+        "price_int": 28500,
+        "price_formatted": "Rp28.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-028",
+        "name": "Sayur Lodeh",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-028",
+        "name": "Buncis Tumis",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-028",
+        "name": "Sambal Hati Puyuh",
+        "price_raw": "31.500",
+        "price_int": 31500,
+        "price_formatted": "Rp31.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-029",
+        "name": "Sambal Kerang",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-029",
+        "name": "Nila Bakar",
+        "price_raw": "28.500",
+        "price_int": 28500,
+        "price_formatted": "Rp28.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-029",
+        "name": "Gembung Asam Padeh",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-029",
+        "name": "Gembung Bakar",
+        "price_raw": "31.500",
+        "price_int": 31500,
+        "price_formatted": "Rp31.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-029",
+        "name": "Kari Kambing",
+        "price_raw": "49.000",
+        "price_int": 49000,
+        "price_formatted": "Rp49.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-030",
+        "name": "Ayam Bakar Stik",
+        "price_raw": "31.500",
+        "price_int": 31500,
+        "price_formatted": "Rp31.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-030",
+        "name": "Gembung Acar",
+        "price_raw": "43.000",
+        "price_int": 43000,
+        "price_formatted": "Rp43.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-030",
+        "name": "Gembung Asam Padeh",
+        "price_raw": "43.000",
+        "price_int": 43000,
+        "price_formatted": "Rp43.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-030",
+        "name": "Gembung Bakar",
+        "price_raw": "43.000",
+        "price_int": 43000,
+        "price_formatted": "Rp43.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-030",
+        "name": "Dendeng Balado/Hijau",
+        "price_raw": "44.000",
+        "price_int": 44000,
+        "price_formatted": "Rp44.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-030",
+        "name": "Rendang Daging",
+        "price_raw": "44.000",
+        "price_int": 44000,
+        "price_formatted": "Rp44.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-031",
+        "name": "Kakap Goreng",
+        "price_raw": "64.500",
+        "price_int": 64500,
+        "price_formatted": "Rp64.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-031",
+        "name": "Kakap Gulai",
+        "price_raw": "64.500",
+        "price_int": 64500,
+        "price_formatted": "Rp64.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-031",
+        "name": "Kari Kambing",
+        "price_raw": "64.500",
+        "price_int": 64500,
+        "price_formatted": "Rp64.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-031",
+        "name": "Pergedel",
+        "price_raw": "53.000",
+        "price_int": 53000,
+        "price_formatted": "Rp53.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-031",
+        "name": "Gio-",
+        "price_raw": "64.500",
+        "price_int": 64500,
+        "price_formatted": "Rp64.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-032",
+        "name": "Sambal Hati Kentang",
+        "price_raw": "53.000",
+        "price_int": 53000,
+        "price_formatted": "Rp53.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-032",
+        "name": "Sambal Udang",
+        "price_raw": "56.700",
+        "price_int": 56700,
+        "price_formatted": "Rp56.700"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-032",
+        "name": "Telur Gulai",
+        "price_raw": "53.000",
+        "price_int": 53000,
+        "price_formatted": "Rp53.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-032",
+        "name": "Telur Sambal",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-032",
+        "name": "Ayam Goreng",
+        "price_raw": "43.000",
+        "price_int": 43000,
+        "price_formatted": "Rp43.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-033",
+        "name": "Ayam Gulai",
+        "price_raw": "41.500",
+        "price_int": 41500,
+        "price_formatted": "Rp41.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-033",
+        "name": "Ayam Panggang",
+        "price_raw": "41.500",
+        "price_int": 41500,
+        "price_formatted": "Rp41.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-033",
+        "name": "Ayam Rendang",
+        "price_raw": "41.500",
+        "price_int": 41500,
+        "price_formatted": "Rp41.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-033",
+        "name": "Ikan Kakap",
+        "price_raw": "41.500",
+        "price_int": 41500,
+        "price_formatted": "Rp41.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-033",
+        "name": "Telur",
+        "price_raw": "53.000",
+        "price_int": 53000,
+        "price_formatted": "Rp53.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-034",
+        "name": "Ikan Tenggiri",
+        "price_raw": "42.500",
+        "price_int": 42500,
+        "price_formatted": "Rp42.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-034",
+        "name": "Kari Kambing",
+        "price_raw": "57.500",
+        "price_int": 57500,
+        "price_formatted": "Rp57.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-034",
+        "name": "Nila Bakar",
+        "price_raw": "37.200",
+        "price_int": 37200,
+        "price_formatted": "Rp37.200"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-034",
+        "name": "Kakap Goreng",
+        "price_raw": "67.000",
+        "price_int": 67000,
+        "price_formatted": "Rp67.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-034",
+        "name": "Kakap Gulai",
+        "price_raw": "67.000",
+        "price_int": 67000,
+        "price_formatted": "Rp67.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-035",
+        "name": "Kari Kambing",
+        "price_raw": "62.100",
+        "price_int": 62100,
+        "price_formatted": "Rp62.100"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-035",
+        "name": "Hati Kentang",
+        "price_raw": "55.500",
+        "price_int": 55500,
+        "price_formatted": "Rp55.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-035",
+        "name": "Sambal Udang",
+        "price_raw": "61.000",
+        "price_int": 61000,
+        "price_formatted": "Rp61.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PAR-035",
+        "name": "Telur",
+        "price_raw": "55.500",
+        "price_int": 55500,
+        "price_formatted": "Rp55.500"
+      }
+    ]
+  },
+  "dendeng-batokok": {
+    "name": "Rumah Makan Dendeng Batokok",
+    "items": [
+      {
+        "filecode": "O-KP-20260619-DB-013",
+        "name": "Belanja minimum Rp",
+        "price_raw": "75.000",
+        "price_int": 75000,
+        "price_formatted": "Rp75.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-013",
+        "name": "Belanja minimum Rp",
+        "price_raw": "80.000",
+        "price_int": 80000,
+        "price_formatted": "Rp80.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-014",
+        "name": "krupuk",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-014",
+        "name": "krupuk jangek",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-014",
+        "name": "puding",
+        "price_raw": "9.000",
+        "price_int": 9000,
+        "price_formatted": "Rp9.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-014",
+        "name": "Jus nenas",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-015",
+        "name": "jus wortel",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-015",
+        "name": "jus timun",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-015",
+        "name": "air mineral prima",
+        "price_raw": "8.500",
+        "price_int": 8500,
+        "price_formatted": "Rp8.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-015",
+        "name": "jus kuini",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-015",
+        "name": "jus sirsak",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-015",
+        "name": "jus terong belanda",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-016",
+        "name": "jus buah naga",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-016",
+        "name": "jus jeruk",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-016",
+        "name": "jus mangga",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-016",
+        "name": "jus alpukat",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-016",
+        "name": "dingin",
+        "price_raw": "5.000",
+        "price_int": 5000,
+        "price_formatted": "Rp5.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "teh manis dingin",
+        "price_raw": "9.000",
+        "price_int": 9000,
+        "price_formatted": "Rp9.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "frutiea",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "Buah potong",
+        "price_raw": "14.000",
+        "price_int": 14000,
+        "price_formatted": "Rp14.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "jus Apel hijau",
+        "price_raw": "16.500",
+        "price_int": 16500,
+        "price_formatted": "Rp16.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "teh botol sosro",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "gulai tunjang",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-017",
+        "name": "Sambal teri kacang",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "kentang hatii",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "kentang puyuh",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "gulai",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "pergedel",
+        "price_raw": "7.000",
+        "price_int": 7000,
+        "price_formatted": "Rp7.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "kepala nila",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "telur gulai",
+        "price_raw": "7.000",
+        "price_int": 7000,
+        "price_formatted": "Rp7.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-018",
+        "name": "sambal",
+        "price_raw": "7.000",
+        "price_int": 7000,
+        "price_formatted": "Rp7.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-019",
+        "name": "telur dadar",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-019",
+        "name": "lele goreng",
+        "price_raw": "12.000",
+        "price_int": 12000,
+        "price_formatted": "Rp12.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-019",
+        "name": "cincang",
+        "price_raw": "25.000",
+        "price_int": 25000,
+        "price_formatted": "Rp25.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-019",
+        "name": "kikil",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-019",
+        "name": "terong sambal",
+        "price_raw": "11.000",
+        "price_int": 11000,
+        "price_formatted": "Rp11.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-019",
+        "name": "jengkol sambal",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-020",
+        "name": "udang sambal",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-020",
+        "name": "ikan tongkol asam padeh",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-020",
+        "name": "ikan tongkol goreng",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-020",
+        "name": "ikan nila goreng",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-020",
+        "name": "ikan nila bakar",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-020",
+        "name": "ikan nila ijo",
+        "price_raw": "16.000",
+        "price_int": 16000,
+        "price_formatted": "Rp16.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-021",
+        "name": "ikan gembung acarlrica",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-021",
+        "name": "ikan gembung bakar",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-021",
+        "name": "ikan kakap goreng",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-021",
+        "name": "ikan kakap",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-021",
+        "name": "ayam saos",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-021",
+        "name": "ayam kecap",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-022",
+        "name": "ayam bakar",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-022",
+        "name": "ayam kemangi",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-022",
+        "name": "ayam sambal merah",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-022",
+        "name": "ayam rendang",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-022",
+        "name": "ayam",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-022",
+        "name": "ayam goreng",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-023",
+        "name": "rendang daging",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-023",
+        "name": "dendeng sambal",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-023",
+        "name": "lele bakar",
+        "price_raw": "12.000",
+        "price_int": 12000,
+        "price_formatted": "Rp12.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-023",
+        "name": "kan dencis goreng",
+        "price_raw": "13.000",
+        "price_int": 13000,
+        "price_formatted": "Rp13.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-023",
+        "name": "nasi gulai tunjang",
+        "price_raw": "36.000",
+        "price_int": 36000,
+        "price_formatted": "Rp36.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "nasi sayur",
+        "price_raw": "12.000",
+        "price_int": 12000,
+        "price_formatted": "Rp12.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "nasi ayam goreng tepung",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "nasi kentang hati",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "kentang puyuh",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "nasi usuS",
+        "price_raw": "22.500",
+        "price_int": 22500,
+        "price_formatted": "Rp22.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "nasi tahu+tempe",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-024",
+        "name": "nasi pergedel",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-025",
+        "name": "nasi gulai kepala nila",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-025",
+        "name": "ns telur sambal",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-025",
+        "name": "nasi telur gulai",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-025",
+        "name": "nasi telur dadar",
+        "price_raw": "17.000",
+        "price_int": 17000,
+        "price_formatted": "Rp17.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-025",
+        "name": "ns lele goreng",
+        "price_raw": "17.000",
+        "price_int": 17000,
+        "price_formatted": "Rp17.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-025",
+        "name": "ns cincang",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-026",
+        "name": "ns kikil",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-026",
+        "name": "ns jengkol sambal",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-026",
+        "name": "udang sambal",
+        "price_raw": "26.500",
+        "price_int": 26500,
+        "price_formatted": "Rp26.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-026",
+        "name": "ns tongkol asam padeh",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-026",
+        "name": "nasi tongkol goreng",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-026",
+        "name": "nasi nila goreng",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-027",
+        "name": "nasi tongkol goreng",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-027",
+        "name": "nasi nila goreng",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-027",
+        "name": "nasi nila bakar",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-027",
+        "name": "nasi nila ijo",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-027",
+        "name": "nasi gembung acarlrica",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-027",
+        "name": "nasi gembung bakar",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-028",
+        "name": "nasi kakap gorenglsambal",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-028",
+        "name": "nasi kakap gulai",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-028",
+        "name": "nasi ayam saos",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-028",
+        "name": "nasi ayam kecap",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-028",
+        "name": "nasi ayam kemangi",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-028",
+        "name": "nasi ayam € ijo",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-029",
+        "name": "nasi ayam bakar",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-029",
+        "name": "nasi ayam sambal merah",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-029",
+        "name": "nasi ayam rendang",
+        "price_raw": "1",
+        "price_int": 1,
+        "price_formatted": "Rp1"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-029",
+        "name": "nasi ayam",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-029",
+        "name": "nasi ayam goreng",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-030",
+        "name": "nasi rendang",
+        "price_raw": "29.000",
+        "price_int": 29000,
+        "price_formatted": "Rp29.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-030",
+        "name": "nasi dendeng basah",
+        "price_raw": "29.000",
+        "price_int": 29000,
+        "price_formatted": "Rp29.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-030",
+        "name": "babat",
+        "price_raw": "21.500",
+        "price_int": 21500,
+        "price_formatted": "Rp21.500"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-030",
+        "name": "ns lele bakar",
+        "price_raw": "17.000",
+        "price_int": 17000,
+        "price_formatted": "Rp17.000"
+      },
+      {
+        "filecode": "O-KP-20260619-DB-030",
+        "name": "nasi dencis goreng",
+        "price_raw": "18.000",
+        "price_int": 18000,
+        "price_formatted": "Rp18.000"
+      }
+    ]
+  },
+  "istana-krakatau": {
+    "name": "Rumah Makan Istana Krakatau",
+    "items": [
+      {
+        "filecode": "O-KP-20260619-IK-003",
+        "name": "Nasi Rendang Sapi",
+        "price_raw": "63.000",
+        "price_int": 63000,
+        "price_formatted": "Rp63.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-003",
+        "name": "Nasi Ikan Cabe Ijo",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-004",
+        "name": "Nasi Dendeng Sapi",
+        "price_raw": "47.000",
+        "price_int": 47000,
+        "price_formatted": "Rp47.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-004",
+        "name": "Juice Murni Tanpa Es",
+        "price_raw": "38.000",
+        "price_int": 38000,
+        "price_formatted": "Rp38.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-004",
+        "name": "Juice Timun",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-004",
+        "name": "Juice Tomat",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-005",
+        "name": "Jeruk",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-005",
+        "name": "Cincau",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-005",
+        "name": "Teh Pahit Dingin",
+        "price_raw": "10.000",
+        "price_int": 10000,
+        "price_formatted": "Rp10.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-005",
+        "name": "Teh Manis Panas",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-005",
+        "name": "Kelapa Thai",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-006",
+        "name": "Juice Sirsak",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-006",
+        "name": "Teh Manis Dingin",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-006",
+        "name": "Air Mineral",
+        "price_raw": "11.000",
+        "price_int": 11000,
+        "price_formatted": "Rp11.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-006",
+        "name": "Sebiag",
+        "price_raw": "45.000",
+        "price_int": 45000,
+        "price_formatted": "Rp45.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-006",
+        "name": "Teh Tong",
+        "price_raw": "9.000",
+        "price_int": 9000,
+        "price_formatted": "Rp9.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-007",
+        "name": "Long Black (Hot/lce)",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-007",
+        "name": "Lemon Tea",
+        "price_raw": "30.000",
+        "price_int": 30000,
+        "price_formatted": "Rp30.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-007",
+        "name": "Sebagai Wltist",
+        "price_raw": "45.000",
+        "price_int": 45000,
+        "price_formatted": "Rp45.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-007",
+        "name": "Terong Belanda",
+        "price_raw": "35.000",
+        "price_int": 35000,
+        "price_formatted": "Rp35.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-007",
+        "name": "Sn",
+        "price_raw": "808",
+        "price_int": 808,
+        "price_formatted": "Rp808"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-008",
+        "name": "Ayam tdk bisa reguest",
+        "price_raw": "63.000",
+        "price_int": 63000,
+        "price_formatted": "Rp63.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-008",
+        "name": "mungkin tergantung kondisi dan keters .",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-008",
+        "name": "mungkin tergantung kondisi dan keters .",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-008",
+        "name": "mungkin tergantung kondisi dan keters:",
+        "price_raw": "43.000",
+        "price_int": 43000,
+        "price_formatted": "Rp43.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-009",
+        "name": "mungkin tergantung kondisi dan keters .",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-009",
+        "name": "bagoluu",
+        "price_raw": "72.000",
+        "price_int": 72000,
+        "price_formatted": "Rp72.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-009",
+        "name": "Nasi Putih",
+        "price_raw": "22.500",
+        "price_int": 22500,
+        "price_formatted": "Rp22.500"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-009",
+        "name": "mungkin tergantung kondisi dan keters",
+        "price_raw": "49.000",
+        "price_int": 49000,
+        "price_formatted": "Rp49.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-010",
+        "name": "mungkin tergantung kondisi dan keters:",
+        "price_raw": "49.000",
+        "price_int": 49000,
+        "price_formatted": "Rp49.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-010",
+        "name": "mungkin tergantung kondisi dan keters:",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-010",
+        "name": "habis ya",
+        "price_raw": "63.000",
+        "price_int": 63000,
+        "price_formatted": "Rp63.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-010",
+        "name": "REGUEST",
+        "price_raw": "63.000",
+        "price_int": 63000,
+        "price_formatted": "Rp63.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-010",
+        "name": "Nasi Ayam Bakar",
+        "price_raw": "63.000",
+        "price_int": 63000,
+        "price_formatted": "Rp63.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-011",
+        "name": "paha habis ya",
+        "price_raw": "63.000",
+        "price_int": 63000,
+        "price_formatted": "Rp63.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-011",
+        "name": "mungkin tergantung kondisi dan keters.",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-011",
+        "name": "Nasi Telur Dadar",
+        "price_raw": "51.000",
+        "price_int": 51000,
+        "price_formatted": "Rp51.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-011",
+        "name": "Perkedel Jagung",
+        "price_raw": "46.000",
+        "price_int": 46000,
+        "price_formatted": "Rp46.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-011",
+        "name": "Perkedel Kentang",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-012",
+        "name": "Dendeng Sapi",
+        "price_raw": "48.000",
+        "price_int": 48000,
+        "price_formatted": "Rp48.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-012",
+        "name": "Rendang Sapi",
+        "price_raw": "48.000",
+        "price_int": 48000,
+        "price_formatted": "Rp48.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-012",
+        "name": "Dendeng Batokok Per Porsi",
+        "price_raw": "95.000",
+        "price_int": 95000,
+        "price_formatted": "Rp95.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-012",
+        "name": "paha habis ya",
+        "price_raw": "47.000",
+        "price_int": 47000,
+        "price_formatted": "Rp47.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-012",
+        "name": "Ayam Goreng Per Ekor",
+        "price_raw": "133.000",
+        "price_int": 133000,
+        "price_formatted": "Rp133.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-013",
+        "name": "paha habis ya",
+        "price_raw": "47.000",
+        "price_int": 47000,
+        "price_formatted": "Rp47.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-013",
+        "name": "habis ya",
+        "price_raw": "47.000",
+        "price_int": 47000,
+        "price_formatted": "Rp47.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-013",
+        "name": "Ayam Cabe Ijo Per Porsi",
+        "price_raw": "93.000",
+        "price_int": 93000,
+        "price_formatted": "Rp93.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-013",
+        "name": "Ayam Saus Istana",
+        "price_raw": "198.000",
+        "price_int": 198000,
+        "price_formatted": "Rp198.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-013",
+        "name": "Ayam Bakar",
+        "price_raw": "47.000",
+        "price_int": 47000,
+        "price_formatted": "Rp47.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-014",
+        "name": "Bunga Pepaya",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-014",
+        "name": "Genjer",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-014",
+        "name": "urap",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-014",
+        "name": "Sambal Tempe",
+        "price_raw": "37.000",
+        "price_int": 37000,
+        "price_formatted": "Rp37.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-014",
+        "name": "Teri Joss",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-015",
+        "name": "Pete Goreng",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-015",
+        "name": "Acar Timun",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-015",
+        "name": "Daun Ubi Tumbuk",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-015",
+        "name": "Gori",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-015",
+        "name": "Buncis",
+        "price_raw": "32.000",
+        "price_int": 32000,
+        "price_formatted": "Rp32.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-016",
+        "name": "Pete Sambal",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-016",
+        "name": "Rendang Jengkol",
+        "price_raw": "45.000",
+        "price_int": 45000,
+        "price_formatted": "Rp45.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-016",
+        "name": "Terong Sambal",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-016",
+        "name": "Telur Mata Sapi",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-017",
+        "name": "Telur Bulat",
+        "price_raw": "19.000",
+        "price_int": 19000,
+        "price_formatted": "Rp19.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-017",
+        "name": "Telur Dadar",
+        "price_raw": "21.000",
+        "price_int": 21000,
+        "price_formatted": "Rp21.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-017",
+        "name": "Udang Tauco",
+        "price_raw": "240.000",
+        "price_int": 240000,
+        "price_formatted": "Rp240.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-017",
+        "name": "Udang Kelong Goreng",
+        "price_raw": "240.000",
+        "price_int": 240000,
+        "price_formatted": "Rp240.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-017",
+        "name": "Udang Kelong Mentega",
+        "price_raw": "240.000",
+        "price_int": 240000,
+        "price_formatted": "Rp240.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-018",
+        "name": "Udang Kelong Mentega",
+        "price_raw": "240.000",
+        "price_int": 240000,
+        "price_formatted": "Rp240.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-018",
+        "name": "Udang Kelong Cabe Ijo",
+        "price_raw": "240.000",
+        "price_int": 240000,
+        "price_formatted": "Rp240.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-018",
+        "name": "Udang Kelong Sambal",
+        "price_raw": "240.000",
+        "price_int": 240000,
+        "price_formatted": "Rp240.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-018",
+        "name": "Udang Gala Goreng",
+        "price_raw": "213.000",
+        "price_int": 213000,
+        "price_formatted": "Rp213.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-018",
+        "name": "Udang Gala Lada Hitam",
+        "price_raw": "223.000",
+        "price_int": 223000,
+        "price_formatted": "Rp223.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-019",
+        "name": "Udang Gala Saus Padang",
+        "price_raw": "223.000",
+        "price_int": 223000,
+        "price_formatted": "Rp223.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-019",
+        "name": "Cumi Goreng Tepung",
+        "price_raw": "108.000",
+        "price_int": 108000,
+        "price_formatted": "Rp108.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-019",
+        "name": "Cumi Tauco",
+        "price_raw": "105.000",
+        "price_int": 105000,
+        "price_formatted": "Rp105.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-019",
+        "name": "Bawal Saus Padang",
+        "price_raw": "250.000",
+        "price_int": 250000,
+        "price_formatted": "Rp250.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-020",
+        "name": "Grab",
+        "price_raw": "198.000",
+        "price_int": 198000,
+        "price_formatted": "Rp198.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-020",
+        "name": "Gra",
+        "price_raw": "98.000",
+        "price_int": 98000,
+        "price_formatted": "Rp98.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-020",
+        "name": "Kakap Goreng",
+        "price_raw": "48.000",
+        "price_int": 48000,
+        "price_formatted": "Rp48.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-021",
+        "name": "Kakap Sambal",
+        "price_raw": "48.000",
+        "price_int": 48000,
+        "price_formatted": "Rp48.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-021",
+        "name": "Bawal Kukus",
+        "price_raw": "155.000",
+        "price_int": 155000,
+        "price_formatted": "Rp155.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-021",
+        "name": "Kakap Gulai",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-021",
+        "name": "Kepala Ikan Gulai",
+        "price_raw": "298.000",
+        "price_int": 298000,
+        "price_formatted": "Rp298.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-021",
+        "name": "Kakap Kukus",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-022",
+        "name": "Opak",
+        "price_raw": "20.000",
+        "price_int": 20000,
+        "price_formatted": "Rp20.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-022",
+        "name": "Pisang Goreng",
+        "price_raw": "42.000",
+        "price_int": 42000,
+        "price_formatted": "Rp42.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-022",
+        "name": "Tahu Goreng Per Porsi",
+        "price_raw": "28.000",
+        "price_int": 28000,
+        "price_formatted": "Rp28.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-022",
+        "name": "Tempe Goreng Per Porsi",
+        "price_raw": "25.000",
+        "price_int": 25000,
+        "price_formatted": "Rp25.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-023",
+        "name": "Nasi Kotak Rendang Sapi",
+        "price_raw": "67.000",
+        "price_int": 67000,
+        "price_formatted": "Rp67.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-023",
+        "name": "Nasi Kotak Ikan Gulai",
+        "price_raw": "72.000",
+        "price_int": 72000,
+        "price_formatted": "Rp72.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-023",
+        "name": "Nasi Kotak Ikan",
+        "price_raw": "67.000",
+        "price_int": 67000,
+        "price_formatted": "Rp67.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-023",
+        "name": "Nasi Kotak Dendeng Sapi",
+        "price_raw": "67.000",
+        "price_int": 67000,
+        "price_formatted": "Rp67.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-023",
+        "name": "Nasi Kotak Ayam Sambal",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-024",
+        "name": "Nasi Kotak Ayam Gulai",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-024",
+        "name": "Nasi Kotak Ayam Rendang",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-024",
+        "name": "Nasi Kotak Ayam Goreng",
+        "price_raw": "65.000",
+        "price_int": 65000,
+        "price_formatted": "Rp65.000"
+      },
+      {
+        "filecode": "O-KP-20260619-IK-024",
+        "name": "Bubur sumsumset",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      }
+    ]
+  },
+  "pondok-gurih": {
+    "name": "RM. Pondok Gurih",
+    "items": [
+      {
+        "filecode": "O-KP-20260619-PG-005",
+        "name": "Ayam Bakar",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-006",
+        "name": "Nasi Sayur",
+        "price_raw": "37.500",
+        "price_int": 37500,
+        "price_formatted": "Rp37.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-006",
+        "name": "bks",
+        "price_raw": "23.000",
+        "price_int": 23000,
+        "price_formatted": "Rp23.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-006",
+        "name": "ikan bawal sambal",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-007",
+        "name": "ikan bawal sambal",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-007",
+        "name": "ikan bawal goreng",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-007",
+        "name": "Ikan Sambal",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-007",
+        "name": "Gembung Acar",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-007",
+        "name": "Gembung Bakar",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-008",
+        "name": "Ikan Asam Pedas",
+        "price_raw": "50.000",
+        "price_int": 50000,
+        "price_formatted": "Rp50.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-008",
+        "name": "Rendang Sapi",
+        "price_raw": "52.750",
+        "price_int": 52750,
+        "price_formatted": "Rp52.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-008",
+        "name": "Dendeng",
+        "price_raw": "52.750",
+        "price_int": 52750,
+        "price_formatted": "Rp52.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-008",
+        "name": "Kari Kambing",
+        "price_raw": "64.500",
+        "price_int": 64500,
+        "price_formatted": "Rp64.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-008",
+        "name": "Kikil",
+        "price_raw": "52.750",
+        "price_int": 52750,
+        "price_formatted": "Rp52.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-009",
+        "name": "Telur Bulat",
+        "price_raw": "42.250",
+        "price_int": 42250,
+        "price_formatted": "Rp42.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-009",
+        "name": "Telur Mata Sapi",
+        "price_raw": "42.250",
+        "price_int": 42250,
+        "price_formatted": "Rp42.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-009",
+        "name": "Perkedel",
+        "price_raw": "42.250",
+        "price_int": 42250,
+        "price_formatted": "Rp42.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-009",
+        "name": "Telur Dadar",
+        "price_raw": "42.250",
+        "price_int": 42250,
+        "price_formatted": "Rp42.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-009",
+        "name": "Badak",
+        "price_raw": "16.250",
+        "price_int": 16250,
+        "price_formatted": "Rp16.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-010",
+        "name": "Badak",
+        "price_raw": "16.250",
+        "price_int": 16250,
+        "price_formatted": "Rp16.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-010",
+        "name": "Le Minerale 600 ml",
+        "price_raw": "9.500",
+        "price_int": 9500,
+        "price_formatted": "Rp9.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-010",
+        "name": "Es Sarang Burung",
+        "price_raw": "18.500",
+        "price_int": 18500,
+        "price_formatted": "Rp18.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-010",
+        "name": "Teh Bunga (Liang Teh)",
+        "price_raw": "20.500",
+        "price_int": 20500,
+        "price_formatted": "Rp20.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-010",
+        "name": "Le Minerale 1500 ml",
+        "price_raw": "12.000",
+        "price_int": 12000,
+        "price_formatted": "Rp12.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-011",
+        "name": "kerupuk emping",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-011",
+        "name": "kerupuk jangek",
+        "price_raw": "15.000",
+        "price_int": 15000,
+        "price_formatted": "Rp15.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-011",
+        "name": "Ayam Goreng",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-011",
+        "name": "Ayam Gulai",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-011",
+        "name": "Ayam Rendang",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-012",
+        "name": "Telur Bulat/sambal",
+        "price_raw": "18.500",
+        "price_int": 18500,
+        "price_formatted": "Rp18.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-012",
+        "name": "Telur Mata Sapi",
+        "price_raw": "18.500",
+        "price_int": 18500,
+        "price_formatted": "Rp18.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-012",
+        "name": "Ikan Goreng",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-012",
+        "name": "Ikan Gulai",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-012",
+        "name": "Rendang Sapi",
+        "price_raw": "43.250",
+        "price_int": 43250,
+        "price_formatted": "Rp43.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-013",
+        "name": "Dendeng",
+        "price_raw": "43.250",
+        "price_int": 43250,
+        "price_formatted": "Rp43.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-013",
+        "name": "Kambing",
+        "price_raw": "75.000",
+        "price_int": 75000,
+        "price_formatted": "Rp75.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-013",
+        "name": "potong",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-013",
+        "name": "potong",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-013",
+        "name": "Ayam Bakar",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-013",
+        "name": "Perkedel",
+        "price_raw": "19.750",
+        "price_int": 19750,
+        "price_formatted": "Rp19.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-014",
+        "name": "Perkedel",
+        "price_raw": "19.750",
+        "price_int": 19750,
+        "price_formatted": "Rp19.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-014",
+        "name": "Telur Dadar",
+        "price_raw": "19.750",
+        "price_int": 19750,
+        "price_formatted": "Rp19.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-014",
+        "name": "Sambal Goreng Kentang",
+        "price_raw": "43.500",
+        "price_int": 43500,
+        "price_formatted": "Rp43.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-014",
+        "name": "Ikan Sambal",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-014",
+        "name": "Ikan Gembung Acar",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-015",
+        "name": "Ikan Gembung Bakar",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-015",
+        "name": "Ikan Asam Pedas",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-015",
+        "name": "Kikil",
+        "price_raw": "43.250",
+        "price_int": 43250,
+        "price_formatted": "Rp43.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-015",
+        "name": "Jengkol",
+        "price_raw": "47.500",
+        "price_int": 47500,
+        "price_formatted": "Rp47.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-015",
+        "name": "Teri Cabai Hijau",
+        "price_raw": "47.500",
+        "price_int": 47500,
+        "price_formatted": "Rp47.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-016",
+        "name": "Sambal Hati Ampela",
+        "price_raw": "22.000",
+        "price_int": 22000,
+        "price_formatted": "Rp22.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-016",
+        "name": "Sambal Udang Pete",
+        "price_raw": "68.500",
+        "price_int": 68500,
+        "price_formatted": "Rp68.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-016",
+        "name": "Sayur Gori",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-016",
+        "name": "Sayur Tauco",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-016",
+        "name": "Sayur Daun Ubi Gulai",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-017",
+        "name": "Sayur Daun Ubi Gulai",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-017",
+        "name": "Sayur Daun Ubi Rebus",
+        "price_raw": "19.750",
+        "price_int": 19750,
+        "price_formatted": "Rp19.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-017",
+        "name": "Timun",
+        "price_raw": "14.500",
+        "price_int": 14500,
+        "price_formatted": "Rp14.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-017",
+        "name": "Sayur Lodeh",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-017",
+        "name": "Sayur Daun Ubi Tumbuk",
+        "price_raw": "35.750",
+        "price_int": 35750,
+        "price_formatted": "Rp35.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-018",
+        "name": "Teh Manis Dingin",
+        "price_raw": "14.750",
+        "price_int": 14750,
+        "price_formatted": "Rp14.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-018",
+        "name": "Teh Manis Hangat",
+        "price_raw": "14.750",
+        "price_int": 14750,
+        "price_formatted": "Rp14.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-018",
+        "name": "Teh Pahit Dingin",
+        "price_raw": "8.000",
+        "price_int": 8000,
+        "price_formatted": "Rp8.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-018",
+        "name": "Teh Botol",
+        "price_raw": "10.750",
+        "price_int": 10750,
+        "price_formatted": "Rp10.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-018",
+        "name": "Fruit Tea",
+        "price_raw": "10.750",
+        "price_int": 10750,
+        "price_formatted": "Rp10.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-018",
+        "name": "TeA",
+        "price_raw": "8",
+        "price_int": 8,
+        "price_formatted": "Rp8"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-019",
+        "name": "Teh Tong",
+        "price_raw": "6.750",
+        "price_int": 6750,
+        "price_formatted": "Rp6.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-019",
+        "name": "kelapa muda",
+        "price_raw": "31.500",
+        "price_int": 31500,
+        "price_formatted": "Rp31.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-019",
+        "name": "Jus Alpukat",
+        "price_raw": "34.250",
+        "price_int": 34250,
+        "price_formatted": "Rp34.250"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-019",
+        "name": "Jus Guava",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-019",
+        "name": "Jus Timun",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-020",
+        "name": "Jus Terong Belanda",
+        "price_raw": "37.000",
+        "price_int": 37000,
+        "price_formatted": "Rp37.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-020",
+        "name": "Jus Tomat",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-020",
+        "name": "Jus Sirsak",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-020",
+        "name": "Jus Jeruk",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-020",
+        "name": "Jus Jeruk Murni",
+        "price_raw": "37.000",
+        "price_int": 37000,
+        "price_formatted": "Rp37.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-021",
+        "name": "jus mangga",
+        "price_raw": "37.000",
+        "price_int": 37000,
+        "price_formatted": "Rp37.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-021",
+        "name": "Jus Sunkist",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-021",
+        "name": "Jus Martabe",
+        "price_raw": "37.000",
+        "price_int": 37000,
+        "price_formatted": "Rp37.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-021",
+        "name": "Jus Kuini",
+        "price_raw": "37.000",
+        "price_int": 37000,
+        "price_formatted": "Rp37.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-021",
+        "name": "Jus Belimbing",
+        "price_raw": "31.750",
+        "price_int": 31750,
+        "price_formatted": "Rp31.750"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-022",
+        "name": "Kepala Ikan Kecil",
+        "price_raw": "180.000",
+        "price_int": 180000,
+        "price_formatted": "Rp180.000"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-022",
+        "name": "Kepala Ikan Sedang",
+        "price_raw": "213.500",
+        "price_int": 213500,
+        "price_formatted": "Rp213.500"
+      },
+      {
+        "filecode": "O-KP-20260619-PG-022",
+        "name": "Kepala Ikan Besar",
+        "price_raw": "246.750",
+        "price_int": 246750,
+        "price_formatted": "Rp246.750"
+      }
+    ]
+  },
+  "garuda": {
+    "name": "Restoran Garuda",
+    "items": [
+      {
+        "filecode": "O-KP-20260619-GAR-005",
+        "name": "Ayam Rendang",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-005",
+        "name": "Ayam Goreng",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-006",
+        "name": "Telur",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-006",
+        "name": "Gulai Telur",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-006",
+        "name": "Hanya Lauk saja",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-007",
+        "name": "Hanya Lauk saja",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-007",
+        "name": "Hanya Lauk saja",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-007",
+        "name": "Hanya Lauk saja",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-007",
+        "name": "Hanya Lauk saja",
+        "price_raw": "50.794",
+        "price_int": 50794,
+        "price_formatted": "Rp50.794"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-007",
+        "name": "Hanya Lauk saja",
+        "price_raw": "22.222",
+        "price_int": 22222,
+        "price_formatted": "Rp22.222"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-008",
+        "name": "Voreis",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-008",
+        "name": "Ayam",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-008",
+        "name": "Ayam Semur",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-008",
+        "name": "Ayam Panggang",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-008",
+        "name": "Ayam Sambal Ijo",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-009",
+        "name": "' 4",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-009",
+        "name": "Rendang Limpa",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-009",
+        "name": "Rendang Hati",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-009",
+        "name": "Dendeng Sambal Ijo",
+        "price_raw": "46.032",
+        "price_int": 46032,
+        "price_formatted": "Rp46.032"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-009",
+        "name": "Dendeng Kering",
+        "price_raw": "46.032",
+        "price_int": 46032,
+        "price_formatted": "Rp46.032"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-010",
+        "name": "Dendeng Brekele",
+        "price_raw": "74.603",
+        "price_int": 74603,
+        "price_formatted": "Rp74.603"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-010",
+        "name": "Sop Daging",
+        "price_raw": "88.889",
+        "price_int": 88889,
+        "price_formatted": "Rp88.889"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-010",
+        "name": "Ayam",
+        "price_raw": "61.100",
+        "price_int": 61100,
+        "price_formatted": "Rp61.100"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-010",
+        "name": "Ikan Goreng",
+        "price_raw": "42.857",
+        "price_int": 42857,
+        "price_formatted": "Rp42.857"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-010",
+        "name": "Ikan Gulai",
+        "price_raw": "42.857",
+        "price_int": 42857,
+        "price_formatted": "Rp42.857"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-011",
+        "name": "Ikan Gembung Panggang",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-011",
+        "name": "Ikan Gembung Acar",
+        "price_raw": "42.857",
+        "price_int": 42857,
+        "price_formatted": "Rp42.857"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-011",
+        "name": "Ikan Bawal Steam",
+        "price_raw": "113.751",
+        "price_int": 113751,
+        "price_formatted": "Rp113.751"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-011",
+        "name": "Ikan Teri Bilis",
+        "price_raw": "74.603",
+        "price_int": 74603,
+        "price_formatted": "Rp74.603"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-011",
+        "name": "Kari Kambing",
+        "price_raw": "85.714",
+        "price_int": 85714,
+        "price_formatted": "Rp85.714"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-012",
+        "name": "Paru",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-012",
+        "name": "Usus",
+        "price_raw": "38.095",
+        "price_int": 38095,
+        "price_formatted": "Rp38.095"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-012",
+        "name": "Babat",
+        "price_raw": "38.095",
+        "price_int": 38095,
+        "price_formatted": "Rp38.095"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-012",
+        "name": "Gulai Otak",
+        "price_raw": "57.143",
+        "price_int": 57143,
+        "price_formatted": "Rp57.143"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-012",
+        "name": "Telur Dadar",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "Mrutla",
+        "price_raw": "74.603",
+        "price_int": 74603,
+        "price_formatted": "Rp74.603"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "Cumi",
+        "price_raw": "66.667",
+        "price_int": 66667,
+        "price_formatted": "Rp66.667"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "QurWtn",
+        "price_raw": "57.143",
+        "price_int": 57143,
+        "price_formatted": "Rp57.143"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "Sambal Kerang",
+        "price_raw": "66.667",
+        "price_int": 66667,
+        "price_formatted": "Rp66.667"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "\"Sebagal Iistras",
+        "price_raw": "4",
+        "price_int": 4,
+        "price_formatted": "Rp4"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "R",
+        "price_raw": "4",
+        "price_int": 4,
+        "price_formatted": "Rp4"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "Sayur Kangkung",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-013",
+        "name": "Wirg",
+        "price_raw": "8",
+        "price_int": 8,
+        "price_formatted": "Rp8"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-014",
+        "name": "Sayur Taucho",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-014",
+        "name": "Sayur Asem",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-014",
+        "name": "Sayur Daun Ubi Gulai",
+        "price_raw": "33.333",
+        "price_int": 33333,
+        "price_formatted": "Rp33.333"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-014",
+        "name": "Sayur Daun Ubi Tumbuk",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-014",
+        "name": "Pergedel Jagung",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-015",
+        "name": "Pergedel Kentang",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-015",
+        "name": "Udang Goreng Nestum",
+        "price_raw": "76.051",
+        "price_int": 76051,
+        "price_formatted": "Rp76.051"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-015",
+        "name": "Rendang Jengkol",
+        "price_raw": "37.700",
+        "price_int": 37700,
+        "price_formatted": "Rp37.700"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-015",
+        "name": "quruda",
+        "price_raw": "53.951",
+        "price_int": 53951,
+        "price_formatted": "Rp53.951"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-015",
+        "name": "Daun Ubi Rebus",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-016",
+        "name": "Sayur Brokoli",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-016",
+        "name": "Sayur Kailan",
+        "price_raw": "40.300",
+        "price_int": 40300,
+        "price_formatted": "Rp40.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-016",
+        "name": "Sayur Poiling",
+        "price_raw": "40.300",
+        "price_int": 40300,
+        "price_formatted": "Rp40.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-016",
+        "name": "Sayur Buncis",
+        "price_raw": "33.800",
+        "price_int": 33800,
+        "price_formatted": "Rp33.800"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-016",
+        "name": "Sayur Bunga Pepaya",
+        "price_raw": "36.400",
+        "price_int": 36400,
+        "price_formatted": "Rp36.400"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-017",
+        "name": "Gulai Tahu",
+        "price_raw": "14.300",
+        "price_int": 14300,
+        "price_formatted": "Rp14.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-017",
+        "name": "Gulai Tempe",
+        "price_raw": "14.300",
+        "price_int": 14300,
+        "price_formatted": "Rp14.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-017",
+        "name": "Cabe Merah",
+        "price_raw": "30.159",
+        "price_int": 30159,
+        "price_formatted": "Rp30.159"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-017",
+        "name": "S",
+        "price_raw": "30.159",
+        "price_int": 30159,
+        "price_formatted": "Rp30.159"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-018",
+        "name": "Ayam Goreng",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-018",
+        "name": "Ayam Rendang",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-018",
+        "name": "Gr",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-018",
+        "name": "Rendang",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-018",
+        "name": "Telur",
+        "price_raw": "71.429",
+        "price_int": 71429,
+        "price_formatted": "Rp71.429"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-019",
+        "name": "Kikil",
+        "price_raw": "58.730",
+        "price_int": 58730,
+        "price_formatted": "Rp58.730"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-019",
+        "name": "Sayur",
+        "price_raw": "28.571",
+        "price_int": 28571,
+        "price_formatted": "Rp28.571"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-019",
+        "name": "Nasi Putih Bungkus",
+        "price_raw": "19.048",
+        "price_int": 19048,
+        "price_formatted": "Rp19.048"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-019",
+        "name": "Gulai Telur",
+        "price_raw": "30.159",
+        "price_int": 30159,
+        "price_formatted": "Rp30.159"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-019",
+        "name": "Ayam",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-020",
+        "name": "Ayam Panggang",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-020",
+        "name": "Ayam Sambal Ijo",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-020",
+        "name": "Ayam Saos",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-020",
+        "name": "Ayam Semur",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-020",
+        "name": "Telur",
+        "price_raw": "68.254",
+        "price_int": 68254,
+        "price_formatted": "Rp68.254"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-021",
+        "name": "Dendeng",
+        "price_raw": "53.968",
+        "price_int": 53968,
+        "price_formatted": "Rp53.968"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-021",
+        "name": "Kambing",
+        "price_raw": "92.063",
+        "price_int": 92063,
+        "price_formatted": "Rp92.063"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-021",
+        "name": "GraaEQ",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-021",
+        "name": "Ikan Kakap Gulai",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-021",
+        "name": "Ikan Gulai Patin",
+        "price_raw": "42.251",
+        "price_int": 42251,
+        "price_formatted": "Rp42.251"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-022",
+        "name": "Telur",
+        "price_raw": "71.429",
+        "price_int": 71429,
+        "price_formatted": "Rp71.429"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-022",
+        "name": "Ikan Lele",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-022",
+        "name": "Gembung Panggang",
+        "price_raw": "50.794",
+        "price_int": 50794,
+        "price_formatted": "Rp50.794"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-022",
+        "name": "Teri Bilis",
+        "price_raw": "80.952",
+        "price_int": 80952,
+        "price_formatted": "Rp80.952"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-022",
+        "name": "GrobFord",
+        "price_raw": "46.032",
+        "price_int": 46032,
+        "price_formatted": "Rp46.032"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-023",
+        "name": "Babat",
+        "price_raw": "46.032",
+        "price_int": 46032,
+        "price_formatted": "Rp46.032"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-023",
+        "name": "Hati",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-023",
+        "name": "Paru",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-023",
+        "name": "Kerang",
+        "price_raw": "73.016",
+        "price_int": 73016,
+        "price_formatted": "Rp73.016"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-023",
+        "name": "Telur",
+        "price_raw": "77.778",
+        "price_int": 77778,
+        "price_formatted": "Rp77.778"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-024",
+        "name": "Telur Dadar",
+        "price_raw": "33.333",
+        "price_int": 33333,
+        "price_formatted": "Rp33.333"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-024",
+        "name": "Sambal Udang",
+        "price_raw": "80.952",
+        "price_int": 80952,
+        "price_formatted": "Rp80.952"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-024",
+        "name": "Cumi",
+        "price_raw": "73.016",
+        "price_int": 73016,
+        "price_formatted": "Rp73.016"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-024",
+        "name": "Sambal Hati",
+        "price_raw": "73.016",
+        "price_int": 73016,
+        "price_formatted": "Rp73.016"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-024",
+        "name": "Rendang",
+        "price_raw": "55.556",
+        "price_int": 55556,
+        "price_formatted": "Rp55.556"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-025",
+        "name": "Ayam Goreng",
+        "price_raw": "55.556",
+        "price_int": 55556,
+        "price_formatted": "Rp55.556"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-025",
+        "name": "Ayam Gulai",
+        "price_raw": "55.556",
+        "price_int": 55556,
+        "price_formatted": "Rp55.556"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-025",
+        "name": "Rendang Daging",
+        "price_raw": "58.730",
+        "price_int": 58730,
+        "price_formatted": "Rp58.730"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-025",
+        "name": "Telur",
+        "price_raw": "77.778",
+        "price_int": 77778,
+        "price_formatted": "Rp77.778"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-025",
+        "name": "Nasi Ktk + Telur",
+        "price_raw": "39.683",
+        "price_int": 39683,
+        "price_formatted": "Rp39.683"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-026",
+        "name": "Nasi Ktk + Ayam Panggang",
+        "price_raw": "55.556",
+        "price_int": 55556,
+        "price_formatted": "Rp55.556"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-026",
+        "name": "Rendang",
+        "price_raw": "96.825",
+        "price_int": 96825,
+        "price_formatted": "Rp96.825"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-026",
+        "name": "Telur",
+        "price_raw": "74.603",
+        "price_int": 74603,
+        "price_formatted": "Rp74.603"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-026",
+        "name": "Dendeng Brekele",
+        "price_raw": "70.200",
+        "price_int": 70200,
+        "price_formatted": "Rp70.200"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-026",
+        "name": "Kakap Goreng",
+        "price_raw": "58.730",
+        "price_int": 58730,
+        "price_formatted": "Rp58.730"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-027",
+        "name": "@icula",
+        "price_raw": "58.730",
+        "price_int": 58730,
+        "price_formatted": "Rp58.730"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-027",
+        "name": "Telur",
+        "price_raw": "77.778",
+        "price_int": 77778,
+        "price_formatted": "Rp77.778"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-027",
+        "name": "Buahan",
+        "price_raw": "49.206",
+        "price_int": 49206,
+        "price_formatted": "Rp49.206"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-027",
+        "name": "Peyek Udang",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-027",
+        "name": "Kerupuk Jangek",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-028",
+        "name": "Kerupuk Udang",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-028",
+        "name": "Kerupuk Emping",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-028",
+        "name": "Martabak Mesir",
+        "price_raw": "74.603",
+        "price_int": 74603,
+        "price_formatted": "Rp74.603"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-028",
+        "name": "Gado-Gado",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-028",
+        "name": "Grol =",
+        "price_raw": "42.857",
+        "price_int": 42857,
+        "price_formatted": "Rp42.857"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-029",
+        "name": "Grol E",
+        "price_raw": "80.952",
+        "price_int": 80952,
+        "price_formatted": "Rp80.952"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-029",
+        "name": "Grol E",
+        "price_raw": "85.714",
+        "price_int": 85714,
+        "price_formatted": "Rp85.714"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-029",
+        "name": "Telur",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-029",
+        "name": "Telur",
+        "price_raw": "31.746",
+        "price_int": 31746,
+        "price_formatted": "Rp31.746"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-029",
+        "name": "Telur",
+        "price_raw": "41.270",
+        "price_int": 41270,
+        "price_formatted": "Rp41.270"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-030",
+        "name": "Sate Padang",
+        "price_raw": "66.667",
+        "price_int": 66667,
+        "price_formatted": "Rp66.667"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-030",
+        "name": "Sate Ayam (Bumbu Kacang)",
+        "price_raw": "66.667",
+        "price_int": 66667,
+        "price_formatted": "Rp66.667"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-030",
+        "name": "n",
+        "price_raw": "20.635",
+        "price_int": 20635,
+        "price_formatted": "Rp20.635"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-030",
+        "name": "Juice Sunkist",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-030",
+        "name": "Teh Pahit Panas",
+        "price_raw": "1",
+        "price_int": 1,
+        "price_formatted": "Rp1"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-031",
+        "name": "Juice Tomat",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-031",
+        "name": "Juice Wortel",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-031",
+        "name": "Jus Semangka",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-031",
+        "name": "S",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-031",
+        "name": "Teh Manis Panas",
+        "price_raw": "25.397",
+        "price_int": 25397,
+        "price_formatted": "Rp25.397"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-032",
+        "name": "a",
+        "price_raw": "1",
+        "price_int": 1,
+        "price_formatted": "Rp1"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-032",
+        "name": "Lemon Tea",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-032",
+        "name": "=",
+        "price_raw": "1",
+        "price_int": 1,
+        "price_formatted": "Rp1"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-032",
+        "name": "A OFO",
+        "price_raw": "33.333",
+        "price_int": 33333,
+        "price_formatted": "Rp33.333"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-032",
+        "name": "Teh Susu Dingin",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-032",
+        "name": "7CeFe",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-033",
+        "name": "Teh Susu Panas",
+        "price_raw": "33.333",
+        "price_int": 33333,
+        "price_formatted": "Rp33.333"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-033",
+        "name": "Es Garuda Special",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-033",
+        "name": "Es Doger Garuda",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-033",
+        "name": "SebagalW,",
+        "price_raw": "3",
+        "price_int": 3,
+        "price_formatted": "Rp3"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-033",
+        "name": "Jus Kuini",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-033",
+        "name": "Naga Sirsak )",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-034",
+        "name": "Es Pelangi",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-034",
+        "name": "4D-o",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-034",
+        "name": "Juice Jeruk Kelapa Muda",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-034",
+        "name": "Juice Tomjeri",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-034",
+        "name": "Es Alpaka Garuda",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-034",
+        "name": "ORO",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-035",
+        "name": "`",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-035",
+        "name": "Juice Pokat",
+        "price_raw": "52.381",
+        "price_int": 52381,
+        "price_formatted": "Rp52.381"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-035",
+        "name": "(",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-035",
+        "name": "iC",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-035",
+        "name": "g",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-036",
+        "name": "d",
+        "price_raw": "36.508",
+        "price_int": 36508,
+        "price_formatted": "Rp36.508"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-036",
+        "name": "Juice Martabe",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-036",
+        "name": "Juice Jeruk",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-036",
+        "name": "=",
+        "price_raw": "44.444",
+        "price_int": 44444,
+        "price_formatted": "Rp44.444"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-036",
+        "name": "Nasi Bks Ayam Gulai + Teh Pucuk",
+        "price_raw": "53.300",
+        "price_int": 53300,
+        "price_formatted": "Rp53.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-037",
+        "name": "Teh Pucuk",
+        "price_raw": "53.300",
+        "price_int": 53300,
+        "price_formatted": "Rp53.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-037",
+        "name": "Teh Pucuk",
+        "price_raw": "57.200",
+        "price_int": 57200,
+        "price_formatted": "Rp57.200"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-037",
+        "name": "jus jeruk",
+        "price_raw": "80.600",
+        "price_int": 80600,
+        "price_formatted": "Rp80.600"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-037",
+        "name": "teh manis dingin",
+        "price_raw": "80.600",
+        "price_int": 80600,
+        "price_formatted": "Rp80.600"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-037",
+        "name": "cupJus jeruk",
+        "price_raw": "124.800",
+        "price_int": 124800,
+        "price_formatted": "Rp124.800"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-037",
+        "name": "Teh manis dingin",
+        "price_raw": "97.500",
+        "price_int": 97500,
+        "price_formatted": "Rp97.500"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "Jus Mangga",
+        "price_raw": "80.600",
+        "price_int": 80600,
+        "price_formatted": "Rp80.600"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "Kepala Kambing + Jus Timun",
+        "price_raw": "265.851",
+        "price_int": 265851,
+        "price_formatted": "Rp265.851"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "2 Bks Nasi Ikan Panggang + Jus Pokat",
+        "price_raw": "124.800",
+        "price_int": 124800,
+        "price_formatted": "Rp124.800"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "2 Bungkus Nasi Ayam Panggang + Jus Jeruk",
+        "price_raw": "124.800",
+        "price_int": 124800,
+        "price_formatted": "Rp124.800"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "2 Bks Nasi Ayam Rendang + 1 Cup Jus Jeruk",
+        "price_raw": "148.300",
+        "price_int": 148300,
+        "price_formatted": "Rp148.300"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "Manis Dingin",
+        "price_raw": "50.794",
+        "price_int": 50794,
+        "price_formatted": "Rp50.794"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-038",
+        "name": "Manis Dingin",
+        "price_raw": "50.794",
+        "price_int": 50794,
+        "price_formatted": "Rp50.794"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-039",
+        "name": "Manis Dingin",
+        "price_raw": "50.794",
+        "price_int": 50794,
+        "price_formatted": "Rp50.794"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-039",
+        "name": "1 Bks Ns Ayam Goreng + Jus Jeruk",
+        "price_raw": "74.603",
+        "price_int": 74603,
+        "price_formatted": "Rp74.603"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-039",
+        "name": "Manis Dingin",
+        "price_raw": "58.730",
+        "price_int": 58730,
+        "price_formatted": "Rp58.730"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-039",
+        "name": "Manis Dingin",
+        "price_raw": "53.968",
+        "price_int": 53968,
+        "price_formatted": "Rp53.968"
+      },
+      {
+        "filecode": "O-KP-20260619-GAR-039",
+        "name": "3 Bks Ns Ayam Goreng + 1 Cup Jus Jeruk",
+        "price_raw": "150.794",
+        "price_int": 150794,
+        "price_formatted": "Rp150.794"
+      }
+    ]
+  }
+}

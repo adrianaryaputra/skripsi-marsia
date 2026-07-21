@@ -15,3 +15,9 @@ test.*
 *.txt
 *.xml
 scratch/99-temp/_discarded/
+
+# Verification renders / temporary page images
+page*.png
+verify-pages/
+verify-pages-new/
+verify-pages-final/

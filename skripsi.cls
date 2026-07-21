@@ -38,6 +38,11 @@
 \RequirePackage[style=apa, backend=biber]{biblatex} % APA Style references
 \RequirePackage{indentfirst} % Indent first paragraph
 \RequirePackage{tabularx}
+% MiKTeX may ship xltabular newer than the local LaTeX kernel; its tagging
+% hooks are optional for this thesis build, so provide harmless fallbacks.
+\providecommand{\SuspendTagging}[1]{}
+\providecommand{\ResumeTagging}[1]{}
+\RequirePackage{xltabular}
 \RequirePackage{booktabs} % Cleaner table rules ala jurnal
 \RequirePackage{ragged2e} % Better ragged text in narrow table columns
 \RequirePackage{csquotes} % Required by biblatex
@@ -85,6 +90,7 @@
 
 % Justify alignment is default in LaTeX.
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\keepXColumns
 \newcommand{\skripsi@headingfont}{\normalfont\normalsize\bfseries}
 \newcommand{\skripsi@resetbodyindent}{%
   \par
@@ -230,8 +236,20 @@
 \renewcommand{\tablename}{Tabel}
 \renewcommand{\figurename}{Gambar}
 
+\makeatletter
 % Caption settings and table spacing
+\newcommand{\skripsi@tabletextsize}{\footnotesize}
+\newcommand{\skripsi@tablecontinuefontsize}{\footnotesize}
 \captionsetup[table]{
+  font={footnotesize, singlespacing},
+  labelfont=bf,
+  textfont=bf,
+  labelsep=newline,
+  justification=centering,
+  singlelinecheck=false,
+  skip=6pt
+}
+\captionsetup[longtable]{
   font={footnotesize, singlespacing},
   labelfont=bf,
   textfont=bf,
@@ -253,7 +271,7 @@
 \newcommand{\tablesource}[2][\textwidth]{%
   \par\nointerlineskip\vspace{-7pt}%
   \begingroup
-  \normalfont\footnotesize\singlespacing
+  \normalfont\skripsi@tabletextsize\singlespacing
   \noindent\begin{minipage}{#1}%
     \raggedright Sumber: #2%
   \end{minipage}\par
@@ -288,6 +306,9 @@
 \setlength{\cmidrulewidth}{0.05em}
 \newcommand{\skripsi@tableheadcolor}{black!12}
 \newcommand{\skripsi@tablerulecolor}{black!60}
+\newlength{\skripsi@tabletabcolsep}
+\setlength{\skripsi@tabletabcolsep}{4pt}
+\newcommand{\skripsi@tablearraystretch}{1.08}
 \newcolumntype{Z}[1]{>{\columncolor{\skripsi@tableheadcolor}\bfseries\RaggedRight\arraybackslash\hyphenpenalty=50\exhyphenpenalty=0\relax}p{#1}}
 \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
@@ -298,24 +319,36 @@
 \renewcommand{\midrule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline}
 \renewcommand{\bottomrule}{\arrayrulecolor{\skripsi@tablerulecolor}\hline}
 \renewcommand{\addlinespace}[1][]{}
-\AtBeginEnvironment{table}{%
+\newcommand{\skripsi@tableenvsetup}{%
   \singlespacing
   \footnotesize
   \arrayrulecolor{\skripsi@tablerulecolor}%
-  \setlength{\tabcolsep}{5pt}%
-  \renewcommand{\arraystretch}{1.12}%
+  \setlength{\tabcolsep}{\skripsi@tabletabcolsep}%
+  \renewcommand{\arraystretch}{\skripsi@tablearraystretch}%
+  \setlength{\LTleft}{0pt}%
+  \setlength{\LTright}{0pt}%
+  \setlength{\LTcapwidth}{\textwidth}%
+}
+\AtBeginEnvironment{table}{%
+  \skripsi@tableenvsetup
 }
 \AtBeginEnvironment{tabularx}{%
-  \footnotesize
-  \arrayrulecolor{\skripsi@tablerulecolor}%
+  \skripsi@tableenvsetup
+}
+\AtBeginEnvironment{xltabular}{%
+  \skripsi@tableenvsetup
 }
 \AtBeginEnvironment{longtable}{%
-  \singlespacing
-  \arrayrulecolor{\skripsi@tablerulecolor}%
+  \skripsi@tableenvsetup
 }
 
 \newcommand{\continuedtabletitle}[1]{%
-  \multicolumn{#1}{@{}l@{}}{\textbf{Lanjutan Tabel \thetable}}\\%
+  \multicolumn{#1}{l}{\textbf{Lanjutan Tabel \thetable}}\\[2pt]%
+}
+
+\newcommand{\continuedtablefooter}[1]{%
+  \midrule
+  \multicolumn{#1}{r}{\footnotesize Dilanjutkan pada halaman berikutnya}\\%
 }
 
 % Keep table/figure-to-text spacing close to the guide and avoid stretched gaps.

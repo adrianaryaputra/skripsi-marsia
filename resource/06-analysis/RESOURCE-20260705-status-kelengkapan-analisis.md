@@ -5,7 +5,7 @@ Root resource: `resource/`
 
 ## Jawaban Utama
 
-Resource sudah rapi dan cukup untuk menyusun analisis Bab IV/V dengan batas klaim yang jelas. Namun resource belum dapat disebut lengkap final atau sepenuhnya ter-triangulasi karena masih ada empat gap: wawancara pemilik utama terbaru, data kinerja terbaru, jumlah responden pelanggan yang terbatas, dan wawancara kompetitor yang belum merata.
+Resource sudah rapi dan cukup untuk menyusun analisis Bab IV/V dengan batas klaim yang jelas. Setelah catatan wawancara pemilik 6 Juli 2026 masuk, gap wawancara pemilik utama tertutup sebagian. Resource tetap belum dapat disebut lengkap final karena data kinerja terbaru, jumlah responden pelanggan yang terbatas, dan wawancara kompetitor yang belum merata masih membatasi kekuatan klaim.
 
 Dengan kondisi sekarang, analisis dapat ditulis sebagai analisis lengkap berbasis data tersedia, tetapi beberapa bagian harus memakai bahasa provisional seperti "berdasarkan data yang tersedia", "mengindikasikan", "berpotensi", atau "perlu divalidasi dengan data lanjutan".
 
@@ -24,7 +24,7 @@ Dengan kondisi sekarang, analisis dapat ditulis sebagai analisis lengkap berbasi
 
 | Area | Status |
 |---|---|
-| Wawancara lapangan | Sudah dikoding dalam `05-fieldwork/07-rekap-koding/W-INT-20260704-koding-temuan-lapangan-lengkap.md`. |
+| Wawancara lapangan | Sudah dikoding dalam `05-fieldwork/07-rekap-koding/W-INT-20260704-koding-temuan-lapangan-lengkap.md`, termasuk tambahan `TW-PM` dari wawancara pemilik 6 Juli 2026. |
 | Instrumen penelitian | Sudah dipindahkan dari `output/pdf/` ke `05-fieldwork/00-instrumen-penelitian/` beserta manifest. |
 | Angket pelanggan | Sudah dikoding sebagai `TS-PL-01` sampai `TS-PL-12`, tetapi jumlah responden masih terbatas. |
 | Observasi GrabFood Nasi Gerilya | Sudah termanifest dan terhubung ke koding utama. |
@@ -49,7 +49,7 @@ Dengan kondisi sekarang, analisis dapat ditulis sebagai analisis lengkap berbasi
 
 | Gap | Tidak boleh diklaim penuh |
 |---|---|
-| Pemilik utama terbaru belum diwawancarai | Jangan menulis bahwa strategi final terbaru sudah ditetapkan pemilik, kecuali diberi label berdasarkan wawancara awal/pra-survei. |
+| Wawancara pemilik terbaru berbentuk catatan ringkas | Boleh dipakai untuk validasi tema manajerial, tetapi jangan menulis margin/HPP rinci atau dampak penjualan kuantitatif yang tidak dibuka pemilik. |
 | Data penjualan terbaru belum ada | Jangan menulis strategi terbukti meningkatkan penjualan sebesar angka tertentu. |
 | Responden pelanggan terbatas | Jangan menggeneralisasi sebagai "mayoritas pelanggan" atau "pelanggan secara umum" tanpa bahasa indikatif. |
 | Wawancara kompetitor belum merata | Jangan menyatakan semua kompetitor memiliki pola operasional yang sama. |

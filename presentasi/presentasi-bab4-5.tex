@@ -1,0 +1,634 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% -----------------------------------------------------------------------------
+% Presentasi skripsi -- fokus Bab IV dan Bab V
+% -----------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[indonesian]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{etoolbox}
+\usetikzlibrary{positioning}
+\pgfplotsset{compat=1.18}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\definecolor{usuGreen}{RGB}{0,92,75}
+\definecolor{usuGold}{RGB}{215,169,62}
+\definecolor{softGreen}{RGB}{232,243,239}
+\definecolor{softGold}{RGB}{255,248,225}
+\definecolor{darkText}{RGB}{35,35,35}
+
+\setbeamercolor{palette primary}{bg=usuGreen,fg=white}
+\setbeamercolor{palette secondary}{bg=usuGreen!85!black,fg=white}
+\setbeamercolor{palette tertiary}{bg=usuGold,fg=black}
+\setbeamercolor{frametitle}{bg=usuGreen,fg=white}
+\setbeamercolor{title}{fg=usuGreen}
+\setbeamercolor{block title}{bg=usuGreen,fg=white}
+\setbeamercolor{block body}{bg=softGreen,fg=darkText}
+\setbeamercolor{alerted text}{fg=usuGreen!80!black}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[default]
+
+\graphicspath{{../resource/01-brand/}{../resource/05-fieldwork/02-observasi-grabfood/user-supplied/}}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcommand{\strong}[1]{\textbf{\textcolor{usuGreen!85!black}{#1}}}
+\newcommand{\smallsource}[1]{\vspace{0.15cm}{\tiny\textit{Sumber: #1}}}
+
+\title[Strategi Pemasaran Nasi Gerilya]{Strategi Pemasaran Rumah Makan Nasi Gerilya pada Platform GrabFood untuk Meningkatkan Penjualan Berdasarkan Analisis SWOT}
+\subtitle{}
+\author[Marsia Br Pelawi]{Marsia Br Pelawi\\\small NIM 220502068}
+\institute[Universitas Sumatera Utara]{Program Studi S-1 Manajemen\\Fakultas Ekonomi dan Bisnis\\Universitas Sumatera Utara}
+\date{}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+\begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[usuGreen] (current page.north west) rectangle ([yshift=-2.35cm]current page.north east);
+    \end{tikzpicture}
+    \vspace*{0.48cm}
+    \begin{minipage}[c]{0.14\textwidth}
+        \hspace*{0.08cm}\IfFileExists{../resource/01-brand/logo-usu.png}{\includegraphics[height=1.28cm]{../resource/01-brand/logo-usu.png}}{}
+    \end{minipage}\hfill
+    \begin{minipage}[c]{0.81\textwidth}
+        {\color{white}\bfseries\fontsize{12.3pt}{14pt}\selectfont Strategi Pemasaran Rumah Makan Nasi Gerilya pada Platform GrabFood untuk Meningkatkan Penjualan Berdasarkan Analisis SWOT}
+    \end{minipage}
+
+    \vspace{1.35cm}
+    \begin{center}
+        {\large\bfseries Marsia Br Pelawi}\par
+        {\small NIM 220502068}\par
+        \vspace{0.45cm}
+        \begin{tabular}{@{}r@{\hspace{0.25cm}}l@{}}
+            \textbf{Pembimbing} & Dr. Tetty Yuliaty, S.E., M.Si \\
+            \textbf{Penguji 1} & Prof. Dr. Arlina Nurbaity Lubis, S.E., M.B.A \\
+            \textbf{Penguji 2} & Haryaji Catur Putera Hasman, S.E., M.Si \\
+        \end{tabular}
+        \vfill
+        {\small Program Studi S-1 Manajemen\\Fakultas Ekonomi dan Bisnis\\Universitas Sumatera Utara}
+    \end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Fokus dan Alur Presentasi}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.47\textwidth}
+        \begin{block}{Yang akan dibahas}
+            \begin{itemize}
+                \item Data utama Bab IV.
+                \item Temuan dari wawancara, angket, dan observasi.
+                \item Hasil IFAS, EFAS, dan kuadran SWOT.
+                \item Kesimpulan dan saran Bab V.
+            \end{itemize}
+        \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+        \begin{block}{Urutan pembahasan}
+            \begin{enumerate}
+                \item Objek dan sumber data.
+                \item Temuan lapangan.
+                \item Gambaran STP, 7P, dan SWOT.
+                \item Strategi yang paling diprioritaskan.
+                \item Kesimpulan, saran, dan batasan.
+            \end{enumerate}
+        \end{block}
+    \end{column}
+\end{columns}
+\vspace{0.2cm}
+\begin{center}
+    \strong{Pesan utama:} penjualan tidak bisa ditingkatkan hanya dengan promo. Nasi Gerilya juga perlu merapikan layanan, memperjelas paket menu, dan memakai data pelanggan untuk mendorong pembelian ulang.
+\end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Pertanyaan dan Tujuan Penelitian}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}L{0.43\textwidth}Y@{}}
+\toprule
+\textbf{Rumusan Masalah} & \textbf{Tujuan} \\
+\midrule
+Faktor apa saja yang menjadi kekuatan dan kelemahan Nasi Gerilya di \mbox{GrabFood?} & Menjelaskan kekuatan dan kelemahan usaha. \\
+\addlinespace[0.12cm]
+Faktor luar apa saja yang menjadi peluang dan ancaman Nasi Gerilya di \mbox{GrabFood?} & Menjelaskan peluang dan ancaman usaha. \\
+\addlinespace[0.12cm]
+Strategi pemasaran apa yang paling sesuai berdasarkan SWOT? & Menyusun strategi pemasaran yang lebih tepat untuk membantu peningkatan penjualan. \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Nasi Gerilya dan Peran GrabFood}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.50\textwidth}
+        \begin{block}{Objek Penelitian}
+            Rumah Makan Nasi Gerilya adalah usaha nasi Padang di Kota Medan. GrabFood menjadi salah satu jalur utama untuk menampilkan menu dan menerima pesanan.
+        \end{block}
+        \begin{itemize}
+            \item Produk utama: menu nasi Padang dengan berbagai lauk.
+            \item Di GrabFood, pelanggan melihat foto, rating, harga, promo, jarak, ulasan, dan waktu antar.
+            \item Karena semua terlihat di aplikasi, pelanggan mudah membandingkan Nasi Gerilya dengan restoran lain.
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+        \begin{block}{Sumber Order}
+            \begin{tabularx}{\linewidth}{@{}Y C{1.5cm}@{}}
+            \toprule
+            \textbf{Platform} & \textbf{Persentase} \\
+            \midrule
+            GrabFood & 50\% \\
+            GoFood & 12\% \\
+            ShopeeFood & 8\% \\
+            Offline & 30\% \\
+            \bottomrule
+            \end{tabularx}
+        \end{block}
+        \vspace{0.2cm}
+        \alert{Artinya:} GrabFood menyumbang porsi digital terbesar, tetapi pesanan offline tetap penting.
+    \end{column}
+\end{columns}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Alur Penelitian}
+\scriptsize
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{\textwidth}
+        \centering
+        \tikzset{
+            alurbox/.style={draw=black!65, fill=white, rounded corners=2pt, align=center, text width=6.45cm, minimum height=0.46cm, font=\scriptsize\bfseries, inner sep=3pt},
+            alurisi/.style={draw=black!65, fill=white, rounded corners=2pt, align=center, text width=6.45cm, minimum height=0.76cm, font=\scriptsize\bfseries, inner sep=4pt}
+        }
+        \begin{tikzpicture}[node distance=0.31cm]
+            \node[alurbox, fill=softGreen] (objek) {RM Nasi Gerilya di GrabFood};
+            \node[alurbox, below=of objek] (data) {Data Lapangan};
+            \node[alurisi, below=of data] (lingkungan) {Faktor\\[1pt]
+                \begin{tabular}{@{}cc@{}}
+                    \fcolorbox{black!55}{black!5}{\parbox[c][0.32cm][c]{1.45cm}{\centering\tiny\bfseries Eksternal}} &
+                    \fcolorbox{black!55}{black!5}{\parbox[c][0.32cm][c]{1.45cm}{\centering\tiny\bfseries Internal}}
+                \end{tabular}};
+            \node[alurbox, below=of lingkungan] (swot) {Matriks SWOT};
+            \node[alurisi, below=of swot] (alternatif) {Pilihan Strategi\\[-1pt]
+                \begin{tabular}{@{}cccc@{}}
+                    \fcolorbox{black!55}{black!5}{\parbox[c][0.32cm][c]{0.95cm}{\centering\tiny\bfseries SO}} &
+                    \fcolorbox{black!55}{black!5}{\parbox[c][0.32cm][c]{0.95cm}{\centering\tiny\bfseries WO}} &
+                    \fcolorbox{black!55}{black!5}{\parbox[c][0.32cm][c]{0.95cm}{\centering\tiny\bfseries ST}} &
+                    \fcolorbox{black!55}{black!5}{\parbox[c][0.32cm][c]{0.95cm}{\centering\tiny\bfseries WT}}
+                \end{tabular}};
+            \node[alurbox, fill=softGreen, below=of alternatif] (rumusan) {Strategi Pemasaran yang Disarankan};
+
+            \draw[->, thick, usuGreen] (objek) -- (data);
+            \draw[->, thick, usuGreen] (data) -- (lingkungan);
+            \draw[->, thick, usuGreen] (lingkungan) -- (swot);
+            \draw[->, thick, usuGreen] (swot) -- (alternatif);
+            \draw[->, thick, usuGreen] (alternatif) -- (rumusan);
+        \end{tikzpicture}
+    \end{column}
+\end{columns}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Data Penjualan: Kenapa Penelitian ini Perlu Dilakukan}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.58\textwidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+            width=\linewidth,
+            height=0.9\textheight,
+            ybar,
+            bar width=22pt,
+            ymin=0,
+            ymax=18000,
+            ylabel={Penjualan (bungkus)},
+            symbolic x coords={Des 2024,Mar 2025,Nov 2025},
+            xtick=data,
+            nodes near coords={\pgfmathprintnumber[fixed,precision=0,1000 sep=.]{\pgfplotspointmeta}},
+            nodes near coords style={font=\scriptsize},
+            ytick={0,5000,10000,15000},
+            yticklabels={0,5000,10000,15000},
+            axis lines*=left,
+            tick label style={font=\scriptsize},
+            label style={font=\scriptsize},
+            xticklabel style={font=\scriptsize},
+            grid=major,
+            major grid style={draw=black!10}
+        ]
+        \addplot[fill=usuGreen!75, draw=usuGreen] coordinates {
+            (Des 2024,6702)
+            (Mar 2025,16590)
+            (Nov 2025,12900)
+        };
+        \end{axis}
+        \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.39\textwidth}
+        \begin{block}{Yang terlihat dari data}
+        \begin{itemize}
+            \item Penjualan naik dari 6.702 bungkus menjadi 16.590 bungkus.
+            \item Setelah puncak Maret 2025, penjualan turun hingga 12.900 bungkus.
+            \item Dari Maret ke November turun sekitar 22,2\%.
+            \item Dibanding kompetitor, indeks Nasi Gerilya turun dari 100,0 ke 70,4.
+        \end{itemize}
+        \end{block}
+        \alert{Artinya:} yang perlu dibenahi bukan hanya kunjungan di aplikasi, tetapi juga pembelian, beli ulang, harga, promo, stok, dan layanan.
+    \end{column}
+\end{columns}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Temuan Lapangan dari Wawancara dan Angket}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.45\textwidth}
+        \begin{block}{Hal yang sudah kuat}
+        \begin{itemize}
+            \item Rasa lauk kuat dan konsistensi bahan dijaga.
+            \item Porsi dinilai besar dan mengenyangkan.
+            \item Menu yang paling menonjol: dendeng, ayam pop, dan ayam goreng.
+            \item Rating, foto, dan reputasi digital membantu pelanggan memilih.
+            \item Alur kerja sudah ada: dapur, checker, display, leader, dan admin.
+        \end{itemize}
+        \end{block}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+        \begin{block}{Masalah yang sering muncul}
+        \begin{itemize}
+            \item Item tambahan seperti kuah, sambal, atau add-on rawan tertinggal saat ramai.
+            \item Pesanan dine in, ojek online, dan take away bisa menumpuk pada jam ramai.
+            \item Update stok belum selalu rapi.
+            \item Harga di GrabFood terasa mahal kalau tanpa promo atau ongkir murah.
+            \item Detail isi paket belum selalu mudah dipahami.
+        \end{itemize}
+        \end{block}
+    \end{column}
+\end{columns}
+\vspace{0.1cm}
+\begin{center}
+\strong{Temuan kunci:} produknya sudah kuat, tetapi layanan perlu dibuat lebih konsisten.
+\end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Temuan Observasi di GrabFood}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.57\textwidth}
+        \setlength{\tabcolsep}{2.5pt}
+        \begin{tabularx}{\linewidth}{@{}Y C{0.85cm} C{1.25cm} C{1.25cm}@{}}
+        \toprule
+        \textbf{Merchant} & \textbf{Rating} & \textbf{Ulasan} & \textbf{Jarak} \\
+        \midrule
+        Nasi Gerilya & 4,7 & 4.584 & 0 km \\
+        Restoran Paripurna & 4,7 & 1.264 & 6,4 km \\
+        RM Dendeng Batokok & 4,8 & 1.479 & 7,3 km \\
+        Istana Krakatau & 4,6 & 6.256 & 0,8 km \\
+        RM Pondok Gurih & 4,9 & 56.157 & 2,1 km \\
+        Restoran Garuda & 4,6 & 17.068 & 1,7 km \\
+        \bottomrule
+        \end{tabularx}
+    \end{column}
+    \begin{column}{0.40\textwidth}
+        \begin{block}{Yang terlihat}
+        \begin{itemize}
+            \item Rating Nasi Gerilya sudah bagus.
+            \item Beberapa kompetitor punya jumlah ulasan jauh lebih banyak.
+            \item Setiap kompetitor punya keunggulan berbeda: reputasi, jarak, harga, menu premium, atau jumlah ulasan.
+            \item Pelanggan bisa membandingkan semuanya langsung di aplikasi.
+        \end{itemize}
+        \end{block}
+    \end{column}
+\end{columns}
+\vspace{0.15cm}
+\alert{Artinya:} Nasi Gerilya perlu menonjolkan rasa dan porsi, sambil merapikan ketelitian pesanan dan info di aplikasi.
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Segmen Pelanggan dan Bauran Pemasaran (7P)}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
+        \begin{block}{Siapa pelanggan yang dituju}
+        \begin{itemize}
+            \item \strong{Segmentasi:} pekerja, mahasiswa, pelanggan sekitar, dan pembeli jam makan siang.
+            \item \strong{Target:} orang yang butuh nasi Padang praktis, porsi besar, rasa kuat, rating bagus, dan promo.
+            \item \strong{Posisi yang ingin dibangun:} nasi Padang Medan yang praktis, mengenyangkan, rasanya kuat, dan terpercaya di GrabFood.
+        \end{itemize}
+        \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+        \begin{block}{Bagian 7P yang paling berpengaruh}
+        \begin{itemize}
+            \item \textit{Product}: rasa lauk dan menu unggulan.
+            \item \textit{Price}: harga perlu dibantu paket dan promo yang terukur.
+            \item \textit{Promotion}: promo efektif kalau stok dan dapur siap.
+            \item \textit{Process}: bagian paling penting adalah packing, antrean, stok, estimasi, dan item terpisah.
+            \item \textit{Physical evidence}: foto, rating, ulasan, label, segel, dan info paket.
+        \end{itemize}
+        \end{block}
+    \end{column}
+\end{columns}
+\begin{center}
+\strong{Intinya:} promo akan lebih efektif kalau proses layanan sudah rapi.
+\end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Faktor Internal: Kekuatan dan Kelemahan}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+        \begin{block}{Kekuatan (S)}
+        \begin{enumerate}
+            \item Rasa lauk \textit{authentic}.
+            \item Porsi besar.
+            \item Sistem checkpoint antrian GrabFood sudah ada.
+            \item Reputasi digital cukup kuat.
+            \item Respon keluhan pelanggan sudah ditanggapi.
+        \end{enumerate}
+        \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+        \begin{block}{Kelemahan (W)}
+        \begin{enumerate}
+            \item Akurasi pesanan.
+            \item Antrian multiplatform menumpuk saat jam ramai.
+            \item Update stok belum stabil.
+            \item Persepsi Harga GrabFood mahal.
+            \item Deskripsi isi paket di grab kurang tegas.
+        \end{enumerate}
+        \end{block}
+    \end{column}
+\end{columns}
+\vspace{0.15cm}
+\alert{Kesimpulan internal:} produk dan reputasi sudah kuat; pekerjaan rumah terbesar ada pada proses layanan.
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Faktor Eksternal: Peluang dan Ancaman}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+        \begin{block}{Peluang (O)}
+        \begin{enumerate}
+            \item Permintaan siang praktis tinggi.
+            \item Promo GrabFood bisa menarik pelanggan baru.
+            \item Tampilan toko digital dapat diperkuat.
+            \item Jika kompetitor lemah di packing, Nasi Gerilya bisa tampil lebih rapi.
+            \item Data pelanggan bisa dipakai untuk mendorong pembelian ulang.
+        \end{enumerate}
+        \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+        \begin{block}{Ancaman (T)}
+        \begin{enumerate}
+            \item Kompetitor punya reputasi digital kuat.
+            \item Harga mudah dibandingkan di aplikasi.
+            \item Terlalu bergantung pada voucher bisa mengurangi keuntungan.
+            \item Ulasan negatif akibat item kurang.
+            \item Cita rasa kompetitor.
+        \end{enumerate}
+        \end{block}
+    \end{column}
+\end{columns}
+\vspace{0.15cm}
+\alert{Kesimpulan eksternal:} peluangnya besar di aplikasi, tetapi pelanggan punya banyak pilihan pembanding.
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Skor IFAS dan EFAS}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.47\textwidth}
+        \begin{block}{IFAS}
+        \begin{tabularx}{\linewidth}{@{}Y C{1.5cm}@{}}
+        \toprule
+        \textbf{Komponen} & \textbf{Skor} \\
+        \midrule
+        Total kekuatan & 1,77 \\
+        Total kelemahan & 0,73 \\
+        \textbf{Total IFAS} & \textbf{2,50} \\
+        \bottomrule
+        \end{tabularx}
+        \vspace{0.15cm}
+        \scriptsize Kekuatan lebih besar, tetapi masalah proses tetap perlu dibereskan.
+        \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+        \begin{block}{EFAS}
+        \begin{tabularx}{\linewidth}{@{}Y C{1.5cm}@{}}
+        \toprule
+        \textbf{Komponen} & \textbf{Skor} \\
+        \midrule
+        Total peluang & 1,53 \\
+        Total ancaman & 0,98 \\
+        \textbf{Total EFAS} & \textbf{2,51} \\
+        \bottomrule
+        \end{tabularx}
+        \vspace{0.15cm}
+        \scriptsize Peluang lebih besar, tetapi tekanan kompetitor dan harga tetap terasa.
+        \end{block}
+    \end{column}
+\end{columns}
+\vspace{0.15cm}
+\begin{block}{Artinya}
+Skor IFAS 2,50 dan EFAS 2,51 menunjukkan kondisi sedang. Nasi Gerilya punya modal untuk tumbuh, tetapi proses layanan harus dibenahi agar peluang di GrabFood tidak berubah menjadi keluhan.
+\end{block}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Posisi Nasi Gerilya di Kuadran SWOT}
+\small
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.43\textwidth}
+        \begin{block}{Cara membaca posisi}
+        \[
+            X = 1{,}77 - 0{,}73 = 1{,}04
+        \]
+        \[
+            Y = 1{,}53 - 0{,}98 = 0{,}55
+        \]
+        \end{block}
+        \begin{itemize}
+            \item X positif: kekuatan lebih besar daripada kelemahan.
+            \item Y positif: peluang lebih besar daripada ancaman.
+            \item Posisi: \strong{Kuadran I / Agresif}.
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.54\textwidth}
+        \centering
+        \begin{tikzpicture}[x=1.0cm,y=0.95cm, every node/.style={font=\scriptsize}]
+            \fill[softGreen] (0,0) rectangle (1.04,0.55);
+            \draw[->, thick] (-2.7,0) -- (3.0,0) node[right] {S};
+            \draw[->, thick] (0,-2.1) -- (0,2.25) node[above] {O};
+            \node[align=center, text=black!65] at (-2.1,1.55) {III\\Perbaikan};
+            \node[align=center, text=usuGreen!85!black, font=\scriptsize\bfseries] at (2.05,1.55) {I\\Agresif};
+            \node[align=center, text=black!65] at (2.05,-1.45) {II\\Diversifikasi};
+            \node[align=center, text=black!65] at (-2.1,-1.45) {IV\\Bertahan};
+            \node[left] at (-2.7,0) {W};
+            \node[below] at (0,-2.1) {T};
+            \draw[dashed, usuGreen!70!black] (1.04,0) -- (1.04,0.55) -- (0,0.55);
+            \filldraw[usuGreen!90!black] (1.04,0.55) circle (2.2pt);
+            \node[draw=usuGreen!70!black, fill=white, rounded corners, anchor=west, align=left] at (1.18,0.78) {Nasi Gerilya\\(1,04; 0,55)};
+        \end{tikzpicture}
+    \end{column}
+\end{columns}
+\vspace{0.1cm}
+\alert{Artinya:} strategi SO jadi arah utama. Perbaikan WO, ST, dan WT tetap perlu agar layanan tidak menghambat pertumbuhan.
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Pilihan Strategi dari SWOT}
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}L{0.23\textwidth}Y Y@{}}
+\toprule
+\textbf{EFAS/IFAS} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\
+\midrule
+\textbf{Peluang (O)} &
+\textbf{SO}\newline
+1. Buat paket menu unggulan: dendeng, ayam pop, dan ayam goreng.\newline
+2. Perkuat foto, deskripsi, rating, dan posisi menu unggulan.\newline
+3. Hubungkan promo dengan stamp digital dan data pelanggan. &
+\textbf{WO}\newline
+1. Jalankan promo hanya untuk menu yang stok dan dapurnya siap.\newline
+2. Perjelas isi paket, kuah, sambal, segel, label, dan stok.\newline
+3. Terapkan antrean dan checklist packing. \\
+\addlinespace[0.15cm]
+\textbf{Ancaman (T)} &
+\textbf{ST}\newline
+1. Tonjolkan rasa, porsi, dan menu khas.\newline
+2. Gunakan rating dan respons keluhan untuk menjaga kepercayaan.\newline
+3. Batasi promo agar keuntungan tetap aman. &
+\textbf{WT}\newline
+1. Rapikan SOP jam ramai dan pengecekan item terpisah.\newline
+2. Stabilkan update stok dan estimasi tunggu driver.\newline
+3. Evaluasi biaya/HPP, batas voucher, dan paket hemat. \\
+\bottomrule
+\end{tabularx}
+\vspace{0.2cm}
+\begin{center}
+\strong{Arah utama:} strategi SO; \strong{penopang:} WO, ST, dan WT agar layanan tetap konsisten.
+\end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Urutan Strategi yang Disarankan}
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}C{0.65cm} Y Y Y@{}}
+\toprule
+\textbf{No.} & \textbf{Strategi utama} & \textbf{Masalah yang dijawab} & \textbf{Hasil yang diharapkan} \\
+\midrule
+1 & Rapikan antrean lintas jalur, checklist packing, dan SOP jam ramai. & Item kurang, driver menunggu, antrean menumpuk, stok belum stabil. & Komplain turun, rating terjaga, layanan lebih konsisten. \\
+\addlinespace[0.15cm]
+2 & Buat paket menu unggulan: dendeng, ayam pop, ayam goreng, plus bundling minum/sambal/kuah. & Harga terasa mahal dan pilihan paket belum jelas. & Pelanggan coba beli, beli ulang, nilai transaksi, dan penilaian terhadap menu meningkat. \\
+\addlinespace[0.15cm]
+3 & Perbaiki tampilan GrabFood dan menu digital. & Pelanggan ragu karena detail isi paket, kuah, sambal, stok, dan foto belum optimal. & Checkout dan kepercayaan pelanggan meningkat. \\
+\addlinespace[0.15cm]
+4 & Samakan promo dengan stok, kapasitas dapur, HPP, dan keuntungan. & Promo dapat membebani dapur dan mengurangi keuntungan. & Order lebih terkendali dan promo lebih sehat. \\
+\addlinespace[0.15cm]
+5 & Gunakan stamp digital, data pelanggan, dan Flowie. & Terlalu bergantung pada voucher dan data pelanggan belum dimanfaatkan. & Pembelian ulang, kontrol stok, dan evaluasi biaya lebih terukur. \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Kesimpulan}
+\small
+\begin{enumerate}
+    \item Nasi Gerilya punya modal kuat: rasa, porsi, reputasi digital, kualitas bahan, konsistensi rasa, promo, dan kemauan memakai sistem digital.
+    \item Masalah utama ada pada proses layanan: packing, item terpisah atau berkuah, antrean, stok, harga di aplikasi, dan info paket.
+    \item IFAS 2,50 dan EFAS 2,51 menunjukkan kondisi sedang; posisi SWOT ada di Kuadran I.
+    \item Strategi SO menjadi arah utama, tetapi harus dibarengi perbaikan proses agar peluang digital tidak berubah menjadi keluhan.
+\end{enumerate}
+\vspace{0.15cm}
+\begin{block}{Inti kesimpulan}
+Penjualan dapat didorong lewat menu unggulan, reputasi digital, promo yang terukur, layanan yang rapi, dan data pelanggan untuk pembelian ulang.
+\end{block}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Saran untuk Nasi Gerilya}
+\small
+\begin{block}{Yang paling perlu dilakukan}
+\begin{enumerate}
+    \item Pisahkan dan rapikan antrean \textit{dine in}, ojek online, dan \textit{take away}.
+    \item Pakai checklist packing untuk nomor pesanan, lauk, kuah, sambal, add-on, catatan khusus, label, dan segel.
+    \item Siapkan SOP jam ramai: petugas stok, packing, dan estimasi tunggu driver.
+    \item Buat paket menu unggulan yang mudah dipilih, terutama dendeng, ayam pop, dan ayam goreng.
+    \item Perjelas foto, isi paket, stok, dan keterangan menu di GrabFood/menu digital.
+    \item Jalankan promo hanya saat stok, dapur, biaya/HPP, dan keuntungan aman.
+    \item Gunakan stamp digital, data pelanggan, dan Flowie untuk mendorong pembelian ulang.
+\end{enumerate}
+\end{block}
+\vspace{0.1cm}
+\begin{center}
+\strong{Intinya:} perbaiki proses layanan dulu, lalu perkuat promo dan paket menu.
+\end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Keterbatasan Penelitian}
+\small
+\begin{block}{Hal yang perlu diingat}
+\begin{itemize}
+    \item Fokus penelitian adalah GrabFood, jadi belum mewakili semua jalur penjualan Nasi Gerilya.
+    \item Strategi yang disusun masih berupa rekomendasi, belum diuji langsung menaikkan penjualan.
+    \item Jumlah responden pelanggan terbatas, sehingga temuan pelanggan dibaca sebagai gambaran pengalaman.
+    \item Wawancara kompetitor belum mencakup semua restoran Padang pesaing di Medan.
+    \item Data keuntungan, HPP rinci, dan target BEP tidak dibuka karena termasuk data internal usaha.
+    \item Harga, promo, rating, dan ulasan GrabFood bisa berubah.
+\end{itemize}
+\end{block}
+\vspace{0.1cm}
+\begin{center}
+\strong{Maknanya:} hasil penelitian sudah bisa menjadi arahan strategi, tetapi dampaknya tetap perlu diuji dengan data lanjutan.
+\end{center}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Penutup}
+\centering
+\vspace{0.25cm}
+\begin{block}
+\Large
+Untuk meningkatkan penjualan di GrabFood, Nasi Gerilya tidak cukup hanya menambah promo. Yang paling penting adalah layanan lebih rapi, paket menu lebih jelas, stok lebih konsisten, pesanan lebih teliti, dan data pelanggan dipakai untuk mendorong pembelian ulang.
+\end{block}
+\vspace{0.5cm}
+\Huge\textcolor{usuGreen}{Terima kasih}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{FAQ}
+\small
+\begin{tabularx}{\textwidth}{@{}L{0.34\textwidth}Y@{}}
+\toprule
+\textbf{Pertanyaan} & \textbf{Jawaban singkat} \\
+\midrule
+Faktor internal Nasi Gerilya & Kekuatan utama ada pada rasa, porsi, reputasi digital, pengecekan pesanan, dan respons keluhan. Kelemahan utama ada pada packing, antrean, stok, harga, dan penjelasan paket. \\
+\addlinespace[0.18cm]
+Faktor eksternal Nasi Gerilya & Peluang datang dari kebutuhan makan siang praktis, promo, tampilan digital, kelemahan packing kompetitor, dan data pelanggan. Ancaman datang dari reputasi kompetitor, harga, voucher, ulasan negatif, dan rasa pesaing. \\
+\addlinespace[0.18cm]
+Strategi pemasaran berdasarkan SWOT & Posisi ada di Kuadran I, sehingga strategi SO menjadi arah utama. Prioritasnya adalah merapikan layanan, membuat paket menu unggulan, memperbaiki tampilan digital, menjalankan promo terukur, dan memakai data pelanggan. \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\end{document}

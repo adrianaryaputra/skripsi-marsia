@@ -4,6 +4,7 @@ Tanggal susun: 2026-07-05
 
 | Kode sumber | Lokasi resource | Peran dalam triangulasi |
 |---|---|---|
+| `W-PM-20260706` | `05-fieldwork/01-wawancara/20260706-wawancara-pemilik/` | Validasi pemilik atas komposisi kanal, kualitas bahan, konsistensi rasa, margin secara kualitatif, struktur leader, KOL, APINDO, reputasi GrabFood, Flowie, dan regenerasi SDM. |
 | `W-KR-BD-20260703` | `05-fieldwork/01-wawancara/20260701-20260704-wawancara-lapangan/` | Validasi operasional dapur, stok, SOP, SDM, rasa, dan packing. |
 | `W-AD-RK-20260701` | `05-fieldwork/01-wawancara/20260701-20260704-wawancara-lapangan/` | Validasi alur kasir/checker, GrabFood, driver, catatan khusus, promo, dan komplain. |
 | `W-BC-20260704` | `05-fieldwork/01-wawancara/20260701-20260704-wawancara-lapangan/` | Validasi sistem internal, antrean, menu digital, stamp digital, dan prioritas strategi. |

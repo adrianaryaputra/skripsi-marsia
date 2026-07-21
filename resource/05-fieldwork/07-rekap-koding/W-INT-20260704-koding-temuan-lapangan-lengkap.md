@@ -1,9 +1,9 @@
 # Koding Temuan Lapangan Lengkap
 
-Sumber data: transkrip pegawai, wawancara intern business consultant, rekap kompetitor, observasi GrabFood, dokumentasi kinerja, dan angket pelanggan.  
-Tanggal penyusunan: 3 Juli 2026; diperbarui 4 Juli 2026.  
+Sumber data: transkrip pegawai, wawancara intern business consultant, rekap kompetitor, wawancara pemilik, observasi GrabFood, dokumentasi kinerja, dan angket pelanggan.  
+Tanggal penyusunan: 3 Juli 2026; diperbarui 6 Juli 2026.  
 Fokus: Strategi pemasaran Rumah Makan Nasi Gerilya pada platform GrabFood untuk meningkatkan penjualan berdasarkan analisis SWOT.  
-Catatan: wawancara pemilik utama belum tersedia dalam kumpulan transkrip ini; informasi pemilik yang digunakan tetap bersumber dari wawancara awal dan dokumentasi yang sudah ada di skripsi.
+Catatan: wawancara pemilik utama 6 Juli 2026 sudah ditambahkan sebagai data berbasis catatan ringkas; data margin tetap tidak dibuka karena rahasia usaha.
 
 ## Inventaris Sumber Data
 
@@ -12,6 +12,7 @@ Catatan: wawancara pemilik utama belum tersedia dalam kumpulan transkrip ini; in
 | W-KR-BD | Transkrip Bella, karyawan/leader dapur Nasi Gerilya | Alur dapur, stok, standar resep, porsi, kendala SDM, keterlambatan, komunikasi dapur-kasir, kebersihan, menu unggulan. |
 | W-AD-RK | Transkrip Ririn, kasir/checker Nasi Gerilya | Alur kasir/checker, update lauk, pesanan GrabFood, catatan khusus, packing, driver, promo, menu yang sering dipesan, komplain. |
 | W-BC | Transkrip intern business consultant Nasi Gerilya | Sistem antrean, menu digital, stamp digital, absensi digital, data pelanggan, target pelanggan, positioning, ayam pop sebagai hero menu, promo-HPP-margin, indikator evaluasi. |
+| W-PM | Catatan wawancara pemilik Nasi Gerilya 6 Juli 2026 | Komposisi kanal, pemasok dan cold storage, freezer/chiller, konsistensi rasa, margin/BEP secara kualitatif, leader, KOL, APINDO, reputasi GrabFood, Flowie, dan regenerasi SDM. |
 | W-KP-PK | Rekap manual Ken, Pondok Krakatau | Peran GrabFood, menu sering dipesan, jam ramai, promo, stok, porsi/rasa tidak konsisten, item tertinggal, keunggulan rasa dan cepat. |
 | W-KP-IK | Rekap manual kasir Istana Krakatau | Dominasi offline, jam ramai, ikan sambal, harga, promo, pesanan kurang lengkap, driver menunggu, sambal dan porsi sebagai pembeda. |
 | S-PL | Angket pelanggan GrabFood Nasi Gerilya | Tiga responden: Reyza, Alip, Ojan. Mewakili pelanggan sekitar, pekerja, dan mahasiswa yang membeli karena menu, rating, promo, porsi, dan jarak. |
@@ -72,6 +73,23 @@ Catatan: wawancara pemilik utama belum tersedia dalam kumpulan transkrip ini; in
 | W-BC-20 | Rekomendasi terkuat adalah sistem antrean karena masalahnya terlihat langsung; menu digital dan stamp digital relevan tetapi perlu diuji bertahap sesuai kebiasaan pelanggan dan karyawan. | Process, physical evidence, loyalty | Recommendation | W-BC |
 | W-BC-21 | Strategi Nasi Gerilya tidak hanya soal promosi atau GrabFood; internal yang rapi akan membuat layanan lebih cepat, pelanggan nyaman, dan pemasaran lebih berdampak pada penjualan. | Process, strategy | Recommendation | W-BC |
 
+## Koding Pemilik Nasi Gerilya
+
+| Kode temuan | Ringkasan temuan | Tema 7P/STP | Kategori SWOT | Sumber |
+|---|---|---|---|---|
+| TW-PM-01 | Komposisi pembelian diperkirakan GrabFood sekitar 50 persen, GoFood 12 persen, ShopeeFood 8 persen, dan offline 30 persen. | Place, channel mix | Strength | W-PM |
+| TW-PM-02 | Pemasok berasal dari jaringan yang biasa mengirim ke supermarket; bumbu dan sayur dipilih langsung dan dikirim dengan mobil box cold storage. | Product, supplier quality | Strength | W-PM |
+| TW-PM-03 | Penyimpanan bahan menggunakan freezer peti dan lemari chiller untuk sayur. | Product, process | Strength | W-PM |
+| TW-PM-04 | Pemilik sangat menjaga konsistensi rasa dan pernah membuang batch rendang ketika urutan masuk rempah membuat rasa berubah. | Product, quality control | Strength | W-PM |
+| TW-PM-05 | Margin tidak dibuka karena rahasia; keuntungan belum cukup untuk BEP dan rencana dapur central serta cabang Medan membutuhkan peningkatan keuntungan. | Price, finance | Weakness | W-PM |
+| TW-PM-06 | Dapur dan frontline memiliki leader masing-masing; leader frontline mengelola GrabFood dan data dikirim ke admin di unit Sambal Gerilya. | People, process | Strength | W-PM |
+| TW-PM-07 | Pemasaran melalui KOL makanan pernah dicoba; hasilnya bervariasi, tetapi secara keseluruhan membantu penjualan. | Promotion | Opportunity | W-PM |
+| TW-PM-08 | Kerja sama APINDO menghadirkan mahasiswa magang sebagai business consultant untuk brainstorming pemasaran dan pengembangan usaha. | People, promotion | Opportunity | W-PM |
+| TW-PM-09 | Toko berstatus halal, meraih Rising Star GrabFood 2025 dan 2026, serta disebut sebagai restoran bintang lima di GrabFood. | Physical evidence, reputation | Strength | W-PM |
+| TW-PM-10 | Usaha sedang mengembangkan aplikasi Flowie untuk mengecek stok dan HPP di toko. | Process, technology | Strength | W-PM |
+| TW-PM-11 | Leader diajarkan independen agar dapat bekerja tanpa campur tangan langsung pemilik. | People | Strength | W-PM |
+| TW-PM-12 | Regenerasi dilakukan dengan mendidik wakil leader. | People | Strength | W-PM |
+
 ## Koding Kompetitor
 
 | Kode temuan | Ringkasan temuan | Tema 7P/STP | Kategori SWOT | Sumber |
@@ -116,23 +134,23 @@ Catatan: wawancara pemilik utama belum tersedia dalam kumpulan transkrip ini; in
 
 | Kode faktor | Faktor strategis | Kode pendukung |
 |---|---|---|
-| S1 | Rasa dan menu unggulan kuat, terutama dendeng, ayam pop, ayam goreng, dan variasi lauk. | TO-GF-02, TO-GF-04, TO-GF-07, TW-KR-05, TW-KR-06, TW-AD-02, TW-AD-08, TS-PL-03, W-BC-08, W-BC-09 |
+| S1 | Cita rasa lauk kuat. | TO-GF-02, TO-GF-04, TO-GF-07, TW-KR-05, TW-KR-06, TW-AD-02, TW-AD-08, TS-PL-03, W-BC-08, W-BC-09, TW-PM-02, TW-PM-04 |
 | S2 | Porsi besar dan kemasan relatif rapi memberi nilai pelanggan. | TO-GF-07, TS-PL-04, TS-PL-08 |
-| S3 | Alur operasional online sudah memiliki checker, print bill, nomor antrean, update lauk, koordinasi display/dapur, dan arah digitalisasi internal. | TW-AD-03, TW-AD-04, TW-AD-07, TW-KR-01, TW-KR-02, W-BC-01, W-BC-03, W-BC-19 |
-| S4 | Reputasi digital Nasi Gerilya cukup kuat dengan rating 4,7, 4.584 penilaian, 19 promo/voucher aktif, dan peluang penguatan menu digital. | TO-GF-01, TO-GF-03, W-BC-11 |
+| S3 | Checkpoint pesanan GrabFood sudah berjalan. | TW-AD-03, TW-AD-04, TW-AD-07, TW-KR-01, TW-KR-02, W-BC-01, W-BC-03, W-BC-19, TW-PM-06, TW-PM-10, TW-PM-11, TW-PM-12 |
+| S4 | Reputasi digital kuat. | TO-GF-01, TO-GF-03, W-BC-11, TW-PM-09 |
 | S5 | Respons keluhan sudah ada, misalnya pengiriman ulang item kurang dan pemberian komplimen/permintaan maaf. | TW-AD-11, TS-PL-09 |
 | W1 | Akurasi packing masih rawan saat ramai, terutama item terpisah/berkuah, catatan khusus, dan nomor GrabFood mirip. | TO-GF-08, TW-AD-05, TW-AD-06, TS-PL-09, TS-PL-10 |
 | W2 | Kecepatan layanan terhambat saat peak hour karena antrean dine in, ojek online, take away, pesanan mendadak, kekurangan SDM, proses packing, dan driver menunggu. | TW-KR-03, TW-KR-04, TW-KR-10, TW-AD-07, W-BC-05, W-BC-15 |
 | W3 | Update stok dan kesiapan menu belum sepenuhnya stabil, terutama menu yang lama dimasak atau cepat habis. | TO-GF-06, TW-KR-08, TW-AD-03, TS-PL-10 |
-| W4 | Persepsi harga di GrabFood cenderung mahal dan sangat bergantung pada promo/ongkir, sementara promo perlu dihitung terhadap HPP dan margin. | TW-AD-09, TS-PL-05, TS-PL-06, W-BC-10 |
+| W4 | Harga GrabFood dipersepsikan mahal. | TW-AD-09, TS-PL-05, TS-PL-06, W-BC-10, TW-PM-05 |
 | W5 | Informasi menu, detail isi paket, kuah/sambal, segel, label, batas request, dan data pelanggan langsung masih perlu dipertegas. | TW-KR-07, TW-AD-12, TS-PL-07, TS-PL-08, W-BC-16 |
 | O1 | Segmen pelanggan pekerja, mahasiswa, pelanggan sekitar, dan pelanggan jam makan siang membutuhkan makanan berat praktis melalui GrabFood. | TS-PL-01, TS-PL-02, W-BC-07, W-BC-17 |
-| O2 | Promo, voucher, ongkir murah, paket segmen, dan stamp digital dapat mendorong trial, repeat order, dan pembelian saat jam makan. | TO-GF-03, TW-AD-10, TS-PL-06, W-BC-05, W-BC-12, W-BC-16 |
+| O2 | Promo GrabFood mendorong trial pelanggan baru. | TO-GF-03, TW-AD-10, TS-PL-06, W-BC-05, W-BC-12, W-BC-16, TW-PM-07 |
 | O3 | Tampilan digital, foto menu, rating, ulasan, deskripsi, dan menu digital dapat diperkuat untuk menaikkan rasa percaya pelanggan baru. | TO-GF-01, TO-GF-02, TS-PL-07, W-BC-11 |
 | O4 | Kompetitor juga menghadapi masalah stok, item tertinggal, porsi/rasa tidak konsisten, dan driver menunggu; Nasi Gerilya dapat membedakan diri lewat SOP yang lebih disiplin. | TW-KP-PK-06, TW-KP-PK-07, TW-KP-PK-08, TW-KP-IK-06, TW-KP-IK-07 |
-| O5 | Media sosial, rekomendasi teman, ulasan pelanggan, dan database pelanggan dapat memperkuat awareness di luar GrabFood. | TW-AD-10, TS-PL-07, W-BC-12, W-BC-16 |
+| O5 | Database pelanggan membuka loyalitas langsung. | TW-AD-10, TS-PL-07, W-BC-12, W-BC-16, TW-PM-07, TW-PM-08, TW-PM-10 |
 | T1 | Kompetitor memiliki reputasi digital dan akumulasi penilaian kuat, terutama Pondok Gurih, Garuda, dan Istana Krakatau. | TO-KP-01, TO-KP-02, TO-KP-07 |
 | T2 | Pelanggan mudah membandingkan harga, promo, ongkir, dan menu dengan kompetitor seperti Dendeng Batokok, Paripurna, Pondok Gurih, Garuda, dan Istana Krakatau. | TO-KP-03, TO-KP-06, TS-PL-12 |
-| T3 | Biaya tambahan, ongkir, biaya platform, kenaikan bahan baku, dan ketergantungan pada voucher dapat menurunkan minat beli tanpa promo. | TS-PL-05, TS-PL-06, TS-PL-10, W-BC-17 |
+| T3 | Ketergantungan voucher menekan margin. | TS-PL-05, TS-PL-06, TS-PL-10, W-BC-17, TW-PM-05 |
 | T4 | Human error, antrean menumpuk, makanan dingin, stok habis, dan item kurang dapat memunculkan ulasan negatif serta mengurangi repeat order. | TO-GF-08, TS-PL-10, TS-PL-11, W-BC-15 |
 | T5 | Kompetitor menonjolkan rasa, pelayanan cepat, sambal, porsi, dan keunggulan menu spesifik. | TW-KP-PK-04, TW-KP-IK-04, TW-KP-IK-09 |
