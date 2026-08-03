@@ -225,16 +225,18 @@ Berdasarkan kesenjangan tersebut, penelitian ini diarahkan untuk mengisi ruang y
 \section{Kerangka Konseptual}
 Kerangka konseptual dalam penelitian kualitatif deskriptif berfungsi sebagai alur berpikir yang menghubungkan objek penelitian, data lapangan, proses analisis, dan keluaran strategi \parencite{creswell2018qualitativeinquiry,miles2020qualitativedata}. Dalam penelitian ini, objek yang dikaji adalah Rumah Makan Nasi Gerilya pada platform GrabFood. Data lapangan dikumpulkan melalui observasi, wawancara, angket pelanggan, ulasan pelanggan, serta dokumentasi kinerja usaha.
 
-Data lapangan tersebut dianalisis melalui analisis lingkungan yang mencakup lingkungan eksternal dan lingkungan internal. Lingkungan eksternal digunakan untuk membaca peluang dan ancaman, sedangkan lingkungan internal digunakan untuk membaca kekuatan dan kelemahan usaha \parencite{david2023strategicmanagement,gurel2017swot}. Hasil analisis lingkungan kemudian disusun ke dalam matriks SWOT untuk merumuskan alternatif strategi SO, WO, ST, dan WT. Alternatif strategi tersebut menjadi dasar penyusunan rumusan strategi pemasaran Rumah Makan Nasi Gerilya pada GrabFood.
+Data lapangan tersebut dianalisis melalui analisis lingkungan yang mencakup lingkungan eksternal dan lingkungan internal. Lingkungan eksternal digunakan untuk membaca peluang dan ancaman, sedangkan lingkungan internal digunakan untuk membaca kekuatan dan kelemahan usaha \parencite{david2023strategicmanagement,gurel2017swot}. Hasil analisis lingkungan kemudian disusun ke dalam matriks SWOT untuk merumuskan alternatif strategi SO, WO, ST, dan WT. Alternatif strategi tersebut menjadi dasar penyusunan rumusan strategi pemasaran Rumah Makan Nasi Gerilya pada GrabFood, dengan STP dan bauran pemasaran 7P sebagai alat baca operasional.
 
-Berdasarkan Gambar~\ref{fig:kerangka-konseptual}, alur penelitian ini dimulai dari Rumah Makan Nasi Gerilya sebagai objek penelitian, dilanjutkan dengan pengumpulan data lapangan, analisis lingkungan eksternal dan internal, penyusunan matriks SWOT, perumusan alternatif strategi SO, WO, ST, dan WT, serta berakhir pada rumusan strategi pemasaran. Karena penelitian ini bersifat kualitatif deskriptif, kerangka konseptual digunakan sebagai pedoman untuk menata temuan dan menjawab rumusan masalah secara sistematis, bukan untuk menguji hubungan sebab akibat antarvariabel \parencite{creswell2018qualitativeinquiry,miles2020qualitativedata}.
+Berdasarkan Gambar~\ref{fig:kerangka-konseptual}, alur penelitian ini dimulai dari Rumah Makan Nasi Gerilya sebagai objek penelitian, dilanjutkan dengan pengumpulan data lapangan, analisis lingkungan eksternal dan internal, penyusunan matriks SWOT, perumusan alternatif strategi SO, WO, ST, dan WT, serta berakhir pada rumusan strategi pemasaran. Data lapangan dibaca dalam konteks \textit{Online Food Delivery Application} (OFDA) atau GrabFood, sedangkan rumusan strategi pemasaran dibaca dengan menggunakan STP dan bauran pemasaran 7P. Karena penelitian ini bersifat kualitatif deskriptif, kerangka konseptual digunakan sebagai pedoman untuk menata temuan dan menjawab rumusan masalah secara sistematis, bukan untuk menguji hubungan sebab akibat antarvariabel \parencite{creswell2018qualitativeinquiry,miles2020qualitativedata}.
 
 \begin{figure}[!htbp]
     \centering
     \begingroup
-    \newcommand{\kotakkecil}[1]{%
+    % Kotak anak yang mengisi penuh lebar kolom tabular
+    \newcommand{\kotakanak}[2]{%
         \fcolorbox{black!55}{black!5}{%
-            \parbox[c][0.44cm][c]{1.7cm}{\centering\scriptsize\bfseries #1}%
+            \parbox[c][0.42cm][c]{\dimexpr#1-2\fboxsep-2\fboxrule\relax}{%
+                \centering\scriptsize\bfseries #2}%
         }%
     }
     \tikzset{
@@ -254,43 +256,61 @@ Berdasarkan Gambar~\ref{fig:kerangka-konseptual}, alur penelitian ini dimulai da
             rounded corners=2pt,
             align=center,
             text width=8.0cm,
-            minimum height=1.28cm,
+            minimum height=1.20cm,
             font=\footnotesize\bfseries,
             inner sep=5pt
         },
-        anak/.style={
-            draw=black!55,
-            fill=black!5,
+        samping/.style={
+            draw=black!45,
+            fill=white,
             rounded corners=2pt,
             align=center,
-            text width=1.7cm,
-            minimum height=0.44cm,
-            font=\scriptsize\bfseries,
-            inner sep=2pt
+            font=\scriptsize,
+            inner sep=3pt
         },
-        panah/.style={-{Stealth[length=2.2mm]}, draw=black!70, line width=0.7pt}
+        panah/.style={-{Stealth[length=2.2mm]}, draw=black!70, line width=0.7pt},
+        tautan/.style={draw=black!45, dashed, line width=0.5pt}
     }
     \begin{tikzpicture}[node distance=0.45cm]
+        % --- Kolom utama (6 tahap) ---
         \node[kotak, fill=black!10] (objek) {RM Nasi Gerilya};
         \node[kotak, below=of objek] (data) {Data Lapangan};
-        \node[kotakisi, below=of data] (lingkungan) {\begin{tabular}{@{}c@{}}Analisis Lingkungan\\[4pt]
-            \begin{tabular}{@{}cc@{}}
-                \kotakkecil{Eksternal} & \kotakkecil{Internal}
+
+        % Analisis Lingkungan dengan anak seragam (di dalam kotak induk)
+        \node[kotakisi, below=of data] (lingkungan) {\begin{tabular}{@{}c@{}}
+            Analisis Lingkungan\\[4pt]
+            \begin{tabular}{@{}p{3.85cm}@{\hspace{6pt}}p{3.85cm}@{}}
+                \kotakanak{3.85cm}{Eksternal} & \kotakanak{3.85cm}{Internal}
             \end{tabular}
         \end{tabular}};
+
         \node[kotak, below=of lingkungan] (swot) {Matriks SWOT};
-        \node[kotakisi, below=of swot] (alternatif) {\begin{tabular}{@{}c@{}}Alternatif Strategi\\[4pt]
-            \begin{tabular}{@{}cccc@{}}
-                \kotakkecil{SO} & \kotakkecil{WO} & \kotakkecil{ST} & \kotakkecil{WT}
+
+        % Alternatif Strategi dengan anak seragam (di dalam kotak induk)
+        \node[kotakisi, below=of swot] (alternatif) {\begin{tabular}{@{}c@{}}
+            Alternatif Strategi\\[4pt]
+            \begin{tabular}{@{}p{1.80cm}@{\hspace{6pt}}p{1.80cm}@{\hspace{6pt}}p{1.80cm}@{\hspace{6pt}}p{1.80cm}@{}}
+                \kotakanak{1.80cm}{SO} & \kotakanak{1.80cm}{WO} & \kotakanak{1.80cm}{ST} & \kotakanak{1.80cm}{WT}
             \end{tabular}
         \end{tabular}};
+
         \node[kotak, fill=black!10, below=of alternatif] (rumusan) {Rumusan Strategi Pemasaran};
 
+        % --- Panah utama ---
         \draw[panah] (objek) -- (data);
         \draw[panah] (data) -- (lingkungan);
         \draw[panah] (lingkungan) -- (swot);
         \draw[panah] (swot) -- (alternatif);
         \draw[panah] (alternatif) -- (rumusan);
+
+        % --- Anotasi alat baca (samping) ---
+        \node[samping, right=0.55cm of data,
+              text width=2.5cm] (ofda) {OFDA / GrabFood};
+        \draw[tautan] (ofda.west) -- (data.east);
+
+        \node[samping, right=0.55cm of rumusan,
+              text width=2.5cm] (stp7p) {STP \& 7P};
+        \draw[tautan] (stp7p.west) -- (rumusan.east);
     \end{tikzpicture}
     \endgroup
     \figuresource[8.2cm]{Diolah peneliti (2026).}
