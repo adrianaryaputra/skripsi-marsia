@@ -152,7 +152,7 @@ Menu selebihnya disajikan secara lebih lengkap pada Lampiran Tabel~\ref{tab:surv
 \tablesource[\textwidth]{Observasi awal platform GrabFood pada 04 April 2026; diolah peneliti (2026).}
 \endgroup
 
-Data awal mengenai observasi GrabFood, wawancara awal pemilik, dan dokumentasi kinerja usaha disajikan lebih lengkap pada Lampiran~\ref{app:observasi-grabfood}, Lampiran~\ref{app:wawancara-awal-pemilik}, dan Lampiran~\ref{app:dokumentasi-indeks-kinerja}. Visual pendukung pada Gambar~\ref{fig:tren-penjualan-bungkus-gerilya} menunjukkan bahwa jumlah penjualan Nasi Gerilya meningkat dari 6.702 bungkus pada Desember 2024 menjadi 16.590 bungkus pada Maret 2025, tetapi kemudian menurun bertahap menjadi 12.900 bungkus pada November 2025. Gambar~\ref{fig:komposisi-pelanggan-gerilya} juga menunjukkan bahwa pelanggan baru meningkat dari 45\% menjadi 55\%, sedangkan \textit{repeat order} menurun dari 43\% menjadi 38\%. Pada sisi lain, dokumentasi kinerja pada Tabel~\ref{tab:indeks_aov_grabfood} dan Tabel~\ref{tab:indeks_kunjungan_grabfood} menunjukkan bahwa indeks \textit{Average Order Value} (AOV) dan indeks kunjungan harian justru meningkat pada periode pengamatan. Selain itu, Tabel~\ref{tab:indeks_kompetitor_grabfood} menunjukkan bahwa indeks Nasi Gerilya turun 29,6\% pada Juli--Oktober 2025, sedangkan Pondok Krakatau naik 7,5\%, Istana Krakatau naik 19,3\%, dan Gumarang Jaya naik 14,1\% pada periode yang sama. Kondisi tersebut menunjukkan bahwa eksposur digital, peningkatan kunjungan, dan kontribusi GrabFood yang besar belum otomatis menjamin stabilitas penjualan, loyalitas pelanggan, dan daya saing terhadap kompetitor.
+Data awal mengenai observasi GrabFood, wawancara awal pemilik, dan dokumentasi kinerja usaha disajikan lebih lengkap pada Lampiran~\ref{app:observasi-grabfood}, Lampiran~\ref{app:wawancara-awal-pemilik}, dan Lampiran~\ref{app:dokumentasi-indeks-kinerja}. Visual pendukung pada Gambar~\ref{fig:tren-penjualan-bungkus-gerilya} menunjukkan bahwa indeks penjualan bulanan Nasi Gerilya meningkat dari 100,0 pada Desember 2024 menjadi 247,5 pada Maret 2025, tetapi kemudian menurun bertahap menjadi 192,5 pada November 2025. Gambar~\ref{fig:komposisi-pelanggan-gerilya} juga menunjukkan bahwa pelanggan baru meningkat dari 45\% menjadi 55\%, sedangkan \textit{repeat order} menurun dari 43\% menjadi 38\%. Pada sisi lain, dokumentasi kinerja pada Tabel~\ref{tab:indeks_aov_grabfood} dan Tabel~\ref{tab:indeks_kunjungan_grabfood} menunjukkan bahwa indeks \textit{Average Order Value} (AOV) dan indeks kunjungan harian justru meningkat pada periode pengamatan. Selain itu, Tabel~\ref{tab:indeks_kompetitor_grabfood} menunjukkan bahwa indeks Nasi Gerilya turun 29,6\% pada Juli--Oktober 2025, sedangkan Pondok Krakatau naik 7,5\%, Istana Krakatau naik 19,3\%, dan Gumarang Jaya naik 14,1\% pada periode yang sama. Kondisi tersebut menunjukkan bahwa eksposur digital, peningkatan kunjungan, dan kontribusi GrabFood yang besar belum otomatis menjamin stabilitas penjualan, loyalitas pelanggan, dan daya saing terhadap kompetitor.
 
 \begin{figure}[!t]
     \centering
@@ -163,8 +163,8 @@ Data awal mengenai observasi GrabFood, wawancara awal pemilik, dan dokumentasi k
                 ybar,
                 bar width=8pt,
                 xmin=-0.4, xmax=11.4,
-                ymin=0, ymax=18,
-                ylabel={Ribu bungkus},
+                ymin=0, ymax=280,
+                ylabel={Indeks Penjualan Bulanan (Des 2024 = 100)},
                 xlabel={Periode},
                 ymajorgrids=true,
                 grid style={gray!20},
@@ -173,7 +173,7 @@ Data awal mengenai observasi GrabFood, wawancara awal pemilik, dan dokumentasi k
                 xtick=data,
                 xticklabels={Des-24,Jan-25,Feb-25,Mar-25,Apr-25,Mei-25,Jun-25,Jul-25,Ags-25,Sep-25,Okt-25,Nov-25},
                 x tick label style={rotate=35, anchor=east, font=\scriptsize},
-                ytick={0,2,4,6,8,10,12,14,16,18},
+                ytick={0,50,100,150,200,250},
                 yticklabel style={font=\scriptsize},
                 clip=false
             ]
@@ -181,25 +181,25 @@ Data awal mengenai observasi GrabFood, wawancara awal pemilik, dan dokumentasi k
                 fill=black!45,
                 draw=black!75
             ] coordinates {
-                    (0,6.702) (1,8.740) (2,8.911) (3,16.590) (4,15.129) (5,14.580)
-                    (6,13.467) (7,14.633) (8,14.259) (9,14.034) (10,13.009) (11,12.900)
+                    (0,100.0) (1,130.4) (2,133.0) (3,247.5) (4,225.7) (5,217.6)
+                    (6,200.9) (7,218.3) (8,212.8) (9,209.4) (10,194.1) (11,192.5)
                 };
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:0,6.702) {6,7};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:1,8.740) {8,7};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:2,8.911) {8,9};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:3,16.590) {16,6};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:4,15.129) {15,1};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:5,14.580) {14,6};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:6,13.467) {13,5};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:7,14.633) {14,6};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:8,14.259) {14,3};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:9,14.034) {14,0};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:10,13.009) {13,0};
-            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:11,12.900) {12,9};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:0,100.0) {100,0};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:1,130.4) {130,4};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:2,133.0) {133,0};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:3,247.5) {247,5};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:4,225.7) {225,7};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:5,217.6) {217,6};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:6,200.9) {200,9};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:7,218.3) {218,3};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:8,212.8) {212,8};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:9,209.4) {209,4};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:10,194.1) {194,1};
+            \node[font=\tiny, fill=white, inner sep=1pt, anchor=south] at (axis cs:11,192.5) {192,5};
         \end{axis}
     \end{tikzpicture}
     \figuresource[0.9\textwidth]{Diolah peneliti dari dokumentasi grafik penjualan bulanan Nasi Gerilya.}
-    \caption{Tren jumlah penjualan bulanan Nasi Gerilya dalam satuan bungkus}
+    \caption{Tren indeks penjualan bulanan Nasi Gerilya (Desember 2024 = 100)}
     \label{fig:tren-penjualan-bungkus-gerilya}
 \end{figure}
 
@@ -243,7 +243,7 @@ Data awal mengenai observasi GrabFood, wawancara awal pemilik, dan dokumentasi k
     \caption{Perubahan komposisi pelanggan Nasi Gerilya berdasarkan wawancara awal pemilik usaha}
     \label{fig:komposisi-pelanggan-gerilya}
 \end{figure}
-Berdasarkan data pra-survei tersebut, penjualan menjadi masalah utama yang perlu diperhatikan dalam penelitian ini. Jumlah penjualan Nasi Gerilya memang pernah meningkat tajam pada Maret 2025, tetapi kemudian menurun bertahap dari 16.590 bungkus pada Maret 2025 menjadi 12.900 bungkus pada November 2025. Penurunan tersebut setara dengan sekitar 22,2\% dari titik puncak penjualan dalam kurun Maret--November 2025. Dalam membaca pola ini, perlu dicatat bahwa puncak penjualan Maret 2025 bertepatan dengan \textit{high season} Ramadan dan Idulfitri. Pada tahun 2025, bulan Ramadan berlangsung sejak awal Maret dan Idulfitri 1446 H jatuh pada 31 Maret--1 April 2025, sehingga hampir seluruh bulan Maret berada dalam periode permintaan musiman yang tinggi. Pada bulan Ramadan, permintaan makanan siap saji cenderung meningkat karena kebutuhan santap sahur dan berbuka, sedangkan pada periode menjelang dan sesudah Idulfitri permintaan masih terangkat oleh aktivitas silaturahmi dan pesanan keluarga. Bagi rumah makan nasi Padang, musim tersebut umumnya menjadi salah satu periode tersibuk dalam setahun. Dengan demikian, lonjakan penjualan Maret 2025 mengindikasikan adanya dorongan musiman, dan angka puncak tersebut perlu dibaca secara hati-hati sebagai titik tinggi musiman, bukan semata-mata sebagai kinerja normal bulanan.
+Berdasarkan data pra-survei tersebut, penjualan menjadi masalah utama yang perlu diperhatikan dalam penelitian ini. Indeks penjualan bulanan Nasi Gerilya memang pernah meningkat tajam pada Maret 2025, tetapi kemudian menurun bertahap dari indeks 247,5 pada Maret 2025 menjadi 192,5 pada November 2025. Penurunan tersebut setara dengan sekitar 22,2\% dari titik puncak penjualan dalam kurun Maret--November 2025. Dalam membaca pola ini, perlu dicatat bahwa puncak penjualan Maret 2025 bertepatan dengan \textit{high season} Ramadan dan Idulfitri. Pada tahun 2025, bulan Ramadan berlangsung sejak awal Maret dan Idulfitri 1446 H jatuh pada 31 Maret--1 April 2025, sehingga hampir seluruh bulan Maret berada dalam periode permintaan musiman yang tinggi. Pada bulan Ramadan, permintaan makanan siap saji cenderung meningkat karena kebutuhan santap sahur dan berbuka, sedangkan pada periode menjelang dan sesudah Idulfitri permintaan masih terangkat oleh aktivitas silaturahmi dan pesanan keluarga. Bagi rumah makan nasi Padang, musim tersebut umumnya menjadi salah satu periode tersibuk dalam setahun. Dengan demikian, lonjakan penjualan Maret 2025 mengindikasikan adanya dorongan musiman, dan angka puncak tersebut perlu dibaca secara hati-hati sebagai titik tinggi musiman, bukan semata-mata sebagai kinerja normal bulanan.
 
 Meskipun demikian, penurunan bertahap setelah musim lebaran tetap tidak cukup dijelaskan oleh faktor musiman semata. Dalam usaha kuliner, fluktuasi penjualan bulanan merupakan kondisi yang wajar karena dapat dipengaruhi musim, hari besar, promosi, daya beli, tren konsumen, dan intensitas persaingan. Namun, pola penurunan yang terjadi secara bertahap dan berkelanjutan tidak cukup dipahami sebagai fluktuasi biasa, terutama ketika kategori penyediaan akomodasi dan makan minum di Kota Medan justru menjadi lapangan usaha dengan pertumbuhan tertinggi pada 2024, yaitu 14,50\% \parencite{bpsmedan2025ekonomi}, sedangkan pemanfaatan kanal digital dan platform \textit{online food delivery} dalam kajian terdahulu dinilai dapat memperluas jangkauan pasar, meningkatkan visibilitas, dan mendukung penjualan apabila dikelola secara konsisten \parencite{regina2025kuliner,sophia2025rendanggadih,suharjo2020bogorsnacks}. Dengan demikian, terdapat kesenjangan antara peluang pertumbuhan sektor dan kanal digital dengan kinerja penjualan Nasi Gerilya pada periode pengamatan.
 
