@@ -75,7 +75,8 @@ Spesifikasi domain ini mendefinisikan struktur operasional, instrumen, dan prose
 
 ### 4.3 Template Tabel Kosong IFAS, EFAS, & Matriks SWOT (`tab:template-ifas-bab3`, `tab:template-efas-bab3`, `tab:template-matriks-swot-bab3`)
 - **Template IFAS & EFAS**: Kolom `No. | Faktor Strategis | Bobot | Rating | Skor Tertimbang | Catatan / Indikator`.
-- **Template Matriks SWOT**: 8 Sel (Matriks $2 \times 2$ persilangan IFAS vs EFAS: Strategi SO, WO, ST, WT).
+- **Template Matriks SWOT (8 Sel)**: Matriks $2 \times 2$ persilangan IFAS vs EFAS (Strategi SO, WO, ST, WT). **Header Sel Kiri Atas**: Wajib menggunakan garis diagonal pembagi (`Internal \ Eksternal`) yang dipisahkan oleh TikZ (`\swotheader{EFAS (Eksternal)}{IFAS (Internal)}`) memisahkan Sisi Atas = Faktor Internal / IFAS dan Sisi Kiri = Faktor Eksternal / EFAS.
+- **Harmonisasi Bab 4 (`tab:swot-bab4`)**: Tabel "Formulasi Matriks SWOT Nasi Gerilya pada GrabFood" di Bab IV diselaraskan 100% mengikuti struktur header diagonal `Internal \ Eksternal` dari Bab III, memuat data empiris lengkap (faktor S1..S6, W1..W6, O1..O6, T1..T5 dan alternatif strategi SO, WO, ST, WT).
 
 ---
 
@@ -88,3 +89,4 @@ Spesifikasi domain ini mendefinisikan struktur operasional, instrumen, dan prose
 
 ## 6. Riwayat Revisi Spec (Revision Log)
 - **v1.0 (2026-08-31)**: Inisiasi spesifikasi domain fitur Bab III berdasarkan riset komparatif 4 PDF referensi Bu Tetty (`scratch/99-temp/riset-revisi-bab3-dosen.md`).
+- **v1.1 (2026-08-31)**: Amandemen format header Matriks SWOT 8 Sel di Bab III & Bab IV (`\swotheader`) menggunakan garis diagonal TikZ `Internal \ Eksternal` per petunjuk eksplisit Dosen.

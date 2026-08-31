@@ -722,6 +722,14 @@ Implementasi strategi ini memerlukan sinkronisasi sistem internal yang sedang di
 
 Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, ongkir, dan kenaikan harga bahan baku (T4). Jika pelanggan dapat dikelola langsung melalui \textit{database} dan program loyalitas, maka Nasi Gerilya memiliki ruang untuk mengurangi ketergantungan pada voucher platform yang dapat menekan margin. Data pra-survei memperlihatkan bahwa pelanggan baru meningkat, sedangkan \textit{repeat order} menurun pada periode tertentu. Pola ini menunjukkan bahwa masalah penelitian tidak hanya terletak pada kemampuan menarik pembeli baru, tetapi juga pada kemampuan menjaga pembelian ulang dan pengalaman layanan. Dengan demikian, strategi SO3 menjadi jembatan antara promosi jangka pendek dan loyalitas jangka panjang, serta memastikan bahwa investasi pada promo tidak hanya menghasilkan lonjakan sementara, tetapi juga membangun basis pelanggan yang dapat dikelola secara berkelanjutan.
 
+\providecommand{\swotheader}[2]{%
+  \begin{tikzpicture}[baseline=(current bounding box.center), x=1cm, y=1cm]
+    \draw[line width=0.4pt] (-0.2,0.45) -- (3.2,-0.45);
+    \node[anchor=north west, font=\bfseries\scriptsize, inner sep=0pt] at (-0.1,0.05) {#1};
+    \node[anchor=south east, font=\bfseries\scriptsize, inner sep=0pt] at (3.1,-0.05) {#2};
+  \end{tikzpicture}%
+}
+
 \begingroup
     \scriptsize
     \setlength{\tabcolsep}{3pt}
@@ -731,12 +739,12 @@ Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, o
         \caption{Formulasi Matriks SWOT Nasi Gerilya pada GrabFood}
         \label{tab:swot-bab4}\\
         \toprule
-        \textbf{EFAS / IFAS} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\
+        \swotheader{EFAS (Eksternal)}{IFAS (Internal)} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\
         \midrule
         \endfirsthead
         \continuedtabletitle{3}
         \toprule
-        \textbf{EFAS / IFAS} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\
+        \swotheader{EFAS (Eksternal)}{IFAS (Internal)} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\
         \midrule
         \endhead
         \continuedtablefooter{3}
