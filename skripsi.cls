@@ -35,6 +35,8 @@
 \RequirePackage{smartdiagram} % For automatic flow diagrams
 \RequirePackage{longtable} % For multi-page tables
 \RequirePackage{pdflscape} % For landscape pages
+\RequirePackage{amsmath}
+\counterwithin{equation}{chapter}
 \RequirePackage[style=apa, backend=biber]{biblatex} % APA Style references
 \RequirePackage{indentfirst} % Indent first paragraph
 \RequirePackage{tabularx}
