@@ -416,11 +416,11 @@ Interpretasi arah strategi pada setiap kuadran kartesius disajikan pada Tabel~\r
 \subsection{Tahap Perumusan Strategi}
 Tahap akhir analisis data adalah merumuskan alternatif strategi pemasaran menggunakan matriks SWOT 8 sel \parencite{david2023strategicmanagement,rangkuti2016analisisSWOT}. Format template matriks SWOT disajikan pada Tabel~\ref{tab:template-matriks-swot-bab3}.
 
-\providecommand{\swotheader}[2]{%
+\providecommand{\swotheader}[3][2.5cm]{%
   \begin{tikzpicture}[baseline=(current bounding box.center), x=1cm, y=1cm]
-    \draw[line width=0.4pt] (-0.2,0.45) -- (3.2,-0.45);
-    \node[anchor=north west, font=\bfseries\scriptsize, inner sep=0pt] at (-0.1,0.05) {#1};
-    \node[anchor=south east, font=\bfseries\scriptsize, inner sep=0pt] at (3.1,-0.05) {#2};
+    \draw[line width=0.4pt] (-0.1,0.4) -- (#1+0.1,-0.4);
+    \node[anchor=north west, font=\bfseries\scriptsize, inner sep=0pt] at (0.0,0.05) {#2};
+    \node[anchor=south east, font=\bfseries\scriptsize, inner sep=0pt] at (#1,-0.05) {#3};
   \end{tikzpicture}%
 }
 
@@ -430,12 +430,12 @@ Tahap akhir analisis data adalah merumuskan alternatif strategi pemasaran menggu
         \caption{Template Matriks SWOT 8 Sel}
         \label{tab:template-matriks-swot-bab3}\\
         \toprule
-        \swotheader{EFAS}{IFAS} & \textbf{Kekuatan (\textit{Strengths} - S)} & \textbf{Kelemahan (\textit{Weaknesses} - W)} \\ \hline
+        \swotheader[2.5cm]{EFAS}{IFAS} & \textbf{Kekuatan (\textit{Strengths} - S)} & \textbf{Kelemahan (\textit{Weaknesses} - W)} \\ \hline
         \midrule
         \endfirsthead
         \continuedtabletitle{3}
         \toprule
-        \swotheader{EFAS}{IFAS} & \textbf{Kekuatan (\textit{Strengths} - S)} & \textbf{Kelemahan (\textit{Weaknesses} - W)} \\ \hline
+        \swotheader[2.5cm]{EFAS}{IFAS} & \textbf{Kekuatan (\textit{Strengths} - S)} & \textbf{Kelemahan (\textit{Weaknesses} - W)} \\ \hline
         \midrule
         \endhead
         \continuedtablefooter{3}
