@@ -731,19 +731,15 @@ Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, o
         \caption{Formulasi Matriks SWOT Nasi Gerilya pada GrabFood}
         \label{tab:swot-bab4}\\
         \toprule
-        \diagbox[innerwidth=3.3cm,height=0.8cm]{EFAS}{IFAS} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\ \hline
-        \midrule
-        \endfirsthead
-        \continuedtabletitle{3}
-        \toprule
-        \diagbox[innerwidth=3.3cm,height=0.8cm]{EFAS}{IFAS} & \textbf{Kekuatan (S)} & \textbf{Kelemahan (W)} \\ \hline
-        \midrule
-        \endhead
-        \continuedtablefooter{3}
-        \endfoot
-        \bottomrule
-        \endlastfoot
-        \textbf{Faktor Internal (IFAS)} &
+        \begin{minipage}[t][5.15cm][t]{\linewidth}
+        \tikzmark{cellnw}%
+        \hfill\textbf{IFAS}\par
+        \vfill
+        \textbf{EFAS}\hfill\tikzmark{cellse}%
+        \end{minipage}
+        \begin{tikzpicture}[remember picture, overlay]
+          \draw[line width=0.4pt] ($(pic cs:cellnw)+(0,0.75em)$) -- ($(pic cs:cellse)+(0.4em,-0.3em)$);
+        \end{tikzpicture} &
         \begin{enumerate}[label=\textbf{S\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Visi dapur sentral \& komitmen mutu rasa.
             \item Cita rasa lauk kuat \& khas.
@@ -760,6 +756,41 @@ Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, o
             \item Deskripsi rincian paket belum tegas.
             \item Margin belum mencapai BEP ekspansi.
         \end{enumerate} \\ \hline
+        \midrule
+        \endfirsthead
+        \continuedtabletitle{3}
+        \toprule
+        \begin{minipage}[t][5.15cm][t]{\linewidth}
+        \tikzmark{cellnw}%
+        \hfill\textbf{IFAS}\par
+        \vfill
+        \textbf{EFAS}\hfill\tikzmark{cellse}%
+        \end{minipage}
+        \begin{tikzpicture}[remember picture, overlay]
+          \draw[line width=0.4pt] ($(pic cs:cellnw)+(0,0.75em)$) -- ($(pic cs:cellse)+(0.4em,-0.3em)$);
+        \end{tikzpicture} &
+        \begin{enumerate}[label=\textbf{S\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
+            \item Visi dapur sentral \& komitmen mutu rasa.
+            \item Cita rasa lauk kuat \& khas.
+            \item Porsi besar \& armada cold storage.
+            \item Struktur kerja per divisi \& respons keluhan.
+            \item Reputasi digital kuat (Rating 4,7).
+            \item Checkpoint pesanan \& adopsi digital.
+        \end{enumerate} &
+        \begin{enumerate}[label=\textbf{W\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
+            \item Risiko kesalahan packing item terpisah.
+            \item Penumpukan antrean 3 jalur peak hour.
+            \item Status stok menu aplikasi belum otomatis.
+            \item Harga GrabFood dipersepsikan mahal.
+            \item Deskripsi rincian paket belum tegas.
+            \item Margin belum mencapai BEP ekspansi.
+        \end{enumerate} \\ \hline
+        \midrule
+        \endhead
+        \continuedtablefooter{3}
+        \endfoot
+        \bottomrule
+        \endlastfoot
         \textbf{Peluang (O)}
         \begin{enumerate}[label=\textbf{O\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Permintaan makan siang praktis.
