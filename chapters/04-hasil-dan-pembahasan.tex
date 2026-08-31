@@ -722,32 +722,25 @@ Implementasi strategi ini memerlukan sinkronisasi sistem internal yang sedang di
 
 Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, ongkir, dan kenaikan harga bahan baku (T4). Jika pelanggan dapat dikelola langsung melalui \textit{database} dan program loyalitas, maka Nasi Gerilya memiliki ruang untuk mengurangi ketergantungan pada voucher platform yang dapat menekan margin. Data pra-survei memperlihatkan bahwa pelanggan baru meningkat, sedangkan \textit{repeat order} menurun pada periode tertentu. Pola ini menunjukkan bahwa masalah penelitian tidak hanya terletak pada kemampuan menarik pembeli baru, tetapi juga pada kemampuan menjaga pembelian ulang dan pengalaman layanan. Dengan demikian, strategi SO3 menjadi jembatan antara promosi jangka pendek dan loyalitas jangka panjang, serta memastikan bahwa investasi pada promo tidak hanya menghasilkan lonjakan sementara, tetapi juga membangun basis pelanggan yang dapat dikelola secara berkelanjutan.
 
-\providecommand{\swotheader}[4][3.3cm]{%
-  \begin{tikzpicture}[baseline=(current bounding box.north), x=1cm, y=1cm]
-    \useasboundingbox (0,0) rectangle (#1,-#2);
-    \draw[line width=0.4pt] (0,0) -- (#1,-#2);
-    \node[anchor=south east, font=\bfseries\scriptsize, inner sep=3pt] at (#1,0) {#4};
-    \node[anchor=north west, font=\bfseries\scriptsize, inner sep=3pt] at (0,-#2) {#3};
-  \end{tikzpicture}%
-}
-
 \begingroup
     \scriptsize
-    \setlength{\tabcolsep}{3pt}
+    \setlength{\tabcolsep}{4pt}
     \setlength{\aboverulesep}{0pt}
     \setlength{\belowrulesep}{0pt}
     \begin{xltabular}{\textwidth}{|Y|Y|Y|}
         \caption{Formulasi Matriks SWOT Nasi Gerilya pada GrabFood}
         \label{tab:swot-bab4}\\
         \toprule
-        \swotheader[3.3cm]{2.35cm}{EFAS}{IFAS} & \begin{enumerate}[label=\textbf{S\arabic*.},leftmargin=1.2em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt,before=\vspace{-0.6\baselineskip}]
+        \diagbox[innerwidth=3.3cm,height=2.35cm]{EFAS}{IFAS} & \textbf{Kekuatan (S)}
+        \begin{enumerate}[label=\textbf{S\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Visi dapur sentral \& komitmen mutu rasa.
             \item Cita rasa lauk kuat \& khas.
             \item Porsi besar \& armada cold storage.
             \item Struktur kerja per divisi \& respons keluhan.
             \item Reputasi digital kuat (Rating 4,7).
             \item Checkpoint pesanan \& adopsi digital.
-        \end{enumerate} & \begin{enumerate}[label=\textbf{W\arabic*.},leftmargin=1.2em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt,before=\vspace{-0.6\baselineskip}]
+        \end{enumerate} & \textbf{Kelemahan (W)}
+        \begin{enumerate}[label=\textbf{W\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Risiko kesalahan packing item terpisah.
             \item Penumpukan antrean 3 jalur peak hour.
             \item Status stok menu aplikasi belum otomatis.
@@ -759,14 +752,16 @@ Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, o
         \endfirsthead
         \continuedtabletitle{3}
         \toprule
-        \swotheader[3.3cm]{2.35cm}{EFAS}{IFAS} & \begin{enumerate}[label=\textbf{S\arabic*.},leftmargin=1.2em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt,before=\vspace{-0.6\baselineskip}]
+        \diagbox[innerwidth=3.3cm,height=2.35cm]{EFAS}{IFAS} & \textbf{Kekuatan (S)}
+        \begin{enumerate}[label=\textbf{S\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Visi dapur sentral \& komitmen mutu rasa.
             \item Cita rasa lauk kuat \& khas.
             \item Porsi besar \& armada cold storage.
             \item Struktur kerja per divisi \& respons keluhan.
             \item Reputasi digital kuat (Rating 4,7).
             \item Checkpoint pesanan \& adopsi digital.
-        \end{enumerate} & \begin{enumerate}[label=\textbf{W\arabic*.},leftmargin=1.2em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt,before=\vspace{-0.6\baselineskip}]
+        \end{enumerate} & \textbf{Kelemahan (W)}
+        \begin{enumerate}[label=\textbf{W\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Risiko kesalahan packing item terpisah.
             \item Penumpukan antrean 3 jalur peak hour.
             \item Status stok menu aplikasi belum otomatis.
@@ -781,7 +776,7 @@ Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, o
         \bottomrule
         \endlastfoot
         \textbf{Peluang (O)}
-        \begin{enumerate}[label=\textbf{O\arabic*.},leftmargin=1.2em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+        \begin{enumerate}[label=\textbf{O\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Permintaan makan siang praktis.
             \item Promo GrabFood akuisisi baru.
             \item Pasokan bahan segar \& cold storage.
@@ -789,30 +784,30 @@ Strategi SO3 juga memperkuat daya tahan usaha terhadap tekanan biaya platform, o
             \item Tren pemesanan digital \& loyalitas.
             \item Integrasi POS digital \& QRIS.
         \end{enumerate} & \textbf{Strategi SO}
-        \begin{enumerate}[label=\textbf{SO\arabic*.},leftmargin=1.4em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+        \begin{enumerate}[label=\textbf{SO\arabic*.},leftmargin=1.7em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Paket menu \textit{hero} dendeng, ayam pop, dan ayam goreng untuk pekerja, mahasiswa, serta pelanggan sekitar.
             \item Perkuat foto, deskripsi, rating, dan posisi menu unggulan pada GrabFood serta menu digital.
             \item Hubungkan promo GrabFood, \textit{stamp digital}, dan database pelanggan agar \textit{trial} menjadi pembelian ulang.
         \end{enumerate} & \textbf{Strategi WO}
-        \begin{enumerate}[label=\textbf{WO\arabic*.},leftmargin=1.4em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+        \begin{enumerate}[label=\textbf{WO\arabic*.},leftmargin=1.7em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Gunakan promo dan paket segmen hanya pada menu dengan stok serta kapasitas dapur yang siap.
             \item Perjelas isi paket, kuah, sambal, segel, label, dan informasi stok pada GrabFood serta menu digital.
             \item Terapkan sistem antrean dan checklist packing untuk mengurangi item kurang serta membangun diferensiasi layanan.
         \end{enumerate} \\ \hline
         \textbf{Ancaman (T)}
-        \begin{enumerate}[label=\textbf{T\arabic*.},leftmargin=1.2em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+        \begin{enumerate}[label=\textbf{T\arabic*.},leftmargin=1.5em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Persaingan \& reputasi pesaing.
             \item Pembandingan harga antar-merchant.
             \item Risiko ulasan negatif pengiriman.
             \item Inflasi bahan baku \& komisi.
             \item Regulasi komisi \& pajak PB1.
         \end{enumerate} & \textbf{Strategi ST}
-        \begin{enumerate}[label=\textbf{ST\arabic*.},leftmargin=1.4em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+        \begin{enumerate}[label=\textbf{ST\arabic*.},leftmargin=1.7em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Tonjolkan diferensiasi rasa, porsi, dan menu khas agar kuat saat dibandingkan dengan kompetitor bereputasi tinggi.
             \item Pakai reputasi digital dan respons keluhan untuk menjaga rating dari risiko ulasan negatif.
             \item Kendalikan promo melalui paket bernilai dan batas margin agar tidak kalah pada perbandingan harga akhir.
         \end{enumerate} & \textbf{Strategi WT}
-        \begin{enumerate}[label=\textbf{WT\arabic*.},leftmargin=1.4em,nosep,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt]
+        \begin{enumerate}[label=\textbf{WT\arabic*.},leftmargin=1.7em,nosep,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt]
             \item Perbaiki SOP \textit{peak hour}, checklist packing, validasi nomor pesanan, item terpisah, kuah, dan sambal.
             \item Stabilkan update stok serta estimasi tunggu driver agar pelanggan tidak berpindah ketika membandingkan kompetitor.
             \item Evaluasi HPP, batas voucher, dan paket hemat agar tekanan margin serta persepsi harga mahal tetap terkendali.
