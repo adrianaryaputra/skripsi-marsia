@@ -182,11 +182,18 @@ Pembobotan faktor strategis internal dan eksternal bertujuan menentukan tingkat 
     \tablesource[\textwidth]{Diolah peneliti berdasarkan skala pembobotan Husein Umar (2001) dan Freddy Rangkuti (2016).}
 \endgroup
 
-Nilai rata-rata kepentingan yang diperoleh dari responden selanjutnya dinormalisasi menjadi bobot relatif ($b_i$) dengan rumus:
-\[
+Nilai rata-rata kepentingan yang diperoleh dari responden selanjutnya dinormalisasi menjadi bobot relatif ($b_i$) melalui Persamaan~\ref{eq:bobot-relatif}.
+\begin{equation}
+    \label{eq:bobot-relatif}
     b_i = \frac{K_i}{\sum_{j=1}^{n} K_j}
-\]
-di mana $K_i$ adalah nilai rata-rata kepentingan faktor ke-$i$, dan $\sum_{j=1}^{n} K_j$ adalah total nilai kepentingan seluruh faktor dalam matriks yang bersangkutan, dengan syarat total bobot relatif $\sum b_i = 1{,}00$.
+\end{equation}
+di mana:
+\begin{description}[font=\normalfont\itshape, leftmargin=2em, style=sameline, nosep]
+    \item[$b_i$] = Nilai bobot relatif faktor strategis ke-$i$ (dengan syarat total bobot relatif $\sum_{i=1}^{n} b_i = 1{,}00$);
+    \item[$K_i$] = Nilai rata-rata kepentingan faktor strategis ke-$i$;
+    \item[$K_j$] = Nilai rata-rata kepentingan faktor strategis ke-$j$ ($j = 1, 2, \dots, n$);
+    \item[$n$] = Jumlah total faktor strategis dalam matriks evaluasi.
+\end{description}
 
 \subsection{Pedoman Pemberian Rating}
 Pemberian rating bertujuan menilai kondisi aktual kinerja internal usaha pada matriks IFAS serta efektivitas kemampuan usaha dalam merespons faktor eksternal pada matriks EFAS. Skala rating yang digunakan adalah 1 sampai 4 mengacu pada standar Husein Umar (2001) dan Freddy Rangkuti (2016), sebagaimana disajikan pada Tabel~\ref{tab:pedoman-rating-swot}.
@@ -271,10 +278,17 @@ Faktor internal dikelompokkan berdasarkan bidang fungsional usaha ke dalam dimen
     \tablesource[\textwidth]{Diolah peneliti berdasarkan konsep analisis lingkungan manajemen strategis \parencite{david2023strategicmanagement,pearce2013strategicmanagement}.}
 \endgroup
 
-Skor tertimbang setiap faktor dihitung dengan mengalikan bobot relatif dengan rating:
-\[
-    \mbox{Skor Tertimbang}_i = b_i \times r_i
-\]
+Skor tertimbang setiap faktor dihitung dengan mengalikan bobot relatif dengan rating melalui Persamaan~\ref{eq:skor-tertimbang-faktor}.
+\begin{equation}
+    \label{eq:skor-tertimbang-faktor}
+    S_i = b_i \times r_i
+\end{equation}
+di mana:
+\begin{description}[font=\normalfont\itshape, leftmargin=2em, style=sameline, nosep]
+    \item[$S_i$] = Skor tertimbang faktor strategis ke-$i$;
+    \item[$b_i$] = Nilai bobot relatif faktor strategis ke-$i$;
+    \item[$r_i$] = Nilai rating kinerja atau efektivitas respons faktor strategis ke-$i$.
+\end{description}
 Format cetak biru evaluasi faktor internal disajikan pada Tabel~\ref{tab:template-ifas-bab3}.
 
 \begingroup
@@ -347,13 +361,29 @@ Faktor eksternal dikelompokkan ke dalam dimensi Peluang (\textit{Opportunities})
 \endgroup
 
 \subsection{Tahap Penentuan Posisi Strategis}
-Penentuan posisi strategis dilakukan dengan memetakan selisih skor faktor ke dalam diagram kartesius SWOT empat kuadran. Koordinat sumbu internal ($X$) dan sumbu eksternal ($Y$) dihitung melalui formula \parencite{rangkuti2016analisisSWOT}:
-\[
-    X = \mbox{Total Skor Kekuatan} - \mbox{Total Skor Kelemahan} = S - W
-\]
-\[
-    Y = \mbox{Total Skor Peluang} - \mbox{Total Skor Ancaman} = O - T
-\]
+Penentuan posisi strategis dilakukan dengan memetakan selisih skor faktor ke dalam diagram kartesius SWOT empat kuadran. Koordinat sumbu internal ($X$) dan sumbu eksternal ($Y$) dihitung melalui Persamaan~\ref{eq:koordinat-x-metode} dan Persamaan~\ref{eq:koordinat-y-metode} \parencite{rangkuti2016analisisSWOT}.
+
+\begin{equation}
+    \label{eq:koordinat-x-metode}
+    X = S - W
+\end{equation}
+di mana:
+\begin{description}[font=\normalfont\itshape, leftmargin=2em, style=sameline, nosep]
+    \item[$X$] = Nilai koordinat posisi strategis pada sumbu horizontal (faktor internal);
+    \item[$S$] = Total skor tertimbang dimensi Kekuatan (\textit{Total Strengths Score});
+    \item[$W$] = Total skor tertimbang dimensi Kelemahan (\textit{Total Weaknesses Score}).
+\end{description}
+
+\begin{equation}
+    \label{eq:koordinat-y-metode}
+    Y = O - T
+\end{equation}
+di mana:
+\begin{description}[font=\normalfont\itshape, leftmargin=2em, style=sameline, nosep]
+    \item[$Y$] = Nilai koordinat posisi strategis pada sumbu vertikal (faktor eksternal);
+    \item[$O$] = Total skor tertimbang dimensi Peluang (\textit{Total Opportunities Score});
+    \item[$T$] = Total skor tertimbang dimensi Ancaman (\textit{Total Threats Score}).
+\end{description}
 
 Diagram kuadran SWOT kartesius disajikan pada Gambar~\ref{fig:kuadran-swot-metode}.
 
