@@ -27,9 +27,9 @@
 \RequirePackage{setspace}
 \singlespacing % Line spacing: 1.0 (Single)
 
-% Paragraph indentation & spacing: No first-line indent, 6pt between paragraphs
+% Paragraph indentation & spacing: No first-line indent, 5pt between paragraphs
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
+\setlength{\parskip}{4.5pt}
 
 % -------------------------------------------------------------------
 % 3. ESSENTIAL PACKAGES
