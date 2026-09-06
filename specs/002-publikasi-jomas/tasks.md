@@ -11,9 +11,9 @@
 ## Daftar Tugas Ekspansi Opsi 2 (High Rigour)
 
 ### Gelombang 1: Rancang Bangun Visualisasi & Ekstensi Gambar (Wave 1 - Design Division)
-- [ ] T13: Pembuatan skematik `jomas/figures/fig-order-cycle-time.tex` (TikZ/PGFPlots perbandingan waktu siklus pemesanan dine-in vs OFDA).
-- [ ] T14: Pembuatan skematik `jomas/figures/fig-recovery-decision-tree.tex` (Pohon keputusan pemulihan kegagalan layanan digital).
-- [ ] T15: Audit box-model TikZ servicescape dan blueprint (0 hyphenation, zero overlapping, padding nyaman).
+- [x] T13: Pembuatan skematik `jomas/figures/fig-order-cycle-time.tex` (TikZ/PGFPlots perbandingan waktu siklus pemesanan dine-in vs OFDA).
+- [x] T14: Pembuatan skematik `jomas/figures/fig-recovery-decision-tree.tex` (Pohon keputusan pemulihan kegagalan layanan digital).
+- [x] T15: Audit box-model TikZ servicescape dan blueprint (0 hyphenation, zero overlapping, padding nyaman).
 
 ### Gelombang 2: Pengayaan Konten Ilmiah & Bibliografi (Wave 2 - Publication Division)
 - [x] T16: Ekspansi `jomas/jomas.bib` dari 13 menjadi 30+ referensi internasional bereputasi (Oliver, Parasuraman, Bitner, Wirtz, Chase, dsb.).

@@ -37,7 +37,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{float}
 \RequirePackage{tikz}
-\usetikzlibrary{positioning,arrows.meta}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,calc}
 \RequirePackage{pgfplots}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
