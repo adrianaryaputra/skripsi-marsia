@@ -1,0 +1,197 @@
+\begin{tikzpicture}[
+    font=\small,
+    thick,
+    trigger/.style={
+        rectangle, draw=black!90, line width=1.1pt, fill=black!8, rounded corners=3pt,
+        text width=11.6cm, minimum height=0.95cm, align=center,
+        font=\footnotesize\bfseries, inner sep=4pt
+    },
+    triage/.style={
+        diamond, aspect=2.4, draw=black!90, line width=1.1pt, fill=black!14,
+        text width=4.2cm, align=center, font=\footnotesize\bfseries, inner sep=2pt
+    },
+    tier1_hdr/.style={
+        rectangle, draw=black!85, line width=1pt, fill=black!8, rounded corners=2pt,
+        text width=4.8cm, minimum height=1.1cm, align=center,
+        font=\footnotesize\bfseries, inner sep=3pt
+    },
+    tier2_hdr/.style={
+        rectangle, draw=black!85, line width=1pt, fill=black!20, rounded corners=2pt,
+        text width=4.8cm, minimum height=1.1cm, align=center,
+        font=\footnotesize\bfseries, inner sep=3pt
+    },
+    tier3_hdr/.style={
+        rectangle, draw=black!95, line width=1pt, fill=black!85, rounded corners=2pt,
+        text width=4.8cm, minimum height=1.1cm, align=center,
+        font=\footnotesize\bfseries, text=white, inner sep=3pt
+    },
+    scope_box/.style={
+        rectangle, draw=black!75, line width=0.6pt, fill=white, rounded corners=2pt,
+        text width=4.8cm, minimum height=2.2cm, align=left,
+        font=\scriptsize, inner sep=5pt
+    },
+    action_box/.style={
+        rectangle, draw=black!85, line width=0.8pt, fill=black!3, rounded corners=2pt,
+        text width=4.8cm, minimum height=2.8cm, align=left,
+        font=\scriptsize, inner sep=5pt
+    },
+    sla_box/.style={
+        rectangle, draw=black!75, line width=0.6pt, fill=black!8, rounded corners=2pt,
+        text width=4.8cm, minimum height=1.1cm, align=center,
+        font=\scriptsize, inner sep=3pt
+    },
+    outcome/.style={
+        rectangle, draw=black!90, line width=1.1pt, fill=black!8, rounded corners=3pt,
+        text width=15.2cm, minimum height=1.1cm, align=center,
+        font=\scriptsize, inner sep=4pt
+    },
+    flow/.style={-{Stealth[scale=1.0]}, line width=1pt, draw=black!85},
+    line/.style={line width=1pt, draw=black!85}
+]
+
+% -------------------------------------------------------------------------
+% 1. ROOT TRIGGER (Center: y = 14.0 cm)
+% -------------------------------------------------------------------------
+\node[trigger] (root) at (7.65, 14.0) {
+    \textbf{Operational Service Failure Detected on GrabFood}\\[2pt]
+    {\normalfont\scriptsize Customer review, merchant chat grievance, platform alert, or cashier audit}
+};
+
+% -------------------------------------------------------------------------
+% 2. TRIAGE DECISION (Center: y = 12.1 cm)
+% -------------------------------------------------------------------------
+\node[triage] (triage) at (7.65, 12.1) {
+    \textbf{Assess Severity Tier}\\[1pt]
+    \textbf{\& Defect Attribution}
+};
+
+\draw[flow] (root.south) -- (triage.north);
+
+% -------------------------------------------------------------------------
+% 3. THREE SEVERITY TIERS
+% Column Centers: 2.45 cm, 7.65 cm, 12.85 cm (Spacing = 5.2 cm, Width = 4.8 cm)
+% -------------------------------------------------------------------------
+
+% Row 1: Headers (Center: y = 9.90 cm, Height = 1.1 cm)
+\node[tier1_hdr] (t1_hdr) at (2.45, 9.90) {
+    \textbf{LEVEL 1: MINOR}\\[1pt]
+    \textbf{SERVICE DEFECT}\\[2pt]
+    {\normalfont\fontsize{6pt}{7pt}\selectfont (38\% Overall Grievance Share)}
+};
+\node[tier2_hdr] (t2_hdr) at (7.65, 9.90) {
+    \textbf{LEVEL 2: MODERATE}\\[1pt]
+    \textbf{SERVICE FAILURE}\\[2pt]
+    {\normalfont\fontsize{6pt}{7pt}\selectfont (30\% Overall Grievance Share)}
+};
+\node[tier3_hdr] (t3_hdr) at (12.85, 9.90) {
+    \textbf{LEVEL 3: CRITICAL}\\[1pt]
+    \textbf{SERVICE FAILURE}\\[2pt]
+    {\normalfont\fontsize{6pt}{7pt}\selectfont (6\% Overall Grievance Share)}
+};
+
+% Branching routing from Triage
+\draw[line] (triage.west) -| (2.45, 10.75);
+\draw[flow] (2.45, 10.75) -- (t1_hdr.north);
+
+\draw[flow] (triage.south) -- (t2_hdr.north);
+
+\draw[line] (triage.east) -| (12.85, 10.75);
+\draw[flow] (12.85, 10.75) -- (t3_hdr.north);
+
+% Row 2: Symptoms / Scope (Center: y = 7.75 cm, Height = 2.2 cm)
+\node[scope_box] (t1_desc) at (2.45, 7.75) {
+    \textbf{Failure Scope \& Characteristics:}\\[2pt]
+    $\bullet$ Missing curry gravy pouch\\
+    $\bullet$ Omitted green or red sambal cup\\
+    $\bullet$ Omitted disposable cutlery or tissue\\
+    $\bullet$ Core food package remains edible
+};
+
+\node[scope_box] (t2_desc) at (7.65, 7.75) {
+    \textbf{Failure Scope \& Characteristics:}\\[2pt]
+    $\bullet$ Swapped dish (rendang vs chicken)\\
+    $\bullet$ Torn sauce pouch causing bag spill\\
+    $\bullet$ Crushed meal container in transit\\
+    $\bullet$ Food item cannot be safely eaten
+};
+
+\node[scope_box] (t3_desc) at (12.85, 7.75) {
+    \textbf{Failure Scope \& Characteristics:}\\[2pt]
+    $\bullet$ Ordered dish depleted after payment\\
+    $\bullet$ Unsynchronized kitchen stockout\\
+    $\bullet$ Imminent order cancellation risk\\
+    $\bullet$ Extended driver idle waiting penalty
+};
+
+\draw[flow] (t1_hdr.south) -- (t1_desc.north);
+\draw[flow] (t2_hdr.south) -- (t2_desc.north);
+\draw[flow] (t3_hdr.south) -- (t3_desc.north);
+
+% Row 3: Operational Recovery Action (Center: y = 4.75 cm, Height = 2.8 cm)
+\node[action_box] (t1_act) at (2.45, 4.75) {
+    \textbf{Operational Recovery Protocol:}\\[2pt]
+    1. Acknowledge error via chat.\\
+    2. Issue micro-refund for sauce.\\
+    3. Dispatch instant Rp10,000 voucher\\
+    \hspace*{3mm}code for customer next purchase.\\
+    4. Verify Stage 1 kitchen checklist.
+};
+
+\node[action_box] (t2_act) at (7.65, 4.75) {
+    \textbf{Operational Recovery Protocol:}\\[2pt]
+    1. Apologize for service disruption.\\
+    2. Offer customer dual resolution choices:\\
+    \hspace*{2mm}a) Express re-dispatch of fresh dish\\
+    \hspace*{6mm}via dedicated courier, OR\\
+    \hspace*{2mm}b) Full item refund via GrabFood.\\
+    3. Audit Stage 2 cashier ticket match.
+};
+
+\node[action_box] (t3_act) at (12.85, 4.75) {
+    \textbf{Operational Recovery Protocol:}\\[2pt]
+    1. Direct phone call within 3 minutes.\\
+    2. Offer premium dish upgrade\\
+    \hspace*{3mm}(e.g., upgrade Ayam Pop to Rendang).\\
+    3. Provide complimentary drink or side.\\
+    4. Instant POS-to-app inventory sync.
+};
+
+\draw[flow] (t1_desc.south) -- (t1_act.north);
+\draw[flow] (t2_desc.south) -- (t2_act.north);
+\draw[flow] (t3_desc.south) -- (t3_act.north);
+
+% Row 4: Target Resolution SLA (Center: y = 2.30 cm, Height = 1.1 cm)
+\node[sla_box] (t1_sla) at (2.45, 2.30) {
+    \textbf{Target SLA: $< 15$ Minutes}\\[1pt]
+    {\fontsize{6pt}{7pt}\selectfont Resolves minor grievance; stops negative rating}
+};
+
+\node[sla_box] (t2_sla) at (7.65, 2.30) {
+    \textbf{Target SLA: $< 30$ Minutes}\\[1pt]
+    {\fontsize{6pt}{7pt}\selectfont Restores service fairness; prevents customer churn}
+};
+
+\node[sla_box] (t3_sla) at (12.85, 2.30) {
+    \textbf{Target SLA: $< 5$ Minutes}\\[1pt]
+    {\fontsize{6pt}{7pt}\selectfont Settled prior to courier dispatch; zero cancel}
+};
+
+\draw[flow] (t1_act.south) -- (t1_sla.north);
+\draw[flow] (t2_act.south) -- (t2_sla.north);
+\draw[flow] (t3_act.south) -- (t3_sla.north);
+
+% Row 5: Governance / Feedback Loop (Center: y = 0.45 cm, Height = 1.1 cm)
+\node[outcome] (gov) at (7.65, 0.45) {
+    \textbf{Closed-Loop Operational Governance \& Organizational Learning}\\[2pt]
+    Defect recorded in Daily Kitchen Shift Ledger $\longrightarrow$ Dual-Check Checklist updated at Stage 1 / Stage 2 $\longrightarrow$\\
+    Storefront catalog updated in real time $\longrightarrow$ Root cause eliminated to prevent recurring peak-hour failures.
+};
+
+% Bus routing lines from SLA boxes down to outcome node
+\draw[line] (t1_sla.south) -- (2.45, 1.35);
+\draw[line] (t2_sla.south) -- (7.65, 1.35);
+\draw[line] (t3_sla.south) -- (12.85, 1.35);
+\draw[line] (2.45, 1.35) -- (12.85, 1.35);
+\draw[flow] (7.65, 1.35) -- (gov.north);
+
+\end{tikzpicture}

@@ -1,0 +1,135 @@
+\begin{tikzpicture}[
+    x=1cm, y=1cm,
+    font=\small,
+    thick
+]
+
+% -------------------------------------------------------------------------
+% BACKGROUND GRID (every 2 minutes from 0 to 26 min)
+% -------------------------------------------------------------------------
+\draw[dashed, draw=gray!25, line width=0.4pt] (3.50, 0) -- (3.50, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (4.34, 0) -- (4.34, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (5.18, 0) -- (5.18, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (6.02, 0) -- (6.02, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (6.86, 0) -- (6.86, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (7.70, 0) -- (7.70, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (8.54, 0) -- (8.54, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (9.38, 0) -- (9.38, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (10.22, 0) -- (10.22, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (11.06, 0) -- (11.06, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (11.90, 0) -- (11.90, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (12.74, 0) -- (12.74, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (13.58, 0) -- (13.58, 4.8);
+\draw[dashed, draw=gray!25, line width=0.4pt] (14.42, 0) -- (14.42, 4.8);
+
+% -------------------------------------------------------------------------
+% 1. DINE-IN SERVICE (TOTAL: 6 MIN)
+% -------------------------------------------------------------------------
+\node[anchor=east, align=right, font=\footnotesize\bfseries] at (3.25, 4.0) {
+    Dine-In Service\\
+    {\normalfont\scriptsize(In-Store Table Dining)}
+};
+
+% Bar segments: [0-1m], [1-5m], [5-6m]
+\draw[fill=black!12, draw=black!85, line width=0.6pt] (3.50, 3.55) rectangle (3.92, 4.45);
+\draw[fill=black!32, draw=black!85, line width=0.6pt] (3.92, 3.55) rectangle (5.60, 4.45);
+\draw[fill=black!80, draw=black!85, line width=0.6pt] (5.60, 3.55) rectangle (6.02, 4.45);
+
+% Labels
+\node[font=\tiny\bfseries, align=center] at (4.76, 4.0) {Assembly\\4 min};
+
+% Total summary badge
+\node[anchor=west, align=left, font=\footnotesize] at (6.25, 4.0) {
+    \textbf{6 min total}\\
+    {\scriptsize\textit{Baseline In-Store Flow}}
+};
+
+% -------------------------------------------------------------------------
+% 2. WALK-IN TAKEAWAY (TOTAL: 10 MIN)
+% -------------------------------------------------------------------------
+\node[anchor=east, align=right, font=\footnotesize\bfseries] at (3.25, 2.5) {
+    Walk-In Takeaway\\
+    {\normalfont\scriptsize(Counter Order \& Pick)}
+};
+
+% Bar segments: [0-2m], [2-7m], [7-10m]
+\draw[fill=black!12, draw=black!85, line width=0.6pt] (3.50, 2.05) rectangle (4.34, 2.95);
+\draw[fill=black!32, draw=black!85, line width=0.6pt] (4.34, 2.05) rectangle (6.44, 2.95);
+\draw[fill=black!55, draw=black!85, line width=0.6pt] (6.44, 2.05) rectangle (7.70, 2.95);
+
+% Labels
+\node[font=\tiny\bfseries, align=center] at (3.92, 2.5) {Queue\\2m};
+\node[font=\tiny\bfseries, align=center] at (5.39, 2.5) {Assembly\\5 min};
+\node[font=\tiny\bfseries, text=white, align=center] at (7.07, 2.5) {Pack\\3m};
+
+% Total summary badge
+\node[anchor=west, align=left, font=\footnotesize] at (7.95, 2.5) {
+    \textbf{10 min total}\\
+    {\scriptsize\textit{(+67\% over Dine-In)}}
+};
+
+% -------------------------------------------------------------------------
+% 3. GRABFOOD DELIVERY (PEAK RUSH, TOTAL: 24 MIN)
+% -------------------------------------------------------------------------
+\node[anchor=east, align=right, font=\footnotesize\bfseries] at (3.25, 1.0) {
+    GrabFood Delivery\\
+    {\normalfont\scriptsize(Peak Lunch Rush)}
+};
+
+% Bar segments: [0-6m], [6-14m], [14-18m], [18-24m]
+\draw[fill=black!12, draw=black!85, line width=0.6pt] (3.50, 0.55) rectangle (6.02, 1.45);
+\draw[fill=black!32, draw=black!85, line width=0.6pt] (6.02, 0.55) rectangle (9.38, 1.45);
+\draw[fill=black!55, draw=black!85, line width=0.6pt] (9.38, 0.55) rectangle (11.06, 1.45);
+\draw[fill=black!80, draw=black!85, line width=0.6pt] (11.06, 0.55) rectangle (13.58, 1.45);
+
+% Labels
+\node[font=\scriptsize\bfseries, align=center] at (4.76, 1.0) {Ingestion / Wait\\{\normalfont\tiny 6 min (25.0\%)}};
+\node[font=\scriptsize\bfseries, align=center] at (7.70, 1.0) {Assembly \& Plating\\{\normalfont\tiny 8 min (33.3\%)}};
+\node[font=\tiny\bfseries, text=white, align=center] at (10.22, 1.0) {Packaging\\{\normalfont\fontsize{5pt}{6pt}\selectfont 4 min (16.7\%)}};
+\node[font=\scriptsize\bfseries, text=white, align=center] at (12.32, 1.0) {Courier Transit\\{\normalfont\tiny 6 min (25.0\%)}};
+
+% Total summary badge
+\node[anchor=west, align=left, font=\footnotesize] at (13.80, 1.0) {
+    \textbf{24 min total}\\
+    {\scriptsize\textit{(+300\% over Dine-In)}}
+};
+
+% -------------------------------------------------------------------------
+% TIME AXIS
+% -------------------------------------------------------------------------
+\draw[line width=0.8pt, draw=black!90, ->, >=Stealth] (3.50, 0) -- (14.90, 0);
+
+\foreach \t/\xpos in {0/3.50, 2/4.34, 4/5.18, 6/6.02, 8/6.86, 10/7.70, 12/8.54, 14/9.38, 16/10.22, 18/11.06, 20/11.90, 22/12.74, 24/13.58, 26/14.42} {
+    \draw[line width=0.6pt, draw=black!90] (\xpos, 0) -- (\xpos, -0.08);
+    \node[font=\scriptsize, below] at (\xpos, -0.08) {\t};
+}
+
+\node[font=\footnotesize\bfseries, anchor=north] at (8.96, -0.50) {Cumulative Order Cycle Time (Minutes)};
+
+% -------------------------------------------------------------------------
+% LEGEND (2 ROWS, EXPLICIT CM COORDINATES)
+% -------------------------------------------------------------------------
+\begin{scope}[shift={(0.2cm, -1.30cm)}]
+% Row 1
+\draw[fill=black!12, draw=black!85, line width=0.5pt] (0.2cm, 0.1cm) rectangle (0.7cm, 0.35cm);
+\node[anchor=west, font=\scriptsize] at (0.8cm, 0.22cm) {Stage 1: Order Ingestion / Counter Queue};
+
+\draw[fill=black!32, draw=black!85, line width=0.5pt] (7.6cm, 0.1cm) rectangle (8.1cm, 0.35cm);
+\node[anchor=west, font=\scriptsize] at (8.2cm, 0.22cm) {Stage 2: Kitchen Assembly \& Plating};
+
+% Row 2
+\draw[fill=black!55, draw=black!85, line width=0.5pt] (0.2cm, -0.45cm) rectangle (0.7cm, -0.20cm);
+\node[anchor=west, font=\scriptsize] at (0.8cm, -0.33cm) {Stage 3: Packaging \& Verification Check};
+
+\draw[fill=black!80, draw=black!85, line width=0.5pt] (7.6cm, -0.45cm) rectangle (8.1cm, -0.20cm);
+\node[anchor=west, font=\scriptsize] at (8.2cm, -0.33cm) {Stage 4: Courier Transit / Customer Handover};
+\end{scope}
+
+% -------------------------------------------------------------------------
+% ANALYTICAL SUMMARY NOTE BOX (WELL-SEPARATED AT Y = -2.75 CM)
+% -------------------------------------------------------------------------
+\node[draw=black!40, fill=black!3, rounded corners=2pt, font=\scriptsize, align=center, text width=15.0cm, inner sep=4.5pt] at (8.5, -2.75) {
+    \textbf{Operational Cycle Time Dynamics (GrabFood Peak 24 min):} Internal Kitchen Operations = 12 min (50.0\%: Assembly 8m + Packaging 4m) $\mid$ Platform \& Logistics Latency = 12 min (50.0\%: Ingestion/Driver Wait 6m + Courier Transit 6m). Peak lunch rush doubles kitchen assembly duration from 4 to 8 minutes due to cross-channel queue contention at the single frontline counter.
+};
+
+\end{tikzpicture}
