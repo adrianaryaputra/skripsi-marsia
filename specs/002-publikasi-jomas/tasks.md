@@ -1,9 +1,34 @@
 # Tasks: Publikasi Artikel JoMAS (`specs/002-publikasi-jomas/tasks.md`)
 
 ## Status Tracking
-- Status: Completed (Ready for Review)
+- Status: In Progress (Opsi 2: High Rigour Expansion to 16--18 Pages)
 - Target Submisi: Journal of Management Analytical and Solution (JoMAS) FEB USU (SINTA 4)
-- Bahasa Naskah: Full English (Abstract & Full Article)
+- Bahasa Naskah: Full Academic English (Clean, Data-Driven, Zero AI Slop)
+- Halaman Target: 16--18 halaman (Batas Maksimal Absolut: 25 halaman)
+
+---
+
+## Daftar Tugas Ekspansi Opsi 2 (High Rigour)
+
+### Gelombang 1: Rancang Bangun Visualisasi & Ekstensi Gambar (Wave 1 - Design Division)
+- [ ] T13: Pembuatan skematik `jomas/figures/fig-order-cycle-time.tex` (TikZ/PGFPlots perbandingan waktu siklus pemesanan dine-in vs OFDA).
+- [ ] T14: Pembuatan skematik `jomas/figures/fig-recovery-decision-tree.tex` (Pohon keputusan pemulihan kegagalan layanan digital).
+- [ ] T15: Audit box-model TikZ servicescape dan blueprint (0 hyphenation, zero overlapping, padding nyaman).
+
+### Gelombang 2: Pengayaan Konten Ilmiah & Bibliografi (Wave 2 - Publication Division)
+- [x] T16: Ekspansi `jomas/jomas.bib` dari 13 menjadi 30+ referensi internasional bereputasi (Oliver, Parasuraman, Bitner, Wirtz, Chase, dsb.).
+- [ ] T17: Penambahan subbab keabsahan data (*Trustworthiness Matrix*) pada METHODS (Lincoln & Guba 1985).
+- [ ] T18: Penambahan tabel & narasi *Temporal Arrival Dynamics & Cycle Time Bottlenecks* pada RESULTS.
+- [ ] T19: Penambahan tabel taksonomi linguistik 4.584 ulasan GrabFood (*Grievance Taxonomy & Valence Analysis*) pada RESULTS.
+- [ ] T20: Penambahan subbab teoritis *Asymmetric Customer Penalty & Expectation-Disconfirmation Theory* pada DISCUSSION.
+- [ ] T21: Penambahan subbab operasional *Hierarchical Service Recovery Protocol* pada DISCUSSION.
+- [ ] T22: Penajaman *Managerial Implications* & *Conclusion* (akademis murni, ringkas, data-grounded, zero AI slop).
+
+### Gelombang 3: Verifikasi Kompilasi, Audit Halaman & Deliverable (Wave 3 - QA & CEO Report)
+- [ ] T23: Eksekusi kompilasi multi-pass `./build.sh` di folder `jomas/`.
+- [ ] T24: Audit jumlah halaman PDF (target: 16--18 halaman, <= 25 halaman).
+- [ ] T25: Pemeriksaan kepatuhan tipografi JoMAS dan invarian perlindungan novelty makro.
+- [ ] T26: Laporan eksekutif selesai ke Adrian.
 
 ---
 
