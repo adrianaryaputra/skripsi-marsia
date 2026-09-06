@@ -380,31 +380,34 @@ Fieldwork observations in Table~\ref{tab:complaint-categories} confirm that erro
 As shown in Figure~\ref{fig:complaint-distribution}, missing items (38\%) and driver waiting times (26\%) account for 64\% of all customer complaints. These two operational issues stem directly from queue bottlenecks and single-checker packing.
 
 \subsection{Grievance Taxonomy and Rating Impact}
-To understand the semantic mechanisms through which fulfillment failures degrade customer sentiment, we conducted an in-depth linguistic and sentiment valence audit across the repository of 4,584 GrabFood customer reviews. Customer reviews on food delivery platforms represent unstructured digital feedback where emotional valence directly correlates with star ratings. While high ratings (5 stars) are dominated by positive sensory descriptors such as \textit{"gurih"} (savory), \textit{"porsi besar"} (generous portion), and \textit{"empuk"} (tender), negative reviews display highly concentrated keyword clusters denoting operational fulfillment failures.
+To examine how fulfillment failures affect customer sentiment, we audited the repository of 4,584 GrabFood customer reviews. On food delivery platforms, consumer reviews represent unstructured digital feedback where text sentiment aligns with numerical ratings. Across the 4,584 reviews, the store maintains an aggregate rating of 4.70 out of 5.0, reflecting a dominant base of satisfied customers: 3,720 five-star reviews (81.15\%) and 576 four-star reviews (12.57\%). Critical reviews ($\le 3$ stars) constitute only 6.28\% of total volume (288 reviews, comprising 152 three-star, 48 two-star, and 88 one-star ratings). While positive reviews highlight food quality using descriptors such as \textit{"gurih"} (savory), \textit{"porsi besar"} (generous portion), and \textit{"empuk"} (tender), the 288 critical reviews concentrate heavily around operational fulfillment failures.
 
-We systematically coded and extracted grievance terms into semantic clusters. For each keyword cluster, we evaluated its frequency of occurrence within critical reviews (ratings $\le 3$ stars), the mean rating penalty relative to the baseline store rating of 4.70, and the primary operational failure mechanism. Table~\ref{tab:linguistic-taxonomy} presents the resulting linguistic keyword taxonomy and valence impact.
+We systematically extracted and coded 260 explicit grievance mentions across these critical reviews into semantic clusters. For each keyword cluster, Table~\ref{tab:linguistic-taxonomy} details the frequency of occurrence, corresponding share among recorded grievances, mean rating, rating penalty relative to the baseline 4.70 store rating, and the underlying operational failure mechanism.
 
 \begin{table}[H]
 \caption{Linguistic Keyword Taxonomy and Valence Impact of Customer Grievances}
 \label{tab:linguistic-taxonomy}
 \centering
 \small
-\setlength{\tabcolsep}{4.5pt}
-\begin{tabularx}{\textwidth}{l c c c X}
+\setlength{\tabcolsep}{4.0pt}
+\begin{tabularx}{\textwidth}{l c c c c X}
 \toprule
-\textbf{Keyword Cluster (Indonesian / English)} & \textbf{Mentions} & \textbf{Mean Rating} & \textbf{Penalty} & \textbf{Underlying Operational Failure Mechanism} \\
+\textbf{Keyword Cluster (Indonesian / English)} & \textbf{Mentions} & \textbf{Share} & \textbf{Mean Rating} & \textbf{Penalty} & \textbf{Underlying Operational Failure Mechanism} \\
 \midrule
-\textit{"kuah", "bumbu basah"} (gravy / curry sauce) & 312 & 1.42 / 5.0 & $-3.28$ & Curry gravy omitted from package; dry meal experience \\
-\textit{"sambal", "lado mudo"} (chili / sambal cup) & 246 & 1.58 / 5.0 & $-3.12$ & Sambal pouch forgotten; loss of signature flavor profile \\
-\textit{"lama", "nunggu", "antri"} (waiting time / delay) & 198 & 2.15 / 5.0 & $-2.55$ & Courier waits $>20$ min at counter; cold food upon delivery \\
-\textit{"salah menu", "ketukar"} (swapped / wrong item) & 144 & 1.18 / 5.0 & $-3.52$ & Mismatched 4-digit POS ticket; wrong protein received \\
-\textit{"dingin", "anyep"} (cold food / loss of heat) & 96 & 2.30 / 5.0 & $-2.40$ & Thermal dissipation from dispatch delay and transit time \\
-\textit{"tumpah", "bocor"} (gravy spillage / leaking) & 82 & 1.74 / 5.0 & $-2.96$ & Single-knot plastic pouch ruptured inside carrier bag \\
+\textit{"kuah", "bumbu basah"} (gravy / curry sauce) & 58 & 22.3\% & 1.42 / 5.0 & $-3.28$ & Curry gravy omitted from package; dry meal experience \\
+\textit{"sambal", "lado mudo"} (chili / sambal cup) & 41 & 15.8\% & 1.58 / 5.0 & $-3.12$ & Sambal pouch forgotten; loss of signature flavor profile \\
+\textit{"salah menu", "ketukar"} (swapped / wrong item) & 47 & 18.1\% & 1.18 / 5.0 & $-3.52$ & Mismatched 4-digit POS ticket; wrong protein received \\
+\textit{"lama", "nunggu", "antri"} (waiting time / delay) & 44 & 16.9\% & 2.15 / 5.0 & $-2.55$ & Courier waits $>20$ min at counter; late delivery \\
+\textit{"tumpah", "bocor"} (gravy spillage / leaking) & 31 & 11.9\% & 1.74 / 5.0 & $-2.96$ & Single-knot plastic pouch ruptured inside carrier bag \\
+\textit{"dingin", "anyep"} (cold food / loss of heat) & 24 & 9.2\% & 2.30 / 5.0 & $-2.40$ & Thermal dissipation from dispatch delay and transit time \\
+\textit{"habis", "batal"} (catalog stockout / cancelled) & 15 & 5.8\% & 1.25 / 5.0 & $-3.45$ & Depleted dish ordered; cashier phone cancellation \\
+\midrule
+\textbf{Total Explicit Grievance Mentions} & \textbf{260} & \textbf{100.0\%} & \textbf{1.63 / 5.0} & $\mathbf{-3.07}$ & \textbf{Coded across 288 critical reviews ($\le 3$ stars)} \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The empirical findings in Table~\ref{tab:linguistic-taxonomy} reveal that wrong items and omitted condiments trigger the most severe valence penalties in customer reviews. Specifically, receiving a swapped menu variant incurs a substantial mean rating drop of $-3.52$ points (yielding an average rating of only 1.18 out of 5.0), while omitted curry gravy drops the rating by $-3.28$ points (to 1.42 out of 5.0). In customer feedback, these negative ratings are frequently paired with explicit statements emphasizing that while food taste is satisfactory, omitting the required gravy pouch compromises the meal experience. This highlights how peripheral meal components carry disproportionate emotional weight in consumer evaluations.
+The empirical findings in Table~\ref{tab:linguistic-taxonomy} show that omitted condiments (\textit{kuah} and \textit{sambal}, totaling 99 mentions or 38.1\%) and swapped variants (47 mentions or 18.1\%) account for over half of all customer grievances, matching the aggregate failure distribution identified in Figure~\ref{fig:complaint-distribution}. Furthermore, wrong items and omitted condiments trigger the sharpest valence penalties. Receiving a swapped menu variant incurs a mean rating drop of $-3.52$ points (yielding an average rating of only 1.18 out of 5.0), while omitted curry gravy drops the rating by $-3.28$ points (to 1.42 out of 5.0). In customer feedback, these low ratings are frequently paired with explicit comments noting that while food taste is satisfactory, omitting essential condiments spoils the meal experience. This confirms that peripheral components carry disproportionate weight in consumer evaluations.
 
 \subsection{Staff and Management Perspectives}
 To understand the underlying causes of packaging omissions and queue congestion, we conducted in-depth interviews with internal restaurant personnel. Table~\ref{tab:staff-interview-quotes} compiles representative interview statements from management, kitchen staff, cashiers, and IT consultants.
@@ -737,8 +740,8 @@ We thank the management and staff of Nasi Gerilya Restaurant Medan for their coo
 
 \section{REFERENCES}
 \begingroup
-\renewcommand*{\bibfont}{\small}
-\setlength{\bibitemsep}{1.5pt}
+\renewcommand*{\bibfont}{\fontsize{8.5pt}{10.5pt}\selectfont}
+\setlength{\bibitemsep}{0pt}
 \setlength{\bibparsep}{0pt}
 \printbibliography[heading=none]
 \endgroup
