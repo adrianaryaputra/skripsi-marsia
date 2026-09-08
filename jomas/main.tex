@@ -75,6 +75,29 @@ We collected empirical data through four distinct methods:
 \subsection{Data Analysis}
 We analyzed qualitative data using the interactive model of \textcite{miles2014qualitative}. This model includes data condensation, matrix displays, and conclusion drawing. We transcribed all audio recordings verbatim, extracted customer reviews into structured digital matrices, and systematically compared interview transcripts with platform telemetry and observational field notes. Thematic coding mapped operational friction points to the four e-service quality dimensions of \textcite{parasuraman2005esqual}.
 
+\subsection{Operational Framework and Research Dimensions}
+To systematically analyze digital service operations and complaint mechanisms, this study operationalizes the core constructs of Electronic Service Quality (\textit{E-S-QUAL}) and Electronic Service Recovery Quality (\textit{E-REC-S-QUAL}) formulated by \textcite{parasuraman2005esqual}, integrated with servicescape and service operations principles \parencite{bitner1992servicescapes,chase1994failsafe,smith1999servicerecovery}. Table~\ref{tab:operational-dimensions} delineates the research constructs, theoretical dimensions, foundational literature, and empirical fieldwork indicators investigated in this case study.
+
+\begin{table}[H]
+\caption{Operationalization of Research Constructs and Empirical Service Dimensions}
+\label{tab:operational-dimensions}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{p{2.6cm} p{3.0cm} p{3.8cm} X}
+\toprule
+\textbf{Construct} & \textbf{Core Dimension} & \textbf{Key Reference} & \textbf{Empirical Fieldwork Indicator} \\
+\midrule
+\textit{E-S-QUAL} (Core) & Fulfillment Accuracy & \textcite{parasuraman2005esqual} & Meal item completeness, sauce pouches, and dish correctness \\
+\textit{E-S-QUAL} (Core) & Operational Speed & \textcite{parasuraman2005esqual} & Ingestion speed, kitchen assembly cycle time, and driver wait \\
+\textit{E-S-QUAL} (Core) & System Availability & \textcite{parasuraman2005esqual} & POS-to-app real-time menu sync and digital stockout rate \\
+Servicescape Flow & Packaging Integrity & \textcite{bitner1992servicescapes} & Tamper-evident seals, tight lids, and sealed condiment bags \\
+\textit{E-REC-S-QUAL} & Grievance Response & \textcite{parasuraman2005esqual} & In-app grievance response speed, apology, and phone SLA \\
+\textit{E-REC-S-QUAL} & Restorative Redress & \textcite{smith1999servicerecovery} & Sauce micro-refunds, digital vouchers, and express dish resend \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \subsection{Data Trustworthiness}
 To ensure methodological rigour and analytical validity, this study implemented the four-dimension trustworthiness criteria formulated by \textcite{lincoln1985naturalistic}: credibility, transferability, dependability, and confirmability. Table~\ref{tab:trustworthiness-audit} details the operationalization of each trustworthiness dimension, mapping the empirical data sources, informant roles, and audit trail verification procedures.
 
@@ -88,10 +111,10 @@ To ensure methodological rigour and analytical validity, this study implemented 
 \toprule
 \textbf{Dimension} & \textbf{Case Operationalization} & \textbf{Data Sources} & \textbf{Audit Trail Procedure} \\
 \midrule
-Credibility & Triangulated multi-source field engagement & 4,584 reviews; \mbox{K01--K07} & Cross-referencing review logs with kitchen checks; member-checks with K01 and K02 \\
-Transferability & Contextual multi-channel operations audit & Store metrics; \mbox{K08, K09} & Documenting kitchen layout, counter setup, 50\% app share, and food packaging \\
-Dependability & Systematic operational audit trail stability & Audio logs, POS data & Standardized E-S-QUAL coding scheme; peer debriefing with academic advisors \\
-Confirmability & Reflexive tracing of authentic field evidence & Informants \mbox{K01--K09} & Grounding inferences in verbatim quotes; cross-checking with competitor data \\
+Credibility & Prolonged field immersion & 4,584 reviews; \mbox{K01--K07} & Cross-referencing review logs with kitchen checks; member-checks with K01 and K02 \\
+Transferability & Contextual multi-channel process audit & Store metrics; \mbox{K08, K09} & Documenting kitchen layout, counter setup, 50\% app share, and food packaging \\
+Dependability & Systematic operational audit trail & Audio logs, POS data & Standardized E-S-QUAL coding scheme; peer debriefing with academic advisors \\
+Confirmability & Reflexive audit of verbatim data & Informants \mbox{K01--K09} & Grounding inferences in verbatim quotes; cross-checking with competitor data \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -144,31 +167,7 @@ When customers order dishes that the kitchen has run out of, staff must call buy
 \label{fig:storefront-and-cashier}
 \end{figure}
 
-Figure~\ref{fig:storefront-and-cashier} displays the digital storefront alongside the physical cashier counter. Figure~\ref{fig:cashier} shows a single counter handling dine-in guests, takeaway buyers, and delivery drivers. This layout creates severe congestion during peak hours.
-
-To examine catalog availability friction, Table~\ref{tab:soldout-inventory} lists the six menu items marked unavailable during platform observation.
-
-\begin{table}[H]
-\caption{Audit of Unavailable Menu Items on GrabFood Storefront}
-\label{tab:soldout-inventory}
-\centering
-\small
-\setlength{\tabcolsep}{5pt}
-\begin{tabularx}{\textwidth}{c p{5.6cm} c X}
-\toprule
-\textbf{No.} & \textbf{Menu Item Name} & \textbf{Price (Rp)} & \textbf{Operational Stockout Category} \\
-\midrule
-1 & Gulai Merah Kepala Ikan (Size L) & 275,000 & Premium fish item; limited daily procurement \\
-2 & Gulai Merah Kepala Ikan (Size M) & 248,050 & Premium fish item; limited daily procurement \\
-3 & Nasi Padang Gembung Kuring Bakar & 47,850 & Fresh fish dish; exhausted before lunch peak \\
-4 & Nasi Padang Ayam Pop Creamy & 46,000 & Core signature dish; high customer demand \\
-5 & Sambal Cumi Nagih Kemasan & 38,500 & Packaged retail item; batch production run delay \\
-6 & Sambal Tuna Asap Keumamah Aceh & 38,500 & Packaged retail item; batch production run delay \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-Table~\ref{tab:soldout-inventory} demonstrates that stockouts affect both high-ticket specialty seafood and best-selling core dishes. Unsynchronized inventory causes immediate customer disappointment when users attempt to reorder signature items.
+Figure~\ref{fig:storefront-and-cashier} displays the digital storefront alongside the physical cashier counter. Figure~\ref{fig:cashier} shows a single counter handling dine-in guests, takeaway buyers, and delivery drivers. This layout creates severe congestion during peak hours. Furthermore, platform catalog observation revealed that six menu items were displayed as \textit{Sold Out} (including premium fish heads and packaged sambal retail jars) due to unsynchronized POS inventory buffers, forcing cashiers to manually navigate dish availability with customers.
 
 \subsection{Promotional Schemes}
 Table~\ref{tab:promo-schemes} details the 19 active promotional vouchers on GrabFood. Commercial bank partnerships dominate promotions and attract new buyers. However, the restaurant does not sync kitchen inventory with the POS terminal. As a result, the digital menu displays exhausted dishes.
@@ -715,7 +714,7 @@ Packaging spillage causes 12\% of recorded complaints. Branded tamper-evident st
 \subsection{Managerial Implications}
 The empirical findings provide actionable, operationally grounded managerial guidance for small and medium food enterprises operating in multi-channel urban delivery ecosystems. Rather than relying on superficial marketing or continuous promotional discounting, restaurant managers must address root operational causes across four structured, capital-efficient operational pillars:
 
-\begin{enumerate}[leftmargin=*,label=\textbf{\arabic*.},itemsep=4pt,topsep=4pt]
+\begin{enumerate}[leftmargin=*,label=\textbf{\arabic*.},itemsep=1pt,topsep=1pt]
     \item \textbf{Managing Asymmetric Quality Perception and Condiment Hygiene Factors}:
     Restaurant operators must recognize the cognitive asymmetry governing digital consumer evaluations (Oliver, 1980; Johnston, 1995). While kitchen staff often view side sauces, green chili cups, and curry gravy as low-cost incidental add-ons, digital delivery consumers treat these condiments as essential hygiene attributes. An omitted condiment pouch induces negative disconfirmation, diminishing the perceived utility of an otherwise well-prepared meal and triggering severe 1-star reviews (Table~\ref{tab:linguistic-taxonomy}). Management must instill an organizational culture where condiment completeness is treated with the same operational discipline as main protein cooking. Condiments should be pre-portioned, sealed, and inventoried during pre-rush staging rather than ladled on-the-fly during peak lunch velocity.
 
@@ -723,27 +722,25 @@ The empirical findings provide actionable, operationally grounded managerial gui
     Counter crowding between dine-in patrons, walk-in takeaway buyers, and delivery couriers represents a primary driver of driver waiting delays and kitchen confusion (Bitner, 1992). Multi-channel restaurants can resolve this physical friction without prohibitive architectural renovation capital. Operators should reallocate existing counter geometry into two distinct operational streams (Figure~\ref{fig:servicescape-decoupling}b): an internal ordering lane for dining patrons and a dedicated courier express dispatch hatch. Low-cost spatial demarcations, such as floor vinyl directional taping, high-visibility signage, and a dedicated staging wire shelf for completed digital orders, physically separate waiting drivers from dining room customers. This decoupling reduces frontline ambient chaos, eliminates driver queue friction, and restores operational line-of-sight for frontline cashiers.
 
     \item \textbf{Dual-Check Poka-Yoke and Standardized Assembly Routines}:
-    Human error during peak lunch order surges cannot be eliminated through verbal admonitions alone; it requires deterministic mistake-proofing mechanisms (Chase \& Stewart, 1994). Restaurants must institutionalize the Two-Stage Fail-Safe Quality Verification Checklist (Table~\ref{tab:poka-yoke-checklist}). Kitchen packers (Stage 1) must physically tick off meal components, liquid condiment pouches, and cutlery against the printed order bill before sealing the bag. Frontline cashiers (Stage 2) must execute a mandatory visual and verbal verification routine, reading the four-digit GrabFood code aloud with the courier and confirming the order summary on the driver's smartphone before handover. Applying high-adhesion tamper-evident tape over box closures and bag handles provides visual integrity, prevents in-transit spills, and prevents courier tampering disputes.
+    Human error during lunch surges cannot be eliminated through verbal warnings alone; it requires deterministic mistake-proofing (Chase \& Stewart, 1994). Restaurants must adopt the Two-Stage Fail-Safe Quality Verification Checklist (Table~\ref{tab:poka-yoke-checklist}). Kitchen packers (Stage 1) physically tick off meal components, sauce pouches, and cutlery against the order bill before sealing. Cashiers (Stage 2) execute visual-verbal verification, reading the 4-digit code aloud with the driver and confirming the app summary before handover. Applying high-adhesion tamper-evident tape provides visual integrity, prevents in-transit spills, and prevents courier disputes.
 
     \item \textbf{Dynamic Channel Inventory Synchronization and Stockout Governance}:
-    Operational friction frequently arises when physical kitchen inventory de-synchronizes from the live digital storefront catalog. Selling depleted menu items forces cashiers into time-consuming phone negotiations with disappointed customers, increases driver waiting times, and risks platform cancellation penalties. Restaurant managers must implement dynamic inventory governance routines. Frontline supervisors must conduct a mandatory inventory audit at 11:00 WIB immediately prior to the lunch peak, toggling depleted or low-stock SKUs to "Sold Out" on the GrabFood Merchant portal. Additionally, promotional discount campaigns must be synchronized with daily ingredient procurement to ensure that discounted high-volume dishes do not stock out within the first hour of trading.
+    Operational friction frequently arises when kitchen inventory de-synchronizes from the digital storefront. Selling depleted items forces cashiers into phone negotiations, increases driver waits, and risks platform cancellations. Frontline supervisors must conduct an 11:00 WIB inventory audit prior to the lunch peak, toggling depleted SKUs to "Sold Out" on GrabFood. Furthermore, promotional campaigns must sync with daily procurement so high-demand dishes do not exhaust prematurely.
 \end{enumerate}
 
 \section{CONCLUSION}
-Online food delivery platforms offer substantial commercial growth for urban small restaurants, but long-term profitability and customer retention depend fundamentally on operational fulfillment rigour. Through an empirical single-case investigation of Nasi Gerilya on GrabFood in Medan City, this study demonstrates that high culinary quality cannot compensate for fulfillment failures. When platform customers pay a 23\%--25\% pricing mark-up, packaging omissions and dispatch errors trigger severe asymmetric rating penalties, eroding customer goodwill and generating substantial service recovery costs.
+Online food delivery platforms offer substantial commercial growth for urban restaurants, but long-term profitability depends fundamentally on operational fulfillment rigour. Through an empirical case investigation of Nasi Gerilya on GrabFood in Medan City, this study demonstrates that high culinary quality cannot compensate for fulfillment failures. When platform customers pay a 23\%--25\% pricing mark-up, packaging omissions and dispatch errors trigger severe asymmetric rating penalties, eroding customer goodwill and escalating service recovery costs.
 
-Our empirical analysis of 4,584 customer reviews, time-and-motion queue telemetry, and multi-informant fieldwork reveals that 64\% of service failures stem from omitted condiments (38\%) and courier waiting delays (26\%). These defects originate not from kitchen culinary shortcomings, but from multi-channel queue crowding at an unsegregated frontline counter and the absence of standardized assembly mistake-proofing. To resolve these operational vulnerabilities, we proposed and validated three modular solutions: (1) a Two-Stage Fail-Safe Poka-Yoke packaging checklist, (2) a low-capital decoupled servicescape layout isolating delivery couriers, and (3) a Hierarchical Digital Service Recovery Framework with defined operational SLAs.
+Our empirical analysis of 4,584 reviews, time-and-motion telemetry, and multi-informant fieldwork reveals that 64\% of service failures stem from omitted condiments (38\%) and courier waiting delays (26\%). These defects originate not from cooking shortcomings, but from multi-channel queue crowding at an unsegregated counter and the absence of assembly mistake-proofing. To resolve these operational vulnerabilities, we proposed and validated three modular solutions: (1) a Two-Stage Fail-Safe Poka-Yoke packaging checklist, (2) a low-capital decoupled servicescape layout isolating delivery couriers, and (3) a Hierarchical Digital Service Recovery Framework with defined operational SLAs.
 
 \subsection{Contributions}
-This study advances service operations and digital platform literature in three key aspects. First, it refines the E-S-QUAL framework \parencite{parasuraman2005esqual} within food delivery ecosystems by establishing that fulfillment accuracy acts as an absolute hygiene prerequisite rather than an incremental satisfier. Second, by synthesizing Expectation-Disconfirmation Theory \parencite{oliver1980cognition} with Asymmetric Attribute Performance \parencite{mittal1998asymmetric}, this research explains the micro-mechanisms whereby low-cost peripheral omissions (such as a Rp1,100 gravy pouch) induce severe negative disconfirmation and disproportionate 1-star rating penalties. Third, this study operationalizes poka-yoke mistake-proofing \parencite{chase1994failsafe} and servicescape decoupling \parencite{bitner1992servicescapes} within resource-constrained small food enterprises, demonstrating that spatial flow separation and structured dual-checks resolve physical-digital interface friction without major capital investments.
+This study advances service operations literature in three aspects. First, it refines the E-S-QUAL framework \parencite{parasuraman2005esqual} within food delivery ecosystems by establishing that fulfillment accuracy acts as an absolute hygiene prerequisite rather than an incremental satisfier. Second, by synthesizing Expectation-Disconfirmation Theory \parencite{oliver1980cognition} with Asymmetric Attribute Performance \parencite{mittal1998asymmetric}, this research explains the micro-mechanisms whereby low-cost peripheral omissions (such as a Rp1,100 gravy pouch) induce severe negative disconfirmation and disproportionate 1-star rating penalties. Third, this study operationalizes poka-yoke mistake-proofing \parencite{chase1994failsafe} and servicescape decoupling \parencite{bitner1992servicescapes} within resource-constrained food enterprises, demonstrating that spatial flow separation and structured dual-checks resolve physical-digital interface friction without major capital investments.
 
 \subsection{Limitations and Future Research}
-This study is bounded by its single-case design focused on an authentic Padang culinary establishment in Medan City operating on GrabFood. While a single-case investigation offers rich, granular insights into operational mechanisms, the findings reflect specific cuisine attributes, including high reliance on liquid gravies and separate packaging pouches.
-
-Future research should extend this empirical inquiry through multi-case comparative designs across diverse culinary formats, such as beverage kiosks and fast-food chains. Comparative studies examining multi-platform fulfillment dynamics across GrabFood, GoFood, and ShopeeFood would clarify platform-specific queue friction. Furthermore, longitudinal empirical tracking of defect rate reductions, net merchant margin improvements, and customer repeat order intervals following poka-yoke deployment would provide valuable operational benchmarks for digital restaurant management.
+This study is bounded by its single-case design of an authentic Padang restaurant on GrabFood in Medan City. While offering rich operational insights, the findings reflect specific cuisine attributes, including reliance on liquid gravies and separate condiment pouches. Future research should extend this inquiry through multi-case designs across diverse culinary formats, such as beverage kiosks and fast-food chains. Comparative studies across GrabFood, GoFood, and ShopeeFood would clarify platform-specific queue friction, while longitudinal tracking of defect reductions following poka-yoke deployment would further advance service operations benchmarks.
 
 \section{ACKNOWLEDGMENTS}
-We express our sincere gratitude to the management, kitchen personnel, and frontline staff of Nasi Gerilya Restaurant Medan for their transparent collaboration during empirical fieldwork. We also acknowledge the APINDO UMKM Merdeka program and the Department of Management, Faculty of Economics and Business, Universitas Sumatera Utara, for institutional support throughout this research.
+We thank the management, kitchen team, and frontline staff of Nasi Gerilya Restaurant Medan for their collaboration during fieldwork. We also acknowledge the APINDO UMKM Merdeka program and the Department of Management, FEB Universitas Sumatera Utara, for institutional research support.
 
 \newpage
 \section{REFERENCES}
