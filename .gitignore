@@ -14,7 +14,11 @@
 test.*
 *.txt
 *.xml
+# Temporary and research notes (quarantined)
 scratch/99-temp/_discarded/
+specs/003-publikasi-scopus/
+SCOPUS/
+jomas/Marsia-*.pdf
 
 # Verification renders / temporary page images
 page*.png
