@@ -51,6 +51,8 @@
 \RequirePackage{enumitem} % For list formatting
 \RequirePackage{etoolbox} % For consistent environment-level table styling
 \RequirePackage{placeins} % Keep floats close to their textual context
+\RequirePackage{eso-pic} % Background watermark and canvas hooks
+\RequirePackage{transparent} % Opacity control for background watermarks
 
 % -------------------------------------------------------------------
 % 1A. BIBLIOGRAPHY LOCALIZATION (INDONESIAN CITATION STYLE)
@@ -994,6 +996,40 @@
 \newcommand{\@logopath}{}
 \newcommand{\logopath}[1]{\renewcommand{\@logopath}{#1}}
 
+% -------------------------------------------------------------------
+% WATERMARK SETTINGS (EMBLEM UNIVERSITAS SUMATERA UTARA)
+% -------------------------------------------------------------------
+\newcommand{\@watermarkpath}{resource/01-brand/logo-usu.png}
+\newcommand{\watermarkpath}[1]{\renewcommand{\@watermarkpath}{#1}}
+
+\newcommand{\@watermarkopacity}{0.20}
+\newcommand{\watermarkopacity}[1]{\renewcommand{\@watermarkopacity}{#1}}
+
+\newcommand{\@watermarkscale}{0.55}
+\newcommand{\watermarkscale}[1]{\renewcommand{\@watermarkscale}{#1}}
+
+\newif\ifwatermarkenabled
+\watermarkenabledtrue
+\newcommand{\enablewatermark}{\watermarkenabledtrue}
+\newcommand{\disablewatermark}{\watermarkenabledfalse}
+
+\AddToShipoutPictureBG{%
+  \ifwatermarkenabled
+    \ifx\@watermarkpath\@empty\else
+      \IfFileExists{\@watermarkpath}{%
+        \AtPageCenter{%
+          \makebox[0pt][c]{%
+            \raisebox{-0.5\height}{%
+              \transparent{\@watermarkopacity}%
+              \includegraphics[width=\@watermarkscale\paperwidth]{\@watermarkpath}%
+            }%
+          }%
+        }%
+      }{}%
+    \fi
+  \fi
+}
+
 \renewcommand{\today}{%
   \ifnum\day<10 0\fi\number\day\space
   \ifcase\month\or
@@ -1012,7 +1048,8 @@
     \begin{tabular}{@{}c@{}}#1\end{tabular}\par}%
 }
 
-\newcommand{\makecover}{
+\newcommand{\makecover}{%
+  \disablewatermark
   \begin{titlepage}
     \centering
     \singlespacing
@@ -1043,7 +1080,8 @@
     {\normalsize \textbf{\MakeUppercase{\@universitas}}}\\[0pt]
     {\normalsize \textbf{\MakeUppercase{\@kota}}}\\[0pt]
     {\normalsize \textbf{\@tahun}}
-  \end{titlepage}
+  \end{titlepage}%
+  \enablewatermark
 }
 
 % -------------------------------------------------------------------
